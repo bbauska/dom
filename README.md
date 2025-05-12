@@ -36,6 +36,17 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 </body>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 01.  change content using innerHTML ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image001.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image001.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
@@ -103,7 +114,17 @@ This is helpful for styling or applying animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- image002.gif -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 02. manipulate class ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image002.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a><!-- image002.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -277,6 +298,17 @@ element.classList.add("className")
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 03. manipulate class ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image003.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image003.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>className</mark></b> Property</h3>
@@ -328,6 +360,17 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 04.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image004.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image004.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -389,6 +432,17 @@ This method selects a single element by its unique ID attribute.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 05.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image005.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image005.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementsByClassName</mark></b></h3>
@@ -431,6 +485,17 @@ with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 06.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image006.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementsByTagName</mark></b></h3>
@@ -473,6 +538,17 @@ specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 07.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image007.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelector</h3>
@@ -510,9 +586,21 @@ one element.</p>
   
 </html>
 ```
-Output:
-<!-- image008 -->
 
+<h4>Output:</h4.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 08.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image008.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+<!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelectorAll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -556,6 +644,17 @@ all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 09.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image009.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image009.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to get all ID of the DOM elements with JavaScript?</h2>
@@ -617,6 +716,17 @@ has an ID. If it has an ID then push it into the array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 10.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image010.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image010.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 2:</h3>
@@ -674,6 +784,17 @@ has an ID. If it has an ID then push it into the array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 11.  ~~~~~~~~~~~~~~~~-->
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image011.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
 <!-- image011.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript – How to Get the Data Attributes of an Element?</h2>
