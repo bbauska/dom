@@ -39,7 +39,7 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 01.  change content using innerHTML ~~~~~~~~~~~~~~~~-->
-<p style="text-align: center">
+<div style="text-align: center">
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -49,7 +49,7 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
     title=""
     alt="." />
 </a>
-</p>
+</div>
 <!-- image001.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
