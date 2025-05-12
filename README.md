@@ -23,15 +23,12 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 <body>
   <div id="example1">This is the original content using <b><mark>innerHTML</mark></b>.</div>
   <div id="example2">This is the original text content using <b><mark>textContent</mark></b>.</div>
-
   <button onclick="changeContent()">Change Content</button>
-
   <script>
   // Function to change content
   function changeContent() {
     document.getElementById("example1").innerHTML = 
       "<strong>This is changed using innerHTML!</strong>";
-
     document.getElementById("example2").textContent = 
       "This is changed using textContent!";
     }
@@ -43,60 +40,62 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  - <b><mark>innerHTML</mark></b> changes the entire content of an element, including HTML tags. 
+<ul>
+  <li><b><mark>innerHTML</mark></b> changes the entire content of an element, including HTML tags. 
       In this case, we replace the content of the first <b><mark>div</mark></b> with bold text 
-	  using <b><mark>&lt;strong&gt;</mark></b>.
-  - <b><mark>textContent</mark></b> changes only the text inside the element, ignoring any HTML 
-    tags. The second <b><mark>div</mark></b> is updated with plain text, without any HTML formatting.
-  - The first <b><mark>div</mark></b> shows "This is the original content using <b><mark>innerHTML</mark></b>."
-  - The second <b><mark>div</mark></b> shows "This is the original text content using <b><mark>textContent</mark></b>."
-  - After clicking the "Change Content" button.
-  - The first <b><mark>div</mark></b> will display "This is changed using <b><mark>innerHTML</mark></b>!" 
-      with bold text.
-  - The second <b><mark>div</mark></b> will display "This is changed using <b><mark>textContent</mark></b>!" 
-      with plain text.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	  using <b><mark>&lt;strong&gt;</mark></b>.</li>
+  <li><b><mark>textContent</mark></b> changes only the text inside the element, ignoring any HTML 
+    tags. The second <b><mark>div</mark></b> is updated with plain text, without any HTML formatting.</li>
+  <li>The first <b><mark>div</mark></b> shows "This is the original content using <b><mark>innerHTML</mark></b>."</li>
+  <li>The second <b><mark>div</mark></b> shows "This is the original text content using <b><mark>textContent</mark></b>."</li>
+  <li>After clicking the "Change Content" button.</li>
+  <li>The first <b><mark>div</mark></b> will display "This is changed using <b><mark>innerHTML</mark></b>!" 
+      with bold text.</li>
+  <li>The second <b><mark>div</mark></b> will display "This is changed using <b><mark>textContent</mark></b>!" 
+      with plain text.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Manipulate the Class Attribute</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You can add, remove, or toggle <b><mark>classes</mark></b> on an element using JavaScript. This is helpful for 
-styling or applying animations.</p>
-
-  * <b><mark>classList.add()</mark></b>: Adds a <b><mark>class</mark></b> to an element.
-  * <b><mark>classList.remove()</mark></b>: Removes a <b><mark>class</mark></b> from an element.
-  * <b><mark>classList.toggle()</mark></b>: Toggles a <b><mark>class</mark></b> (adds it if it's not present, removes it if it is).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>You can add, remove, or toggle <b><mark>classes</mark></b> on an element using JavaScript. 
+This is helpful for styling or applying animations.</p>
+<ul>
+  <li><b><mark>classList.add()</mark></b>: Adds a <b><mark>class</mark></b> to an element.</li>
+  <li><b><mark>classList.remove()</mark></b>: Removes a <b><mark>class</mark></b> from an element.</li>
+  <li><b><mark>classList.toggle()</mark></b>: Toggles a <b><mark>class</mark></b> 
+    (adds it if it's not present, removes it if it is).</li>
+</ul>
 
 ```
 <html>
 <head>
-    <style>
-        .highlight {
-            color: red;
-            font-weight: bold;
-        }
-        .bold {
-            font-weight: bold;
-        }
-    </style>
+  <style>
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div id="example" class="bold">This is a text element with the "bold" class.</div>
+  <div id="example" class="bold">This is a text element with the "bold" class.</div>
 
-    <button onclick="addClass()">Add 'highlight' Class</button>
-    <button onclick="removeClass()">Remove 'bold' Class</button>
-    <button onclick="toggleClass()">Toggle 'highlight' Class</button>
-    <script>
-        function addClass() {
-            document.getElementById("example").classList.add("highlight");
-        }
-        function removeClass() {
-            document.getElementById("example").classList.remove("bold");
-        }
-        function toggleClass() {
-            document.getElementById("example").classList.toggle("highlight");
-        }
-    </script>
+  <button onclick="addClass()">Add 'highlight' Class</button>
+  <button onclick="removeClass()">Remove 'bold' Class</button>
+  <button onclick="toggleClass()">Toggle 'highlight' Class</button>
+  <script>
+    function addClass() {
+      document.getElementById("example").classList.add("highlight");
+    }
+    function removeClass() {
+      document.getElementById("example").classList.remove("bold");
+    }
+    function toggleClass() {
+      document.getElementById("example").classList.toggle("highlight");
+    }
+  </script>
 </body>
 </html>
 ```
@@ -108,16 +107,16 @@ styling or applying animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  - Adding a Class (<b><mark>addClass()</mark></b>): When you click the "Add 'highlight' Class" 
+<ul>
+  <li>Adding a Class (<b><mark>addClass()</mark></b>): When you click the "Add 'highlight' Class" 
       button, the highlight class is added to the div element with the id="example". This changes 
-	  the text color to red and makes it bold (as defined in the CSS).
-  - Removing a Class (<b><mark>removeClass()</mark></b>): When you click the "Remove 'bold' Class" 
-      button, the bold class is removed from the div, which removes the bold styling from the text.
-  - Toggling a Class (<b><mark>toggleClass()</mark></b>): When you click the "Toggle 'highlight' 
+	  the text color to red and makes it bold (as defined in the CSS).</li>
+  <li>Removing a Class (<b><mark>removeClass()</mark></b>): When you click the "Remove 'bold' Class" 
+      button, the bold class is removed from the div, which removes the bold styling from the text.</li>
+  <li>Toggling a Class (<b><mark>toggleClass()</mark></b>): When you click the "Toggle 'highlight' 
       Class" button, the highlight class is either added or removed, depending on whether it's 
-	  already present. If the class is present, it will be removed; if not, it will be added.
-
+	  already present. If the class is present, it will be removed; if not, it will be added.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Set CSS Styles Using JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -137,10 +136,11 @@ document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;";
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Sometimes, you need to create new elements, add them to the DOM, or remove existing ones. You can 
 do this easily with the following methods;
-
-  - <b><mark>document.createElement()</mark></b>: Creates a new element.
-  - <b><mark>appendChild()</mark></b>: Adds a new element to a parent element.
-  - <b><mark>removeChild()</mark></b>: Removes a child element from a parent.
+<ul>
+  <li><b><mark>document.createElement()</mark></b>: Creates a new element.</li>
+  <li><b><mark>appendChild()</mark></b>: Adds a new element to a parent element.</li>
+  <li><b><mark>removeChild()</mark></b>: Removes a child element from a parent.</li>
+</ul>
 
 ```
 // Create a new element
@@ -174,10 +174,11 @@ document.body.insertBefore(newDiv, referenceNode);
 <h3>6. Manipulate Element Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can easily get, set, or remove the attributes of an HTML element using the following methods:
-
-  - <b><mark>getAttribute()</mark></b>: Retrieves the value of an attribute.
-  - <b><mark>setAttribute()</mark></b>: Sets a new value for an attribute.
-  - <b><mark>removeAttribute()</mark></b>: Removes an attribute.
+<ul>
+  <li><b><mark>getAttribute()</mark></b>: Retrieves the value of an attribute.</li>
+  <li><b><mark>setAttribute()</mark></b>: Sets a new value for an attribute.</li>
+  <li><b><mark>removeAttribute()</mark></b>: Removes an attribute.</li>
+</ul>
 
 ```
 // Get the value of an attribute
@@ -196,8 +197,9 @@ document.getElementById("image").removeAttribute("src");
 HTML5 introduced data attributes, which are custom attributes that you can use to store extra 
 information about an element. These are particularly useful for adding data to an element 
 without affecting its visual structure.
-
-  - <b><mark>dataset</mark></b>: A special property in JavaScript that allows you to access data attributes.
+<ul>
+  <li><b><mark>dataset</mark></b>: A special property in JavaScript that allows you to access data attributes.</li>
+</ul>
 
 ```
 // Setting a data attribute
@@ -208,7 +210,7 @@ console.log(userId); // Outputs: 12345
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>How to Add a <b><mark>Class to <b><mark>DOM Element in JavaScript?</h2>
+<h2>How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in JavaScript is a fundamental 
 task that enables developers to dynamically manipulate the appearance and behavior of web pages. 
@@ -223,16 +225,17 @@ These are the following approaches:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Using <b><mark>classList</mark></b> Property</li>
+  <li>Using <b><mark>className</mark></b> Property</li>
+  <li>Using <b><mark>classList</mark></b> Property</li>
+</ul>
 
-  - Using <b><mark>classList</mark></b> Property
-  - Using <b><mark>className</mark></b> Property
-  - Using <b><mark>classList</mark></b> Property
-
-<p>In this approach, we are using classList property to add the class into the DOM element. It 
-returns the class name as a <b><mark>DOMTokenList</mark></b> object. It has a method called “add” which is used to 
-add class name to elements. we will access the div using the <b><mark>getElementById</mark></b> and we will use the 
-add property of <b><mark>classList</mark></b> to add a class.</p>
-
+<p>In this approach, we are using <b><mark>classList</mark></b> property to add the class into the 
+<b><mark>DOM element</mark></b>. It returns the class name as a <b><mark>DOMTokenList</mark></b> 
+object. It has a method called “add” which is used to add class name to elements. We will access 
+the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we will use the add property of 
+<b><mark>classList</mark></b> to add a class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -248,30 +251,25 @@ element.classList.add("className")
 ```
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        .geek {
-            background-color: green;
-            font-size: 50px;
-        }
-    </style>
+  <style>
+    .geek {
+      background-color: green;
+      font-size: 50px;
+    }
+  </style>
 </head>
-
 <body>
+  <button onclick="myClass()">Try it</button>
+  <div id="gfg">Geeks for Geeks</div>
+  <script>
+    function myClass() {
+      let elem = document.getElementById("gfg");
 
-    <button onclick="myClass()">Try it</button>
-
-    <div id="gfg">Geeks for Geeks</div>
-
-    <script>
-        function myClass() {
-            let elem = document.getElementById("gfg");
-
-            // Adding class to div element 
-            elem.classList.add("geek");
-        } 
-    </script>
+      // Adding class to div element 
+      elem.classList.add("geek");
+    } 
+  </script>
 </body>
 </html>
 ```
@@ -297,41 +295,33 @@ add another one to it or else it will append our new class to it.
 ```
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        .geekClass {
-            background-color: green;
-            text-align: center;
-            font-size: 50px;
-        }
-    </style>
+  <style>
+    .geekClass {
+      background-color: green;
+      text-align: center;
+      font-size: 50px;
+    }
+  </style>
 </head>
-
 <body>
-
-    <div id="gfg">
-        Geeks For Geeks
-    </div>
-
-    <button onclick="myClassName()">Add Class</button>
-
-    <script>
-        function myClassName() {
-            let element = document.getElementById("gfg");
-
-            // Adding the class geekClass to element 
-            // with id gfg space is given in className 
-            // (" geekClass") as if there is already 
-            // a class attached to an element than our 
-            // new class won't overwrite and will append 
-            // one more class to the element 
-            element.className += " geekClass";
-        } 
-    </script>
-
+  <div id="gfg">
+      Geeks For Geeks
+  </div>
+  <button onclick="myClassName()">Add Class</button>
+  <script>
+    function myClassName() {
+      let element = document.getElementById("gfg");
+      // Adding the class geekClass to element 
+      // with id gfg space is given in className 
+      // (" geekClass") as if there is already 
+      // a class attached to an element than our 
+      // new class won't overwrite and will append 
+      // one more class to the element 
+      element.className += " geekClass";
+    } 
+  </script>
 </body>
-
 </html>
 ```
 
@@ -353,13 +343,13 @@ Below are the approaches to select DOM elements in JavaScript:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  - Using <b><mark>getElementById</mark></b>
-  - Using <b><mark>getElementsByClassName</mark></b>
-  - Using <b><mark>getElementsByTagName</mark></b>
-  - Using <b><mark>querySelector</mark></b>
-  - Using <b><mark>querySelectorAll</mark></b>
-
+<ul>
+  <li>Using <b><mark>getElementById</mark></b></li>
+  <li>Using <b><mark>getElementsByClassName</mark></b></li>
+  <li>Using <b><mark>getElementsByTagName</mark></b></li>
+  <li>Using <b><mark>querySelector</mark></b></li>
+  <li>Using <b><mark>querySelectorAll</mark></b></li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementById</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -376,29 +366,23 @@ This method selects a single element by its unique ID attribute.
 ```
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-                   initial-scale=1.0">
-    <title>getElementById Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+  <title>getElementById Example</title>
 </head>
-
 <body>
-    <h1 id="gfg">GeeksForGeeks</h1>
-
-    <script>
-        // styling the h1 tag
-        const element = document.getElementById('gfg');
-        element.style.color = "green";
-        element.style.textAlign = "center";
-        element.style.margin = "30px";
-        element.style.fontSize = "30px";
-
-
-    </script>
+  <h1 id="gfg">GeeksForGeeks</h1>
+  <script>
+  // styling the h1 tag
+  const element = document.getElementById('gfg');
+    element.style.color = "green";
+    element.style.textAlign = "center";
+    element.style.margin = "30px";
+    element.style.fontSize = "30px";
+  </script>
 </body>
-
 </html>
 ```
 
@@ -409,8 +393,8 @@ This method selects a single element by its unique ID attribute.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementsByClassName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This method selects elements based on their class attribute. It returns a collection of elements with the specified class name.
-
+<p>This method selects elements based on their class attribute. It returns a collection of elements 
+with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -422,29 +406,25 @@ This method selects elements based on their class attribute. It returns a collec
 ```
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>getElementsByClassName Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+  <title>getElementsByClassName Example</title>
 </head>
-  
 <body>
-    <h1 class="selector">GeeksForGeeks</h1>
-    <h2 class="selector">DOM selector in JavaScript</h2>
-
-    <script>
-        const elements = 
-        documSizeent.getElementsByClassName('selector');
-        elements[0].style.color = "green";
-        elements[1].style.color = "red";
-        elements[0].style.textAlign = "center";
-        elements[1].style.textAlign = "center";
-        elements[0].style.marginTop = "60px";
-    </script>
+  <h1 class="selector">GeeksForGeeks</h1>
+  <h2 class="selector">DOM selector in JavaScript</h2>
+  <script>
+    const elements = 
+      documSizeent.getElementsByClassName('selector');
+      elements[0].style.color = "green";
+      elements[1].style.color = "red";
+      elements[0].style.textAlign = "center";
+      elements[1].style.textAlign = "center";
+      elements[0].style.marginTop = "60px";
+  </script>
 </body>
-  
 </html>
 ```
 
@@ -453,15 +433,14 @@ This method selects elements based on their class attribute. It returns a collec
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using getElementsByTagName</h3>
+<h3>Using <b><mark>getElementsByTagName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This method selects elements based on their tag name. It returns a collection of elements with the specified tag name.
-
+<p>This method selects elements based on their tag name. It returns a collection of elements with the 
+specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>document.getElementsByTagName('tag')</pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -469,29 +448,25 @@ This method selects elements based on their tag name. It returns a collection of
 ```
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>getElementsByTagName Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+  <title>getElementsByTagName Example</title>
 </head>
-  
 <body>
-    <p>Thanks for visiting GFG</p>
-    <p>This is showing how to select DOM element using tag name</p>
-
-    <script>
-        const paragraphs = document.getElementsByTagName('p');
-        paragraphs[0].style.color = "green";
-        paragraphs[1].style.color = "blue";
-        paragraphs[0].style.fontSize = "25px";
-        paragraphs[0].style.textAlign = "center";
-        paragraphs[1].style.textAlign = "center";
-        paragraphs[0].style.marginTop = "60px";
-    </script>
+  <p>Thanks for visiting GFG</p>
+  <p>This is showing how to select DOM element using tag name</p>
+  <script>
+    const paragraphs = document.getElementsByTagName('p');
+      paragraphs[0].style.color = "green";
+      paragraphs[1].style.color = "blue";
+      paragraphs[0].style.fontSize = "25px";
+      paragraphs[0].style.textAlign = "center";
+      paragraphs[1].style.textAlign = "center";
+      paragraphs[0].style.marginTop = "60px";
+  </script>
 </body>
-  
 </html>
 ```
 
@@ -502,7 +477,8 @@ This method selects elements based on their tag name. It returns a collection of
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This method selects the first element that matches a specified CSS selector. It returns only one element.
+<p>This method selects the first element that matches a specified CSS selector. It returns only 
+one element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -512,26 +488,24 @@ This method selects the first element that matches a specified CSS selector. It 
 ```
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width,
-                   initial-scale=1.0">
-    <title>querySelector Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width,
+      initial-scale=1.0">
+  <title>querySelector Example</title>
 </head>
-  
 <body>
-    <div class="gfg">GeeksForGeeks</div>
+  <div class="gfg">GeeksForGeeks</div>
 
-    <script>
-        const element = 
-        document.querySelector('.gfg');
-        element.style.color = "green";
-        element.style.textAlign = "center";
-        element.style.margin = "30px";
-        element.style.fontSize = "30px";
-    </script>
+  <script>
+    const element = 
+      document.querySelector('.gfg');
+      element.style.color = "green";
+      element.style.textAlign = "center";
+      element.style.margin = "30px";
+      element.style.fontSize = "30px";
+  </script>
 </body>
   
 </html>
@@ -542,7 +516,8 @@ Output:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelectorAll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Similar to querySelector, but it returns a NodeList containing all elements that match the specified CSS selector.
+<p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> containing 
+all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -554,31 +529,27 @@ Similar to querySelector, but it returns a NodeList containing all elements that
 ```
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>querySelectorAll Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+  <title>querySelectorAll Example</title>
 </head>
-
 <body>
-    <h1 class="selector">GeeksForGeeks</h1>
-    <p class="selector">
-        This is showing how to select DOM element
-        using tag name
-    </p>
-
-    <script>
-        const elements = document.querySelectorAll('.selector');
-        elements[0].style.color = "green";
-        elements[1].style.color = "red";
-        elements[0].style.textAlign = "center";
-        elements[1].style.textAlign = "center";
-        elements[0].style.marginTop = "60px";
-    </script>
+  <h1 class="selector">GeeksForGeeks</h1>
+  <p class="selector">
+    This is showing how to select DOM element
+    using tag name
+  </p>
+  <script>
+    const elements = document.querySelectorAll('.selector');
+      elements[0].style.color = "green";
+      elements[1].style.color = "red";
+      elements[0].style.textAlign = "center";
+      elements[1].style.textAlign = "center";
+      elements[0].style.marginTop = "60px";
+  </script>
 </body>
-
 </html>
 ```
 
@@ -589,63 +560,57 @@ Similar to querySelector, but it returns a NodeList containing all elements that
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to get all ID of the DOM elements with JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Given a HTML document and the task is to get the all ID of the DOM elements in an array. There are two methods to solve this problem which are discusses below: 
+Given a HTML document and the task is to get the all ID of the DOM elements in an array. There are 
+two methods to solve this problem which are discusses below: 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 1:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-First select all elements using $(‘*’) selector, which selects every element of the document.
-Use .each() method to traverse all elements and check if it has an ID.
-If it has an ID then push it into the array.
-Example: This example implements the above approach. 
+First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every element 
+of the document. Use <b><mark>.each()</mark></b> method to traverse all elements and check if it 
+has an ID. If it has an ID then push it into the array.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: This example implements the above approach.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-    <title>
-        How to get all ID of the DOM
-        elements with JavaScript ?
-    </title>
- 
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+  <title>
+    How to get all ID of the DOM
+    elements with JavaScript ?
+  </title>
+  <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
 </head>
  
 <body>
-    <h1 style="color: green">
-        GeeksforGeeks
-    </h1>
+  <h1 style="color: green">
+    GeeksforGeeks
+  </h1>
+  <p>
+    Click on the button to get 
+    all IDs in an array.
+  </p>
+  <button onclick="muFunc()">
+    Click Here
+  </button>
  
-    <p>
-        Click on the button to get 
-        all IDs in an array.
-    </p>
- 
-    <button onclick="muFunc()">
-        Click Here
-    </button>
- 
-    <p id="GFG"></p>
- 
-    <script>
-        let res = document.getElementById("GFG");
- 
-        function muFunc() {
-            let ID = [];
-             
-            $("*").each(function () {
-                if (this.id) {
-                    ID.push(this.id);
-                }
-            });
- 
-            res.innerHTML = ID;
-        }
-    </script>
+  <p id="GFG"></p>
+   <script>
+     let res = document.getElementById("GFG");
+     function muFunc() {
+       let ID = [];
+       $("*").each(function () {
+         if (this.id) {
+           ID.push(this.id);
+         }
+       });
+       res.innerHTML = ID;
+     }
+   </script>
 </body>
- 
 </html>
 ```
 
@@ -656,11 +621,12 @@ Example: This example implements the above approach.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 2:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  - First select all elements using $(‘*’) selector, Which selects every element of the Document.
-  - Use .map() method to traverse all element and check if it has ID.
-  - If it has ID then push it in the array using .get() method.
-  
+<ul>
+  <li>First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every 
+    element of the Document.</li>
+  <li>Use <b><mark>.map()</mark></b> method to traverse all element and check if it has ID.</li>
+  <li>If it has ID then push it in the array using <b><mark>.get()</mark></b> method.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example implements the above approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -668,50 +634,40 @@ Example: This example implements the above approach.
 ```
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-    <title>
-        How to get all ID of the DOM
-        elements with JavaScript ?
-    </title>
- 
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+  <title>
+    How to get all ID of the DOM
+    elements with JavaScript ?
+  </title>
+  <script src= 
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
 </head>
- 
 <body>
-    <h1 style="color: green">
-        GeeksforGeeks
-    </h1>
- 
-    <p>
-        Click on the button to get 
-        all IDs in an array.
-    </p>
- 
-    <button id="Geeks" onclick="muFunc()">
-        Click Here
-    </button>
- 
-    <p id="GFG"></p>
- 
-    <script>
-        let res = document.getElementById("GFG");
-         
-        function muFunc() {
-            let ID = [];
-             
-            ID = $("*").map(function() {
-                if (this.id) {
-                    return this.id;
-                }
-            }).get();
-            res.innerHTML = ID;
-        }
-    </script>
+  <h1 style="color: green">
+    GeeksforGeeks
+  </h1>
+  <p>
+    Click on the button to get 
+    all IDs in an array.
+  </p>
+   <button id="Geeks" onclick="muFunc()">
+    Click Here
+  </button>
+  <p id="GFG"></p>
+  <script>
+    let res = document.getElementById("GFG");
+    function muFunc() {
+      let ID = [];
+    ID = $("*").map(function() {
+      if (this.id) {
+        return this.id;
+      }
+    }).get();
+    res.innerHTML = ID;
+  }
+  </script>
 </body>
- 
 </html>
 ```
 
