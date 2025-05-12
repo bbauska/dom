@@ -119,6 +119,7 @@ This is helpful for styling or applying animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 02. manipulate class ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -128,6 +129,7 @@ This is helpful for styling or applying animations.</p>
     title=""
     alt="." />
 </a><!-- image002.gif -->
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -303,6 +305,7 @@ element.classList.add("className")
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 03. manipulate class ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -312,6 +315,7 @@ element.classList.add("className")
     title=""
     alt="." />
 </a>
+</p>
 <!-- image003.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>className</mark></b> Property</h3>
@@ -365,6 +369,7 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 04.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -374,6 +379,7 @@ add another one to it or else it will append our new class to it.
     title=""
     alt="." />
 </a>
+</p>
 <!-- image004.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -437,6 +443,7 @@ This method selects a single element by its unique ID attribute.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 05.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -446,6 +453,7 @@ This method selects a single element by its unique ID attribute.
     title=""
     alt="." />
 </a>
+</p>
 <!-- image005.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementsByClassName</mark></b></h3>
@@ -490,6 +498,7 @@ with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 06.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -499,6 +508,7 @@ with the specified class name.</p>
     title=""
     alt="." />
 </a>
+</p>
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>getElementsByTagName</mark></b></h3>
@@ -543,6 +553,7 @@ specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 07.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -552,6 +563,7 @@ specified tag name.</p>
     title=""
     alt="." />
 </a>
+</p>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelector</h3>
@@ -594,6 +606,7 @@ one element.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 08.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -603,6 +616,7 @@ one element.</p>
     title=""
     alt="." />
 </a>
+</p>
 <!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelectorAll</h3>
@@ -649,6 +663,7 @@ all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 09.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -658,6 +673,7 @@ all elements that match the specified CSS selector.</p>
     title=""
     alt="." />
 </a>
+</p>
 <!-- image009.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to get all ID of the DOM elements with JavaScript?</h2>
@@ -721,6 +737,7 @@ has an ID. If it has an ID then push it into the array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 10.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -730,6 +747,7 @@ has an ID. If it has an ID then push it into the array.
     title=""
     alt="." />
 </a>
+</p>
 <!-- image010.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 2:</h3>
@@ -789,6 +807,7 @@ has an ID. If it has an ID then push it into the array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 11.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -798,6 +817,7 @@ has an ID. If it has an ID then push it into the array.
     title=""
     alt="." />
 </a>
+</p>
 <!-- image011.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript – How to Get the Data Attributes of an Element?</h2>
