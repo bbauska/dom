@@ -1,54 +1,56 @@
-# DOM - Document Object Model (DOM).
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>DOM</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript - How to Manipulate DOM Elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The DOM stands for the Document Object Model (DOM), which allows us to interact with the document and change its structure, style, and content. We can use the DOM to change the content and style of an HTML element by changing its properties.
-
+<p>The <b><mark>DOM</mark></b> stands for the <b><mark>Document Object Model (DOM)</mark></b>, which 
+allows us to interact with the document and change its structure, style, and content. We can use 
+the DOM to change the content and style of an HTML element by changing its properties.</p>
 
 <h2>How to Manipulate DOM Elements?</h2>
-We can manipulate or change the DOM elements by using the following methods:
-
+<p>We can manipulate or change the DOM elements by using the following methods:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-1. Change the Content of an Element
+<h3>1. Change the Content of an Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You can change the content inside an HTML element using JavaScript. The two most common properties for this are innerHTML and textContent:
-
-  - innerHTML: Allows you to get or set the HTML content inside an element.
-  - textContent: Allows you to get or set the text content inside an element, ignoring any HTML tags.
+<p>You can change the content inside an HTML element using JavaScript. The two most common 
+properties for this are innerHTML and textContent:</p>
+<ul>
+  <li><b><mark>innerHTML</mark></b>: Allows you to get or set the HTML content inside an element.</li>
+  <li><b><mark>textContent</mark></b>: Allows you to get or set the text content inside an 
+    element, ignoring any HTML tags.</li>
+</ul>
 
 ```
 <body>
-    <div id="example1">This is the original content using innerHTML.</div>
-    <div id="example2">This is the original text content using textContent.</div>
+  <div id="example1">This is the original content using <b><mark>innerHTML</mark></b>.</div>
+  <div id="example2">This is the original text content using <b><mark>textContent</mark></b>.</div>
 
-    <button onclick="changeContent()">Change Content</button>
+  <button onclick="changeContent()">Change Content</button>
 
-    <script>
-        // Function to change content
-        function changeContent() {
-            document.getElementById("example1").innerHTML = 
-            "<strong>This is changed using innerHTML!</strong>";
+  <script>
+  // Function to change content
+  function changeContent() {
+    document.getElementById("example1").innerHTML = 
+      "<strong>This is changed using innerHTML!</strong>";
 
-            document.getElementById("example2").textContent = 
-            "This is changed using textContent!";
-        }
-    </script>
+    document.getElementById("example2").textContent = 
+      "This is changed using textContent!";
+    }
+  </script>
 </body>
 ```
 
 <!-- image001.gif -->
-In this example
 
-  - innerHTML changes the entire content of an element, including HTML tags. In this case, we replace the content of the first div with bold text using <strong>.
-  - textContent changes only the text inside the element, ignoring any HTML tags. The second div is updated with plain text, without any HTML formatting.
-  - The first div shows "This is the original content using innerHTML."
-  - The second div shows "This is the original text content using textContent."
+<h4>In this example</h4>
+
+  - <b><mark>innerHTML</mark></b> changes the entire content of an element, including HTML tags. In this case, we replace the content of the first <b><mark>div</mark></b> with bold text using <strong>.
+  - <b><mark>textContent</mark></b> changes only the text inside the element, ignoring any HTML tags. The second <b><mark>div</mark></b> is updated with plain text, without any HTML formatting.
+  - The first <b><mark>div</mark></b> shows "This is the original content using <b><mark>innerHTML</mark></b>."
+  - The second <b><mark>div</mark></b> shows "This is the original text content using <b><mark>textContent</mark></b>."
   - After clicking the "Change Content" button.
-  - The first div will display "This is changed using innerHTML!" with bold text.
-  - The second div will display "This is changed using textContent!" with plain text.
+  - The first <b><mark>div</mark></b> will display "This is changed using <b><mark>innerHTML</mark></b>!" with bold text.
+  - The second <b><mark>div</mark></b> will display "This is changed using <b><mark>textContent</mark></b>!" with plain text.
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -94,16 +96,16 @@ You can add, remove, or toggle classes on an element using JavaScript. This is h
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image002.gif -->
-In this example
+<h4>In this example</h4>
 
   - Adding a Class (addClass()): When you click the "Add 'highlight' Class" button, the highlight class is added to the div element with the id="example". This changes the text color to red and makes it bold (as defined in the CSS).
   - Removing a Class (removeClass()): When you click the "Remove 'bold' Class" button, the bold class is removed from the div, which removes the bold styling from the text.
   - Toggling a Class (toggleClass()): When you click the "Toggle 'highlight' Class" button, the highlight class is either added or removed, depending on whether it's already present. If the class is present, it will be removed; if not, it will be added.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-3. Set CSS Styles Using JavaScript
+<h3>3. Set CSS Styles Using JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can directly manipulate the CSS styles of an element using the style property. This allows you to dynamically change how elements appear on the page.
 
@@ -116,7 +118,7 @@ document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;";
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-4. Create, Add, and Remove Elements
+<h3>4. Create, Add, and Remove Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Sometimes, you need to create new elements, add them to the DOM, or remove existing ones. You can do this easily with the following methods
 
@@ -152,7 +154,7 @@ document.body.insertBefore(newDiv, referenceNode);
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-6. Manipulate Element Attributes
+<h3>6. Manipulate Element Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can easily get, set, or remove the attributes of an HTML element using the following methods:
 
@@ -172,7 +174,7 @@ document.getElementById("image").removeAttribute("src");
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-7. Manipulate Data Attributes
+<h3>7. Manipulate Data Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 HTML5 introduced data attributes, which are custom attributes that you can use to store extra information about an element. These are particularly useful for adding data to an element without affecting its visual structure.
 
@@ -186,7 +188,6 @@ let userId = document.getElementById("demo").dataset.userId;
 console.log(userId); // Outputs: 12345
 ```
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to Add a Class to DOM Element in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -196,16 +197,24 @@ By using JavaScript, you can easily add, remove, or toggle classes on elements, 
 
 These are the following approaches:
 
-Table of Content
+<h4>Table of Content</h4>
 
-Using classList Property
-Using className Property
-Using classList Property
-In this approach, we are using classList property to add the class into the DOM element. It returns the class name as a DOMTokenList object. It has a method called “add” which is used to add class name to elements. we will access the div using the getElementById and we will use the add property of classList to add a class.
+  - Using classList Property
+  - Using className Property
+  - Using classList Property
 
-Syntax:
+<p>In this approach, we are using classList property to add the class into the DOM element. It 
+returns the class name as a DOMTokenList object. It has a method called “add” which is used to 
+add class name to elements. we will access the div using the getElementById and we will use the 
+add property of classList to add a class.</p>
+
+<h4>Syntax:</h4>
+
+```
 element.classList.add("className")
-Example: This example shows the implementation of the above-explained approach.
+```
+
+<h4>Example: This example shows the implementation of the above-explained approach.</h4>
 
 ```
 <!DOCTYPE html>
@@ -234,24 +243,21 @@ Example: This example shows the implementation of the above-explained approach.
             elem.classList.add("geek");
         } 
     </script>
-
 </body>
-
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image003.gif -->
 
-
-Using className Property
+<h3>Using className Property</h3>
 In this approach, we are using the clasName property. This property returns the className of the element. If the element has already a class then it will simply add another one to it or else it will append our new class to it.
 
-Syntax:
+<h4>Syntax:</h4>
 
-HTMLElementObject.className
+<pre>HTMLElementObject.className</pre>
 
-Example: This example shows the implementation of the above-explained approach.
+<h4>Example: This example shows the implementation of the above-explained approach.</h4>
 
 ```
 <!DOCTYPE html>
@@ -294,9 +300,8 @@ Example: This example shows the implementation of the above-explained approach.
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image004.gif -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to select DOM Elements in JavaScript?</h2>
@@ -305,7 +310,7 @@ Selecting DOM (Document Object Model) elements is a fundamental aspect of web de
 
 Below are the approaches to select DOM elements in JavaScript:
 
-Table of Content
+<h4>Table of Content</h4>
 
   - Using getElementById
   - Using getElementsByClassName
@@ -313,17 +318,15 @@ Table of Content
   - Using querySelector
   - Using querySelectorAll
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using getElementById</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This method selects a single element by its unique ID attribute.
 
-Syntax:
+<h4>Syntax:</h4>
+<pre>document.getElementById('id')</pre>
 
-document.getElementById('id')
-
-Example:
+<h4>Example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -354,7 +357,7 @@ Example:
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image005.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -362,10 +365,10 @@ Output:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This method selects elements based on their class attribute. It returns a collection of elements with the specified class name.
 
-Syntax:
- document.getElementsByClassName('class')
+<h4>Syntax:</h4>
+<pre>document.getElementsByClassName('class')</pre>
 
-Example:
+<h4>Example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -396,18 +399,17 @@ Example:
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image006.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using getElementsByTagName</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This method selects elements based on their tag name. It returns a collection of elements with the specified tag name.
 
-Syntax:
-document.getElementsByTagName('tag')
+<h4>Syntax:</h4>
+<pre>document.getElementsByTagName('tag')</pre>
 
-Example:
+<h4>Example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -438,17 +440,16 @@ Example:
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image007.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This method selects the first element that matches a specified CSS selector. It returns only one element.
 
-Syntax:
-document.querySelector('selector')
-Example:
+<h4>Syntax:</h4>
+<pre>document.querySelector('selector')</pre>
+<h4>Example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -480,15 +481,14 @@ Example:
 Output:
 <!-- image008 -->
 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using querySelectorAll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Similar to querySelector, but it returns a NodeList containing all elements that match the specified CSS selector.
 
-Syntax:
-document.querySelectorAll('selector')
-Example:
+<h4>Syntax:</h4>
+<pre>document.querySelectorAll('selector')</pre>
+<h4>Example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -521,13 +521,12 @@ Example:
 </html>
 ```
 
-Output:
+<h4>Output:</h4>
 <!-- image009.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to get all ID of the DOM elements with JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 
 
 
