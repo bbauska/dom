@@ -1179,7 +1179,10 @@ var elements = document.querySelectorAll(".className");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to Get Value by Class Name using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This article will show you how to use JavaScript to get value by class name. To get the value of an element by its class name in JavaScript, you can use the getElementsByClassName() method. This method returns an array-like object of all elements with the specified class name. You can then access the value property of the first element in the array to get the value.
+This article will show you how to use JavaScript to get value by class name. To get the value 
+of an element by its class name in JavaScript, you can use the getElementsByClassName() method. 
+This method returns an array-like object of all elements with the specified class name. You can 
+then access the value property of the first element in the array to get the value.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example, we will get the classname of an element.</h4>
@@ -2286,5 +2289,971 @@ In this approach we are using the document.querySelectorAll() method. This metho
 <!-- image032.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>How to Get Value by Class Name using JavaScript?</h2>
+<h2>How to Get Domain Name From URL in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In JavaScript, the URL object allows you to easily parse URLs and access their components. This is useful when you need to extract specific parts of a URL, such as the domain name. The hostname property of the URL object provides the domain name of the URL.
+
+<h4>Prerequisite</h4>
+  - Javascript
+  - HTML
+
+Below are the following approaches to get a domain name from a URL in Javascript:
+
+<h4>Table of Content</h4>
+  - Using the URL Object
+  - Using Regular Expressions
+
+<h3>Using the URL Object</h3>
+The new URL(url) constructor parses the URL and creates a URL object. This object has various properties that represent different parts of the URL. The hostname property of the URL object returns the domain name. For instance, for the URL https://www.example.com/path/to/resource?query=param, urlObject.hostname would return www.example.com. If the URL is invalid, the URL constructor will throw an error. In the catch block, you can handle this error, for example by logging it or returning a default value.
+
+<h4>Example: This example shows the extraction of the domain name from a URL.</h4>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+```
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>How to get domain name from URL in JavaScript</h1>
+    <p>Domain Name : <span id="span"></span></p>
+    <script src="Index.js"> </script>
+</body>
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image033.png -->
+
+<h3>Using Regular Expressions</h3>
+If you want more control or need to support environments where the URL object is not available, you can use regular expressions to extract the domain from the URL string.
+
+<h4>Example: This example demonstrates the extraction of the domain name using Regex.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>How to get domain name from URL in JavaScript</h1>
+    <p>Domain Name : <span id="span"></span></p>
+    <script src="Index.js"> </script>
+</body>
+</html>
+```
+
+<h4>Output:</h4>
+
+<!-- image034.png -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to get protocol, domain and port from URL using JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The protocol, domain, and port of the current page can be found by two methods:
+
+<h4>Method 1: Using location.protocol, location.hostname, location.port methods: The location interface has various methods that can be used to return the required properties.</h4>
+
+  - The location.protocol property is used to return the protocol scheme of the URL along with the final colon(:).
+  - The location.hostname is used to return the domain name of the URL.
+  - The location.port property is used to return the port of the URL. It returns nothing if the port is not described explicitly in the URL.
+
+<h4>Syntax:</h4>
+
+```
+protocol = location.protocol;
+domain = location.hostname;
+port = location.port;
+```
+
+<h4>Example:</h4>
+
+```
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        Get protocol, domain, and port from URL 
+    </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        GeeksforGeeks 
+    </h1> 
+      
+    <b> 
+        Get protocol, domain, and port from URL 
+    </b> 
+      
+    <p> 
+        Protocol is:  
+        <span class="protocol"></span> 
+    </p> 
+      
+    <p> 
+        Domain is:  
+        <span class="domain"></span> 
+    </p> 
+      
+    <p> 
+        Port is:  
+        <span class="port"></span> 
+    </p> 
+      
+    <button onclick="getDetails()"> 
+        Get protocol, domain, port 
+    </button> 
+      
+    <script type="text/javascript"> 
+        function getDetails() { 
+            protocol = location.protocol; 
+            domain = location.hostname; 
+            port = location.port; 
+  
+            document.querySelector('.protocol').textContent 
+                    = protocol; 
+            document.querySelector('.domain').textContent 
+                    = domain; 
+            document.querySelector('.port').textContent 
+                    = port; 
+        } 
+    </script> 
+</body> 
+  
+</html>          
+```
+
+<h4>Output:</h4>
+  - Before Clicking the button:
+<!-- image035.png -->
+
+  - After Clicking the button:
+<!-- image036.png -->
+
+<h4>Method 2: Using the URL interface: The URL interface is used to represent object URL. It can be used for getting the port, domain, and protocol as it has inbuilt methods to get these values.</h4>
+
+  - The url.protocol property is used to return the protocol scheme of the URL along with the final colon(:).
+  - The url.hostname is used to return the domain of the URL.
+  - The url.port property is used to return the port of the URL. It returns ” if the port is not described explicitly.
+
+Note: This API is not supported in Internet Explorer 11.
+
+<h4>Syntax:</h4>
+
+```
+current_url = window.location.href;
+url_object = new URL(current_url);
+
+protocol = url_object.protocol;
+domain = url_object.hostname;
+port = url_object.port;
+```
+
+<h4>Example:</h4>
+
+```
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        Get protocol, domain, and port from URL 
+    </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        GeeksforGeeks 
+    </h1> 
+      
+    <b> 
+        Get protocol, domain, and port from URL 
+    </b> 
+      
+    <p>Protocol is: <span class="protocol"></span></p> 
+    <p>Domain is: <span class="domain"></span></p> 
+    <p>Port is: <span class="port"></span></p> 
+      
+    <button onclick="getDetails()"> 
+        Get protocol, domain, port 
+    </button> 
+      
+    <script type="text/javascript"> 
+        function getDetails() { 
+            current_url = window.location.href; 
+            url_object = new URL(current_url); 
+  
+            protocol = url_object.protocol; 
+            domain = url_object.hostname; 
+            port = url_object.port; 
+  
+            document.querySelector('.protocol').textContent 
+                    = protocol; 
+            document.querySelector('.domain').textContent 
+                    = domain; 
+            document.querySelector('.port').textContent 
+                    = port; 
+        } 
+    </script> 
+</body> 
+  
+</html>                     
+```
+
+<h4>Output:</h4>
+  - Before Clicking the button:
+  
+<!-- image037.png -->
+
+  - After Clicking the button:
+  
+<!-- image038.png -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to Extract the Host Name from URL using JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Extracting the hostname from a URL using JavaScript means retrieving the domain part from a complete web address. This can be done using JavaScript’s URL object or methods like window.location, which allow easy access to the hostname of a URL.
+
+<h3>What is URL?</h3>
+A URL (Uniform Resource Locator) is the web address used to access resources on the internet, such as webpages, images, or files, through browsers.
+
+<h3>Using the hostname property of the current window location</h3>
+Here we are using JavaScript’s window.location object to extract the full URL and hostname. The window.location.href outputs the current page URL, while window.location.hostname retrieves only the domain part (hostname) of that URL.
+
+<h4>Syntax</h3>
+<pre>window.location.propertyname</pre>
+
+<h4>Example : In this example, we will use the self URL, where the code will run to extract the hostname.</h4>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Get domain from URL
+    </title>
+</head>
+
+<body>
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+
+    <b>URL is:</b>
+
+    <script>
+        document.write(window.location.href);
+    </script>
+
+    <br>
+    <b>hostname is:</b>
+
+    <script>
+        document.write(window.location.hostname);
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image039.png -->
+
+<h3>Extracting Hostname Using indexOf and Looping</h3>
+here we extracts the hostname from a user-provided URL by locating the position of “://” using indexOf(). It then loops through characters starting after “://” until it encounters a “/”, constructing and displaying the extracted hostname on the page.
+
+<h4>Syntax</h4>
+<pre>url3.indexOf("://");</pre>
+
+<h4>Example : In this example, we will ask for the URL to the user and then will perform the extraction of the hostname on that URL.</h4>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extracting URL</title>
+</head>
+
+<body>
+    <h1 style="color: green;">GeeksforGeeks</h1>
+    <b>Extracting URL</b>
+    <br><br>
+    <form name="f1">
+        <input type="text" name="txt" placeholder="Paste URL" />
+        <input type="button" value="click" onclick="url2()" />
+    </form>
+    <script>
+        function url2() {
+
+            let url3 = document.f1.txt.value;
+
+            let j = url3.indexOf("://");
+
+            let host = "";
+
+            for (i = j + 3; i < url3.length; i++) {
+                if (url3.charAt(i) != '/') {
+                    host = host + "" + url3.charAt(i);
+                } else {
+                    break;
+                }
+            }
+            document.write(host);
+        }
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image040.gif -->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to Get the Current URL using JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Here are two different methods to get the current URL in JavaScript.
+
+<h3>1. Using Document.URL Property</h3>
+The DOM URL property in HTML is used to return a string that contains the complete URL of the current document. The string also includes the HTTP protocol such as ( http://).
+
+<h4>Syntax</h4>
+
+<pre>document.URL</pre>
+
+<h4>Return Value: It returns a string value that represents the full URL of the document.</h4>
+
+```
+<script>
+// Get the current URL using document.URL
+let currentUrl = document.URL;
+
+// Log the URL to the console
+console.log(currentUrl);
+</script>
+```
+
+<h4>Output</h4>
+<pre>http://127.0.0.1:5500/index.html</pre>
+
+
+<h3>2. Using window.location.href Property</h3>
+The window.location.href property of the HTML DOM Window object returns a string containing the URL of the current page. This property is part of the Location object, which contains information about the current location of the document.
+
+<h4>Syntax</h4>
+<pre>window.location.href</pre>
+
+```
+<script>
+// Get the current URL using document.URL
+let currentUrl = document.URL;
+
+// Log the URL to the console
+console.log(currentUrl);
+</script>
+```
+
+<h4>Output:</h4>
+<pre>http://127.0.0.1:5500/index.html</pre>
+
+Note: Use the HTML file to copy paste and run the given code and you can see the output in the console, it will print the URL.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to get URL Parameters using JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+To get URL parameters using JavaScript means extracting the query string values from a URL. URL parameters, found after the ? in a URL, pass data like search terms or user information. JavaScript can parse these parameters, allowing you to programmatically access or manipulate their values.
+
+For getting the URL parameters, there are 2 ways:
+
+<h4>Table of Content</h4>
+  - Using the URLSearchParams Object
+  - Separating and accessing each parameter pair
+
+<h3>Method 1: Using the URLSearchParams Object</h3>
+The URLSearchParams interface provides methods to work with URL parameters. After splitting the URL with ?, the parameters part is passed to URLSearchParams(). Using entries(), you retrieve key/value pairs, allowing access to all URL parameters for further use.
+
+<h4>Syntax:</h4>
+
+```
+let paramString = urlString.split('?')[1];
+let queryString = new URLSearchParams(paramString);
+for (let pair of queryString.entries()) {
+   console.log("Key is: " + pair[0]);
+   console.log("Value is: " + pair[1]);
+}
+```
+
+<h4>Example: In this example we retrieves URL parameters using JavaScript. It splits the URL, extracts parameters with URLSearchParams(), and logs each key-value pair to the console when the button is clicked.</h4>
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+          How To Get URL Parameters using JavaScript?
+      </title>
+</head>
+
+<body>
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1> 
+    <b>
+        How To Get URL Parameters
+        With JavaScript?
+    </b>
+    <p> The url used is: 
+https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks 
+    </p>
+
+    <p> 
+       Click on the button to get the url 
+       parameters in the console. 
+    </p>
+
+    <button onclick="getParameters()"> Get URL parameters </button>
+    <script>
+    function getParameters() {
+        let urlString = 
+"https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
+        let paramString = urlString.split('?')[1];
+        let queryString = new URLSearchParams(paramString);
+        for(let pair of queryString.entries()) {
+            console.log("Key is:" + pair[0]);
+            console.log("Value is:" + pair[1]);
+        }
+    }
+    </script>
+</body>
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image041.gif -->
+
+<h3>Method 2: Separating and accessing each parameter pair</h3>
+The URL’s query string is split at ? to isolate parameters. Using split(“&”) divides parameters into an array. Looping through this array, each key-value pair is split by =, giving keys at the first index and values at the second, enabling parameter extraction.
+
+<h4>Syntax:</h4>
+
+```
+let paramString = urlString.split('?')[1];
+let params_arr = paramString.split('&');
+for (let i = 0; i < params_arr.length; i++) {
+   let pair = params_arr[i].split('=');
+   console.log("Key is:", pair[0]);
+   console.log("Value is:", pair[1]);
+}
+```
+
+<h4>Example: In this example we retrieves URL parameters by splitting the URL string manually. It extracts each key-value pair, splits them, and logs the results in the console when the button is clicked.</h4>
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 
+          How To Get URL Parameters using JavaScript? 
+      </title>
+</head>
+
+<body>
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1> <b>
+        How To Get URL Parameters
+        With JavaScript?
+    </b>
+    <p> The url used is: 
+https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks 
+    </p>
+
+    <p> 
+       Click on the button to get the url
+       parameters in the console. 
+    </p>
+
+    <button onclick="getParameters()"> Get URL parameters </button>
+    <script>
+    function getParameters() {
+        let urlString = 
+"https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
+        let paramString = urlString.split('?')[1];
+        let params_arr = paramString.split('&');
+        for(let i = 0; i < params_arr.length; i++) {
+            let pair = params_arr[i].split('=');
+            console.log("Key is:" + pair[0]);
+            console.log("Value is:" + pair[1]);
+        }
+    }
+    </script>
+</body>
+  
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image042.gif -->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to parse URL using JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Given an URL and the task is to parse that URL and retrieve all the related data using JavaScript. Example:
+
+```
+URL: https://www.geeksforgeeks.org/courses
+When we parse the above URL then we can find
+hostname: geeksforgeeks.com
+path: /courses
+```
+
+<h4>Method 1: In this method, we will use createElement() method to create a HTML element, anchor tag and then use it for parsing the given URL.</h4>
+
+```javascript
+// Store the URL into variable 
+var url = "https://geeksforgeeks.org/pathname/?search=query"; 
+      
+// Created a parser using createElement() method 
+var parser = document.createElement("a"); 
+parser.href = url; 
+      
+// Host of the URL 
+console.log(parser.host); 
+      
+// Hostname of the URL 
+console.log(parser.hostname ); 
+      
+// Pathname of URL 
+console.log(parser.pathname); 
+      
+// Search in the URL 
+console.log(parser.search );
+```
+
+<h4>Output:</h4>
+
+```
+geeksforgeeks.org
+geeksforgeeks.org
+/pathname/
+?search=query
+```
+
+<h4>Method 2: In this method we will use URL() to create a new URL object and then use it for parsing the provided URL.</h4>
+
+```javascript
+// Store the URL into variable 
+var url = 
+"https://geeksforgeeks.org:3000/pathname/?search=query"; 
+      
+// Created a URL object using URL() method 
+var parser = new URL(url); 
+      
+// Protocol used in URL 
+console.log(parser.protocol); 
+      
+// Host of the URL 
+console.log(parser.host); 
+      
+// Port in the URL 
+console.log(parser.port); 
+      
+// Hostname of the URL 
+console.log(parser.hostname); 
+      
+// Search in the URL 
+console.log(parser.search); 
+      
+// Search parameter in the URL 
+console.log(parser.searchParams);
+```
+
+<h4>Output:</h4>
+
+```
+https:
+geeksforgeeks.org:3000
+3000
+geeksforgeeks.org
+?search=query
+search=query
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Manipulating HTML Elements with JavaScript</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript is a powerful language that can be used to manipulate the HTML elements on a web page. By using JavaScript, we can access the HTML elements and modify their attributes, styles, and content. This allows us to create dynamic and interactive web pages.
+
+Methods to Identify the elements to manipulate: There are several methods to identify the HTML elements that we want to manipulate using JavaScript. The most common methods are:
+
+  - Using the element's ID: We can assign an ID to an HTML element and use document.getElementById() to access it.
+  - Using the element's class name: We can assign a class name to an HTML element and use document.getElementsByClassName() to access it.
+  - Using the element's tag name: We can use document.getElementsByTagName() to access all elements with a particular tag name.
+
+Accessing the properties of the elements: Once we have identified the HTML element that we want to manipulate, we can access its properties using JavaScript. For example, to access the text content of an element, we can use the innerHTML property. Similarly, we can access the style properties of an element using the style property.
+
+Use Event Listeners to Respond to User Interactions: We can use event listeners to respond to user interactions such as clicking a button or hovering over an element. Event listeners are functions that are executed when a particular event occurs. For example, we can use the onclick event listener to execute a function when a button is clicked.
+
+When building a website or web application, it's common to need to access and manipulate HTML elements using JavaScript. There are several methods available in JavaScript that allow you to do this, including getElementById(), getElementsByClassName(), and getElementsByTagName(). In this article, we'll take a systematic approach to use these methods and show you how to access and manipulate elements in your HTML documents.
+
+<h4>Step 1: Identify the Element You Want to Manipulate:</h4>
+The first step in working with HTML elements in JavaScript is to identify the element you want to manipulate. There are several ways to do this, depending on the specific element you're trying to access. Here are some common methods:
+
+  - getElementById() Method: Use this method to access an element with a specific ID. IDs should be unique within an HTML document, so this method will always return a single element.
+  - getElementsByClassName() Method: Use this method to access all elements with a specific class name. Multiple elements can have the same class name, so this method will return a collection of elements.
+  - getElementsByTagName() Method: Use this method to access all elements with a specific tag name. Multiple elements can have the same tag name, so this method will also return a collection of elements.
+
+<h4>Syntax:</h4>
+
+```
+let element = document.getElementById("my-id");
+let elements = document.getElementsByClassName("myClass");
+let elements = document.getElementsByTagName("p");
+```
+
+<h4>Step 2: Access the Element's Properties and Methods:</h4>
+Once you've identified the element you want to manipulate, you can access its properties and methods. Properties are values that describe the state of an element, such as its innerHTML, value, or src attributes. Methods are functions that allow you to manipulate an element in some way, such as changing its innerHTML, className, or style properties. Here are some examples of how to access an element's properties and methods:
+
+```
+// Accessing an element's methods
+element.innerHTML = "New content!"; // changes the content of the element
+element.classList.add("newClass"); // adds a new CSS class to the element
+element.style.backgroundColor = "red"; // changes the background color of the element
+```
+
+<h4>Step 3: Use Event Listeners to Respond to User Interactions:</h4>
+In addition to manipulating elements directly, you can also use JavaScript to respond to user interactions, such as clicks, mouse movements, or keyboard inputs. To do this, you can use event listeners, which are functions that are triggered when a specific event occurs on an element. Here's an example of how to add an event listener to a button element:
+
+```
+<button id="myButton">Click me!</button>
+<script>
+let button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+     console.log("Button clicked!");
+});
+</script>
+```
+
+In this example, we use getElementById() to access a button element with the ID "myButton". We then add an event listener to the button using the addEventListener() method. The event we're listening for is a "click" event, which is triggered when the user clicks the button. When the event is triggered, the function we passed as the second argument is executed, which logs a message to the console.
+
+<h4>Example 1. Id selector</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document.getElementById()</title>
+</head>
+
+<body>
+    <h1 id="my-id">Hello World!</h1>
+
+    <script>
+        // Get element with id "my-id"
+        var elements = document.getElementById("my-id");
+        
+        // Change the content of the element
+        elements.innerHTML = "New content!";
+    </script>
+
+</body>
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image043.jpg -->
+
+
+<h4>Example 2. Class Selector:</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>document.getElementsByClassName()</title>
+</head>
+
+<body>
+    <p class="myClass">This is a paragraph.</p>
+    <p class="myClass">This is another paragraph.</p>
+
+    <script>
+        // Get all elements with class "myClass"
+        var elements = document.getElementsByClassName("myClass");
+        
+        // Change the content of the first element
+        elements[0].innerHTML = "New content!";
+    </script>
+
+</body>
+</html>
+```
+
+<h4>Output</h4>
+<!-- image044.jpg -->
+
+<h4>Example 3: Here is an example of how to manipulate an HTML element using JavaScript:</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <h1 id="my-heading">Hello, World!</h1>
+
+    <button id="my-button">Click me!</button>
+
+    <script>
+        const heading = document.getElementById("my-heading");
+        const button = document.getElementById("my-button");
+        button.addEventListener("click", function () {
+            heading.innerHTML = "Button clicked";
+            heading.style.color = "red";
+        });
+    </script>
+</body>
+</html>
+```
+
+Explanation: In this example, we first access the button element using the getElementById() method. We then add an event listener to the button using the addEventListener() method. The event we are listening for is the "click" event, and the function we want to execute when the event occurs is defined inline.
+
+<h4>Output:</h4>
+<!-- image045.gif -->
+
+Conclusion: In conclusion, manipulating HTML elements with JavaScript is a powerful technique that can be used to create dynamic and interactive web pages. By using the methods discussed above, we can identify and access the HTML elements on a web page and modify their properties to create the desired behavior.
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How to use innerHTML in JavaScript?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The innerHTML property in JavaScript allows you to get or set the HTML content of an element as a string.
+
+<h4>Syntax For</h4>
+
+<h4>Getting HTML content of an element:</h4>
+
+```
+let element = document.getElementById("myElementId");
+let htmlContent = element.innerHTML;
+```
+
+<h4>Setting HTML content of an element:</h4>
+
+```
+let element = document.getElementById("myElementId");
+element.innerHTML = "New HTML content";
+```
+
+<h3>Here are step-by-step instructions on how to use the innerHTML property in JavaScript</h3>
+
+<h4>Step 1: Access an HTML element</h4>
+Use JavaScript to select the HTML element you want to manipulate. You can do this using various methods like document.getElementById(), document.querySelector(), or document.querySelectorAll().
+
+```
+<div id="myElement">Initial content</div>
+let element = document.getElementById("myElement");
+```
+
+<h4>Step 2: Get the HTML content</h4>
+If you want to retrieve the current HTML content of the element, use the innerHTML property.
+
+```
+let htmlContent = element.innerHTML;
+console.log(htmlContent); 
+// Output: Initial content
+```
+
+<h4>Step 3: Set the HTML content</h4>
+If you want to replace or update the HTML content of the element, assign a new HTML string to the innerHTML property.
+
+```
+element.innerHTML = "<b>New content</b>";
+```
+
+<h4>Step 4: Verify the changes(optional)</h4>
+You can optionally verify that the HTML content has been updated as expected by accessing the element again or using browser developer tools.
+
+```
+console.log(element.innerHTML);
+ // Output: <b>New content</b>
+```
+
+<h4>Example: Here, we have show the code on how to use innerHTML in JavaScript.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>innerHTML Example</title>
+    <style>
+        .container {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="myElement">Initial content</div>
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            let element = document.getElementById("myElement");
+            element.innerHTML = "<b>New content</b>";
+        }
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image046.gif -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>JavaScript innerHTML</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The innerHTML property in JavScript is used to append the dynamic HTML or text content to an element using JavaScript. It is designed to add dynamic HTML, but developers also use it to add text content as well. It can be directly used with the element by selecting it using DOM manipulation.
+
+<h4>Syntax:</h4>
+<pre>selctedHTMLElement.innerHTML = "contentToAppend";</pre>
+
+<h4>Example 1: The below code shows a basic implementation of innerHTML property to append HTML directly to an element.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1.0">
+    <title>
+        JavaScript innerHTML
+    </title>
+    <style>
+        #container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <h2>
+            The below content is added dynamically
+            using the innerHTML property in JavaScript.
+        </h2>
+    </div>  
+    
+    <script>
+        const container = document.getElementById('container');
+        container.innerHTML += 
+        `
+            <h3>
+                Hey Geek, <br/>
+                Welcome to GeeksforGeeks
+            </h3>
+            <p>
+                This content is added using the 
+                innerHTML property.
+            </p>
+        `;
+    </script>
+</body>
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image047.png -->
+
+<h4>Example 2: The below code implements the innerHTML property with click event to add HTML onclick to the button.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1.0">
+    <title>
+        JavaScript innerHTML
+    </title>
+    <style>
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="color: green;">
+            GeeksforGeeks
+        </h1>
+        <h2>
+            Click the below button to dynamically add
+            the HTML using the innerHTML property.
+        </h2>
+        <button id="myBtn">Add HTML</button>
+    </div>
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+        function clickHandler() {
+            const container = 
+                document.getElementById('container');
+            container.innerHTML +=
+                `
+                <h3>
+                    Hey Geek, <br/>
+                    Welcome to GeeksforGeeks
+                </h3>
+                <p>
+                    This content is added using 
+                    the innerHTML property.
+                </p>
+            `;
+        }
+        myBtn.addEventListener('click', clickHandler);
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!-- image048.gif -->
+
+
+
+
+
+
+
+
+
+
