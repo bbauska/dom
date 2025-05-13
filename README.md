@@ -822,8 +822,346 @@ has an ID. If it has an ID then push it into the array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript – How to Get the Data Attributes of an Element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Here are the various methods to get the data attributes of an element using JavaScript
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1. Using dataset Property</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The dataset property in JavaScript allows you to access all data attributes of an HTML element as a DOMStringMap object. It simplifies retrieving, modifying, or interacting with custom data stored in attributes like data-id or data-name.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Syntax</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>
+const e =  document.getElementByID('demo') // Accessing the element 
+const dataId  = e.dataset.dataID //Access the data-id attribute 
+</code></pre>
 
+```
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <div
+        id="element"
+        data-typeId="123"
+        data-name="name"
+        data-points="10"
+        data-important="true">
+        This is the Target Element.
+    </div>
 
+    <br />
+    <button onclick="myFunction()">
+      	Get Attributes
+  	</button>
+    
+  	<p id="result"></p>
 
+    <script>
+        let result = document.getElementById("result");
+        let e = document.getElementById("element");
 
+        function myFunction() {
+            let jsonData = JSON.stringify({
+                id: parseInt(e.dataset.typeid),
+                points: parseInt(e.dataset.points),
+                important: e.dataset.important,
+                dataName: e.dataset.name
+            });
+            result.innerHTML = jsonData;
+        }
+    </script>
+</body>
+  
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 12.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image012.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+
+<!-- image012.gif -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>2. Using getAttribute() Method</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The getAttribute() method in JavaScript retrieves the value of a specified attribute from an HTML element. To get data attributes, use element.getAttribute(‘data-attribute’). This method allows precise selection and manipulation of individual data attributes without accessing all at once.
+
+```
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <div
+        id="target"
+        data-typeId="123"
+        data-name="name"
+        data-points="10"
+        data-important="true"
+    >
+        This is the Target Element.
+    </div>
+
+    <br />
+    <button onclick="myFunction()">Get Attributes</button>
+    <p id="result"></p>
+
+    <script>
+        let result = document.getElementById("result");
+        let e = document.getElementById("target");
+
+        function myFunction() {
+            let jsonData = JSON.stringify({
+                id: parseInt(e.getAttribute('data-typeId')),
+                points: parseInt(e.getAttribute('data-points')),
+                important: e.getAttribute('data-important'),
+                dataName: e.getAttribute('data-name')
+            });
+            result.innerHTML = jsonData;
+        }
+    </script>
+</body>
+  
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 13.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image013.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!-- image013.gif -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>How To Get Element By Class Name In JavaScript ?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+When working with the DOM in JavaScript, selecting elements by their class names is a common task. JavaScript provides several methods to achieve this, whether we need to select one or multiple elements. In this article, we will cover different approaches to get elements by class name in JavaScript.
+
+<h4>Prerequisites</h4>
+  - HTML
+  - CSS
+  - JavaScript
+
+Below are the following approaches to get elements by class name in Javascript:
+
+<h4>Table of Content</h4>
+
+  - Using document.getElementsByClassName()
+  - Using document.querySelector()
+  - Using document.querySelectorAll()
+
+<h3>1. Using document.getElementsByClassName()</h3>
+In this approach we are using the document.getElementsByClassName() method. This method selects all elements with a specific class name and returns a live HTMLCollection. Think of it as a way to collect all elements with same label. In this, list gets updated automatically if elements are added or removed.
+
+<h4>Syntax:</h4>
+<pre><code>var elements = document.getElementsByClassName("className");</code></pre>
+
+Example: In this example we are using the getElementsByClassName() method to get element by class name in javascript.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0">
+    <title>Get Elements by Class Name</title>
+    <style>
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <div class="output" id="output1"></div>
+
+    <script>
+        var boxes =
+         document.getElementsByClassName("box");
+        var output =
+         document.getElementById("output1");
+        output.innerHTML = 
+        "Number of boxes: " + boxes.length;
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 14.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image014.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!-- image014.png -->
+
+<h3>2. Using document.querySelector()</h3>
+In this approach we are using the document.querySelector() method. This method returns the first element that matches the specified selector (class name). It is useful when you only need to select a single element by class name.
+
+Syntax:
+
+<pre>var element = document.querySelector(".className");</pre>
+
+Example: In this example we are using the querySelector() method to get element by class name and we will change the background color of selected class in javascript.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,'' initial-scale=1.0">
+    <title>Query Selector Example</title>
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <script>
+        var firstBox = 
+        document.querySelector(".box");
+        firstBox.style.backgroundColor =
+         "lightblue"; // Change the background color to light blue
+        firstBox.style.color = "white"; // Change the text color to white
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 15.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image015.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!-- image015.png -->
+
+<h3>3. Using document.querySelectorAll()</h3>
+In this approach we are using the document.querySelectorAll() method. This method finds all elements that match a specific CSS selector, like class name. It gives you a static list, which means it wont automatically update if page changes.
+
+Syntax:
+
+```
+var elements = document.querySelectorAll(".className");
+```
+
+Example: In below example we are using the querySelectorAll and we will print all the content which have that class name.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0">
+    <title>Query Selector All Example</title>
+    <style>
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <div class="output" id="output3"></div>
+
+    <script>
+        var allBoxes = 
+        document.querySelectorAll(".box");
+        var output = 
+        document.getElementById("output3");
+        var content = "Contents of all boxes: <br>";
+        allBoxes.forEach(function (box) {
+            content += box.innerText + "<br>";
+        });
+        output.innerHTML = content;
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 16.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image016.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!-- image016.png -->
 
