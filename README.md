@@ -1,3 +1,15 @@
+---
+title: |
+  DOM Document Object Model
+  by Brian Bauska, Systems Analyst
+author: "bbauska"
+date created: "05/12/25 Mon 12+pm"
+date last editted: "05/12/25 Mon 8+pm"
+output: 
+  markdown:
+    with some style
+---
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of dom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center">DOM</h1>
