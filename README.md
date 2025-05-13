@@ -2024,6 +2024,19 @@ This article will show you how to use JavaScript to get value by class name. To 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 28.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image028.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image028.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: In this example, we will get the second element by class name.</h4>
@@ -2088,6 +2101,19 @@ This article will show you how to use JavaScript to get value by class name. To 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 29.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image029.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image029.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How To Get Element By Class Name In JavaScript?</h2>
@@ -2171,6 +2197,19 @@ In this approach we are using the document.getElementsByClassName() method. This
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 30.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image030.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image030.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2225,6 +2264,19 @@ In this approach we are using the document.querySelector() method. This method r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 31.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image031.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image031.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using document.querySelectorAll()</h3>
@@ -2286,6 +2338,19 @@ In this approach we are using the document.querySelectorAll() method. This metho
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 32.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image032.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image032.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2327,6 +2392,19 @@ The new URL(url) constructor parses the URL and creates a URL object. This objec
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 33.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image033.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image033.png -->
 
 <h3>Using Regular Expressions</h3>
@@ -2351,7 +2429,19 @@ If you want more control or need to support environments where the URL object is
 ```
 
 <h4>Output:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 34.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image034.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image034.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2434,10 +2524,35 @@ port = location.port;
 
 <h4>Output:</h4>
   - Before Clicking the button:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 35.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image035.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image035.png -->
 
   - After Clicking the button:
-<!-- image036.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 36.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image036.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p><!-- image036.png -->
 
 <h4>Method 2: Using the URL interface: The URL interface is used to represent object URL. It can be used for getting the port, domain, and protocol as it has inbuilt methods to get these values.</h4>
 
@@ -2512,12 +2627,36 @@ port = url_object.port;
 <h4>Output:</h4>
   - Before Clicking the button:
   
-<!-- image037.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 37.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image037.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p><!-- image037.png -->
 
   - After Clicking the button:
   
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 38.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image038.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image038.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to Extract the Host Name from URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2567,6 +2706,19 @@ Here we are using JavaScript’s window.location object to extract the full URL 
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 39.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image039.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image039.png -->
 
 <h3>Extracting Hostname Using indexOf and Looping</h3>
@@ -2618,9 +2770,20 @@ here we extracts the hostname from a user-provided URL by locating the position 
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 40.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image040.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image040.gif -->
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to Get the Current URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2741,6 +2904,19 @@ https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 41.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image041.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image041.gif -->
 
 <h3>Method 2: Separating and accessing each parameter pair</h3>
@@ -2805,6 +2981,19 @@ https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 42.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image042.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image042.gif -->
 
 
@@ -2974,6 +3163,19 @@ In this example, we use getElementById() to access a button element with the ID 
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 43.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image043.jpg?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image043.jpg -->
 
 
@@ -3003,6 +3205,19 @@ In this example, we use getElementById() to access a button element with the ID 
 ```
 
 <h4>Output</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 44.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image044.jpg?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image044.jpg -->
 
 <h4>Example 3: Here is an example of how to manipulate an HTML element using JavaScript:</h4>
@@ -3034,6 +3249,19 @@ In this example, we use getElementById() to access a button element with the ID 
 Explanation: In this example, we first access the button element using the getElementById() method. We then add an event listener to the button using the addEventListener() method. The event we are listening for is the "click" event, and the function we want to execute when the event occurs is defined inline.
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 45.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image045.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image045.gif -->
 
 Conclusion: In conclusion, manipulating HTML elements with JavaScript is a powerful technique that can be used to create dynamic and interactive web pages. By using the methods discussed above, we can identify and access the HTML elements on a web page and modify their properties to create the desired behavior.
@@ -3128,8 +3356,20 @@ console.log(element.innerHTML);
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 46.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image046.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image046.gif -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript innerHTML</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3187,6 +3427,19 @@ The innerHTML property in JavScript is used to append the dynamic HTML or text c
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 47.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image047.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image047.png -->
 
 <h4>Example 2: The below code implements the innerHTML property with click event to add HTML onclick to the button.</h4>
@@ -3246,6 +3499,19 @@ The innerHTML property in JavScript is used to append the dynamic HTML or text c
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 48.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image048.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image048.gif -->
 
 
