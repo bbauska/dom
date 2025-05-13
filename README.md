@@ -662,7 +662,7 @@ all elements that match the specified CSS selector.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 09.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 09. how to select dom element using tag name ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -736,14 +736,14 @@ has an ID. If it has an ID then push it into the array.
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 10.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
     src="./images/image010.gif?raw=true"
     loading="lazy"
-    style="width:40%;"
+    style="width:30%;"
     title=""
     alt="." />
 </a>
@@ -806,14 +806,14 @@ has an ID. If it has an ID then push it into the array.
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 11.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 11. click to get all id's in an array ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
     src="./images/image011.gif?raw=true"
     loading="lazy"
-    style="width:40%;"
+    style="width:30%;"
     title=""
     alt="." />
 </a>
@@ -878,7 +878,7 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 12.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 12. click to get attributes for target element ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -940,7 +940,7 @@ The getAttribute() method in JavaScript retrieves the value of a specified attri
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 13.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 13. click to get attributes ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -977,7 +977,7 @@ In this approach we are using the document.getElementsByClassName() method. This
 <h4>Syntax:</h4>
 <pre><code>var elements = document.getElementsByClassName("className");</code></pre>
 
-Example: In this example we are using the getElementsByClassName() method to get element by class name in javascript.
+<h4>Example: In this example we are using the getElementsByClassName() method to get element by class name in javascript.</h4>
 
 ```
 <!DOCTYPE html>
@@ -1021,7 +1021,7 @@ Example: In this example we are using the getElementsByClassName() method to get
 
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 14.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 14. get elements by class name ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1042,7 +1042,7 @@ Syntax:
 
 <pre>var element = document.querySelector(".className");</pre>
 
-Example: In this example we are using the querySelector() method to get element by class name and we will change the background color of selected class in javascript.
+<h4>Example: In this example we are using the querySelector() method to get element by class name and we will change the background color of selected class in javascript.</h4>
 
 ```
 <!DOCTYPE html>
@@ -1081,7 +1081,7 @@ Example: In this example we are using the querySelector() method to get element 
 
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 15.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 15. query selector example ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1104,7 +1104,7 @@ Syntax:
 var elements = document.querySelectorAll(".className");
 ```
 
-Example: In below example we are using the querySelectorAll and we will print all the content which have that class name.
+<h4>Example: In below example we are using the querySelectorAll and we will print all the content which have that class name.</h4>
 
 ```
 <!DOCTYPE html>
@@ -1151,7 +1151,7 @@ Example: In below example we are using the querySelectorAll and we will print al
 
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 16.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 16. query selector all example ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1163,5 +1163,371 @@ Example: In below example we are using the querySelectorAll and we will print al
     alt="." />
 </a>
 </p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image016.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<h2>How to Get Value by Class Name using JavaScript?</h2>
+This article will show you how to use JavaScript to get value by class name. To get the value of an element by its class name in JavaScript, you can use the getElementsByClassName() method. This method returns an array-like object of all elements with the specified class name. You can then access the value property of the first element in the array to get the value.
+
+<h4>Example: In this example, we will get the classname of an element.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        
+    <title>Get Value by Class Name</title>
+</head>
+
+<body style="text-align: center;">
+    <h1 class="heading">
+        GeeksforGeeks
+    </h1>
+
+    <p class="para">
+        A computer science portal for geeks
+    </p>
+    
+    <button onclick="myGeeks()">
+        Get Value
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function myGeeks() {
+
+            // Get elements with the class name 'heading'
+            let headingElements = 
+                document.getElementsByClassName('heading');
+
+            // Check if any elements with the 
+            // specified class name exist
+            if (headingElements.length > 0) {
+
+                // Access the value of the first 
+                // element in the collection
+                let headingVal = headingElements[0].innerHTML;
+
+                // Update the content of the 'result' element
+                document.getElementById('result')
+                    .innerHTML = headingVal;
+            } else {
+                console.log(
+                  'Element with class name "heading" not found.');
+            }
+        }
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 17. query selector all example ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image017.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<h4>Example 2: In this example, we will get the second element by class name.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+
+    <title>Get Value by Class Name</title>
+</head>
+
+<body style="text-align: center;">
+    <h1 class="heading text">
+        GeeksforGeeks
+    </h1>
+
+    <p class="para text">
+        A computer science portal for geeks
+    </p>
+    
+    <button onclick="myGeeks()">
+        Get Value
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function myGeeks() {
+
+            // Get elements with the class name 'heading'
+            let headingElements = 
+                document.getElementsByClassName('text');
+
+            // Check if any elements with the 
+            // specified class name exist
+            if (headingElements.length > 0) {
+
+                // Access the value of the first 
+                // element in the collection
+                let headingVal = headingElements[1].innerHTML;
+
+                // Update the content of the 'result' element
+                document.getElementById('result')
+                    .innerHTML = headingVal;
+            } else {
+                console.log(
+                  'Element with class name "text" not found.');
+            }
+        }
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 18. query selector all example ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image018.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+
+<h2>How To Get Element By Class Name In JavaScript?</h2>
+When working with the DOM in JavaScript, selecting elements by their class names is a common task. JavaScript provides several methods to achieve this, whether we need to select one or multiple elements. In this article, we will cover different approaches to get elements by class name in JavaScript.
+
+<h4>Prerequisites</h4>
+  - HTML
+  - CSS
+  - JavaScript
+
+Below are the following approaches to get elements by class name in Javascript:
+
+<h4>Table of Content</h4>
+
+  - Using document.getElementsByClassName()
+  - Using document.querySelector()
+  - Using document.querySelectorAll()
+
+<h3>1. Using document.getElementsByClassName()</h3>
+In this approach we are using the document.getElementsByClassName() method. This method selects all elements with a specific class name and returns a live HTMLCollection. Think of it as a way to collect all elements with same label. In this, list gets updated automatically if elements are added or removed.
+
+<h4>Syntax:</h4>
+
+<pre>var elements = document.getElementsByClassName("className");</pre>
+
+<h4>Example: In this example we are using the getElementsByClassName() method to get element by class name in javascript.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0">
+    <title>Get Elements by Class Name</title>
+    <style>
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <div class="output" id="output1"></div>
+
+    <script>
+        var boxes =
+         document.getElementsByClassName("box");
+        var output =
+         document.getElementById("output1");
+        output.innerHTML = 
+        "Number of boxes: " + boxes.length;
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 19. query selector all example ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image019.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image019.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h3>2. Using document.querySelector()</h3>
+In this approach we are using the document.querySelector() method. This method returns the first element that matches the specified selector (class name). It is useful when you only need to select a single element by class name.
+
+<h4>Syntax:</h4>
+
+<pre>var element = document.querySelector(".className");</pre>
+
+<h4>Example: In this example we are using the querySelector() method to get element by class name and we will change the background color of selected class in javascript.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,'' initial-scale=1.0">
+    <title>Query Selector Example</title>
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <script>
+        var firstBox = 
+        document.querySelector(".box");
+        firstBox.style.backgroundColor =
+         "lightblue"; // Change the background color to light blue
+        firstBox.style.color = "white"; // Change the text color to white
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 20. query selector all example ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image020.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+
+<h3>3. Using document.querySelectorAll()</h3>
+In this approach we are using the document.querySelectorAll() method. This method finds all elements that match a specific CSS selector, like class name. It gives you a static list, which means it wont automatically update if page changes.
+
+<h4>Syntax:</h4>
+<pre>var elements = document.querySelectorAll(".className");</pre>
+
+<h4>Example: In below example we are using the querySelectorAll and we will print all the content which have that class name.</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0">
+    <title>Query Selector All Example</title>
+    <style>
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <div class="output" id="output3"></div>
+
+    <script>
+        var allBoxes = 
+        document.querySelectorAll(".box");
+        var output = 
+        document.getElementById("output3");
+        var content = "Contents of all boxes: <br>";
+        allBoxes.forEach(function (box) {
+            content += box.innerText + "<br>";
+        });
+        output.innerHTML = content;
+    </script>
+</body>
+
+</html>
+```
+
+<h4>Output;</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 21. query selector all example ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image021.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+
+
+
+
 
