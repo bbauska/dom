@@ -10,11 +10,29 @@ output:
     with some style
 ---
 
+<ol>
+  <li><a href="01">JavaScript - How to Manipulate DOM Elements?</a></li>
+  <li>How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</li>
+  <li>How to select DOM Elements in JavaScript?</li>
+  <li>How to get all ID of the DOM elements with JavaScript?</li>
+  <li>JavaScript – How to Get the Data Attributes of an Element?</li>
+  <li>How To Get Element By Class Name In JavaScript?</li>
+  <li>How to Get Value by Class Name using JavaScript?</li>
+  <li>How to Get Domain Name From URL in JavaScript?</li>
+  <li>How to get protocol, domain and port from URL using JavaScript?</li>
+  <li>How to Extract the Host Name from URL using JavaScript?</li>
+  <li>How to Get the Current URL using JavaScript?</li>
+  <li>How to get URL Parameters using JavaScript?</li>
+  <li>How to parse URL using JavaScript?</li>
+  <li>Manipulating HTML Elements with JavaScript</li>
+  <li>How to use innerHTML in JavaScript?</li>
+  <li>JavaScript innerHTML</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of dom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center">DOM</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>JavaScript - How to Manipulate DOM Elements?</h2>
+<h2 id="#01">01 JavaScript - How to Manipulate DOM Elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <b><mark>DOM</mark></b> stands for the <b><mark>Document Object Model (DOM)</mark></b>, which 
 allows us to interact with the document and change its structure, style, and content. We can use 
@@ -965,7 +983,7 @@ The getAttribute() method in JavaScript retrieves the value of a specified attri
 </p>
 <!-- image013.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>How To Get Element By Class Name In JavaScript ?</h2>
+<h2>How To Get Element By Class Name In JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 When working with the DOM in JavaScript, selecting elements by their class names is a common task. JavaScript provides several methods to achieve this, whether we need to select one or multiple elements. In this article, we will cover different approaches to get elements by class name in JavaScript.
 
