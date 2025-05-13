@@ -1592,6 +1592,19 @@ This article will show you how to use JavaScript to get value by class name. To 
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 23.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image023.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image023.gif -->
 
 <h4>Example 2: In this example, we will get the second element by class name.</h4>
@@ -1653,8 +1666,19 @@ This article will show you how to use JavaScript to get value by class name. To 
 ```
 
 <h4>Output:</h4>
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 24.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image024.gif?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image024.gif -->
 
 <h2>How To Get Element By Class Name In JavaScript?</h2>
@@ -1723,7 +1747,20 @@ In this approach we are using the document.getElementsByClassName() method. This
 ```
 
 <h4>Output:</h4>
-<!-- image025 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 25.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image025.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
+<!-- image025.png -->
 
 2. Using document.querySelector()
 In this approach we are using the document.querySelector() method. This method returns the first element that matches the specified selector (class name). It is useful when you only need to select a single element by class name.
@@ -1769,6 +1806,19 @@ In this approach we are using the document.querySelector() method. This method r
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 26.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image026.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image026.png -->
 
 <h3>3. Using document.querySelectorAll()</h3>
@@ -1823,6 +1873,19 @@ In this approach we are using the document.querySelectorAll() method. This metho
 ```
 
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 27.  ~~~~~~~~~~~~~~~~-->
+<p align="center" >
+<a href="" 
+  target="_blank" rel="noopener noreferrer">
+  <img class="displayed"
+    src="./images/image027.png?raw=true"
+    loading="lazy"
+    style="width:40%;"
+    title=""
+    alt="." />
+</a>
+</p>
 <!-- image027.png -->
 
 
