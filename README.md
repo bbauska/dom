@@ -998,7 +998,6 @@ class name in JavaScript.</p>
   <li>JavaScript</li>
 </ul>
 <p>Below are the following approaches to get elements by class name in Javascript:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1010,18 +1009,17 @@ class name in JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Using document.getElementsByClassName()</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this approach we are using the document.getElementsByClassName() method. This method 
-selects all elements with a specific class name and returns a live HTMLCollection. Think of 
-it as a way to collect all elements with same label. In this, list gets updated automatically 
-if elements are added or removed.</p>
+<p>In this approach we are using the <b><mark>document.getElementsByClassName()</mark></b> 
+method. This method selects all elements with a specific class name and returns a live 
+<b><mark>HTMLCollection</mark></b>. Think of it as a way to collect all elements with same 
+label. In this, list gets updated automatically if elements are added or removed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>var elements = document.getElementsByClassName("className");</code></pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example we are using the getElementsByClassName() method to get element by 
-class name in javascript.</h4>
+<h4>Example: In this example we are using the <b><mark>getElementsByClassName()</mark></b> method 
+to get element by class name in javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -1084,14 +1082,16 @@ class name in javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using document.querySelector()</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this approach we are using the document.querySelector() method. This method returns the first element that matches the specified selector (class name). It is useful when you only need to select a single element by class name.
-
+<p>In this approach we are using the <b><mark>document.querySelector()</mark></b> method. This method 
+returns the first element that matches the specified selector (class name). It is useful when you 
+only need to select a single element by class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>var element = document.querySelector(".className");</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example we are using the querySelector() method to get element by class name and we will change the background color of selected class in javascript.</h4>
+<h4>Example: In this example we are using the <b><mark>querySelector()</mark></b> method to get 
+element by class name and we will change the background color of selected class in javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -1642,19 +1642,19 @@ port = url_object.port;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
       
-<head> 
-    <title> 
-        Get protocol, domain, and port from URL 
-    </title> 
-</head> 
-  
-<body> 
-    <h1 style="color: green"> 
-        GeeksforGeeks 
-    </h1> 
+<head>
+  <title>
+    Get protocol, domain, and port from URL
+  </title>
+</head>
+
+<body>
+  <h1 style="color: green">
+    GeeksforGeeks
+  </h1>
       
     <b> 
         Get protocol, domain, and port from URL 
@@ -1668,24 +1668,24 @@ port = url_object.port;
         Get protocol, domain, port 
     </button> 
       
-    <script type="text/javascript"> 
-        function getDetails() { 
-            current_url = window.location.href; 
-            url_object = new URL(current_url); 
+    <script type="text/javascript">
+        function getDetails() {
+            current_url = window.location.href;
+            url_object = new URL(current_url);
   
-            protocol = url_object.protocol; 
-            domain = url_object.hostname; 
-            port = url_object.port; 
+            protocol = url_object.protocol;
+            domain = url_object.hostname;
+            port = url_object.port;
   
-            document.querySelector('.protocol').textContent 
-                    = protocol; 
-            document.querySelector('.domain').textContent 
-                    = domain; 
-            document.querySelector('.port').textContent 
-                    = port; 
-        } 
-    </script> 
-</body> 
+            document.querySelector('.protocol').textContent
+                    = protocol;
+            document.querySelector('.domain').textContent
+                    = domain;
+            document.querySelector('.port').textContent
+                    = port;
+        }
+    </script>
+</body>
   
 </html>                     
 ```
@@ -1800,7 +1800,6 @@ hostname.</h4>
 </a>
 </p>
 <!-- image039.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Extracting Hostname Using indexOf and Looping</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1906,7 +1905,7 @@ console.log(currentUrl);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>window.location.href</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The window.location.href property of the HTML DOM Window object returns a string containing 
+<p>The <b><mark>window.location.href</mark></b> property of the HTML DOM Window object returns a string containing 
 the URL of the current page. This property is part of the Location object, which contains 
 information about the current location of the document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1934,10 +1933,12 @@ the console, it will print the URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D-12">12. How to get URL Parameters using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-To get URL parameters using JavaScript means extracting the query string values from a URL. URL parameters, found after the ? in a URL, pass data like search terms or user information. JavaScript can parse these parameters, allowing you to programmatically access or manipulate their values.
+<p>To get URL parameters using JavaScript means extracting the query string values from a 
+URL. URL parameters, found after the ? in a URL, pass data like search terms or user 
+information. JavaScript can parse these parameters, allowing you to programmatically 
+access or manipulate their values.</p>
 
-For getting the URL parameters, there are 2 ways:
-
+<p>For getting the URL parameters, there are 2 ways:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1966,8 +1967,8 @@ for (let pair of queryString.entries()) {
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example we retrieves URL parameters using JavaScript. It splits the URL, 
-extracts parameters with URLSearchParams(), and logs each key-value pair to the console when 
-the button is clicked.</h4>
+extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each 
+<b><mark>key-value</mark></b> pair to the console when the button is clicked.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -2131,8 +2132,8 @@ path: /courses
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Method 1: In this method, we will use createElement() method to create a HTML element, anchor 
-tag and then use it for parsing the given URL.</h4>
+<h4>Method 1: In this method, we will use <b><mark>createElement()</mark></b> method to create a 
+HTML element, anchor tag and then use it for parsing the given URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```javascript
@@ -2168,7 +2169,7 @@ geeksforgeeks.org
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Method 2: In this method we will use URL() to create a new URL object and then use it for 
+<h4>Method 2: In this method we will use <b><mark>URL()</mark></b> to create a new URL object and then use it for 
 parsing the provided URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -2215,30 +2216,56 @@ search=query
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D-14">14. Manipulating HTML Elements with JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JavaScript is a powerful language that can be used to manipulate the HTML elements on a web page. By using JavaScript, we can access the HTML elements and modify their attributes, styles, and content. This allows us to create dynamic and interactive web pages.
+<p>JavaScript is a powerful language that can be used to manipulate the HTML elements on a 
+web page. By using JavaScript, we can access the HTML elements and modify their attributes, 
+styles, and content. This allows us to create dynamic and interactive web pages.</p>
 
-Methods to Identify the elements to manipulate: There are several methods to identify the HTML elements that we want to manipulate using JavaScript. The most common methods are:
+<p>Methods to Identify the elements to manipulate: There are several methods to identify 
+the HTML elements that we want to manipulate using JavaScript. The most common methods are:</p>
+<ul>
+  <li>Using the element's ID: We can assign an ID to an HTML element and use 
+    <b><mark>document.getElementById()</mark></b> to access it.</li>
+  <li>Using the element's class name: We can assign a class name to an HTML element and use 
+    <b><mark>document.getElementsByClassName()</mark></b> to access it.</li>
+  <li>Using the element's tag name: We can use <b><mark>document.getElementsByTagName()</mark></b> 
+    to access all elements with a particular tag name.</li>
+</ul>
+<p>Accessing the properties of the elements: Once we have identified the HTML element that we 
+want to manipulate, we can access its properties using JavaScript. For example, to access the 
+text content of an element, we can use the <b><mark>innerHTML</mark></b> property. Similarly, we can access the 
+style properties of an element using the style property.</p>
 
-  - Using the element's ID: We can assign an ID to an HTML element and use document.getElementById() to access it.
-  - Using the element's class name: We can assign a class name to an HTML element and use document.getElementsByClassName() to access it.
-  - Using the element's tag name: We can use document.getElementsByTagName() to access all elements with a particular tag name.
+<p>Use <b><mark>Event Listeners</mark></b> to Respond to User Interactions: We can use event 
+listeners to respond to user interactions such as clicking a button or hovering over an 
+element. Event listeners are functions that are executed when a particular event occurs. 
+For example, we can use the onclick event listener to execute a function when a button 
+is clicked.</p>
 
-Accessing the properties of the elements: Once we have identified the HTML element that we want to manipulate, we can access its properties using JavaScript. For example, to access the text content of an element, we can use the innerHTML property. Similarly, we can access the style properties of an element using the style property.
-
-Use Event Listeners to Respond to User Interactions: We can use event listeners to respond to user interactions such as clicking a button or hovering over an element. Event listeners are functions that are executed when a particular event occurs. For example, we can use the onclick event listener to execute a function when a button is clicked.
-
-When building a website or web application, it's common to need to access and manipulate HTML elements using JavaScript. There are several methods available in JavaScript that allow you to do this, including getElementById(), getElementsByClassName(), and getElementsByTagName(). In this article, we'll take a systematic approach to use these methods and show you how to access and manipulate elements in your HTML documents.
-
+<p>When building a website or web application, it's common to need to access and manipulate HTML 
+elements using JavaScript. There are several methods available in JavaScript that allow you to 
+do this, including <b><mark>getElementById()</mark></b>, <b><mark>getElementsByClassName()</mark></b>, 
+and <b><mark>getElementsByTagName()</mark></b>. In this article, we'll take a systematic approach 
+to use these methods and show you how to access and manipulate elements in your HTML documents.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Identify the Element You Want to Manipulate:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The first step in working with HTML elements in JavaScript is to identify the element you want to manipulate. There are several ways to do this, depending on the specific element you're trying to access. Here are some common methods:
-
-  - getElementById() Method: Use this method to access an element with a specific ID. IDs should be unique within an HTML document, so this method will always return a single element.
-  - getElementsByClassName() Method: Use this method to access all elements with a specific class name. Multiple elements can have the same class name, so this method will return a collection of elements.
-  - getElementsByTagName() Method: Use this method to access all elements with a specific tag name. Multiple elements can have the same tag name, so this method will also return a collection of elements.
-
+<p>The first step in working with HTML elements in JavaScript is to identify the element you 
+want to manipulate. There are several ways to do this, depending on the specific element 
+you're trying to access. Here are some common methods:</p>
+<ul>
+  <li><b><mark>getElementById()</mark></b> Method: Use this method to access an element with a 
+    specific ID. IDs should be unique within an HTML document, so this method will always return 
+	a single element.</li>
+  <li><b><mark>getElementsByClassName()</mark></b> Method: Use this method to access all elements 
+    with a specific class name. Multiple elements can have the same class name, so this method 
+	will return a collection of elements.</li>
+  <li><b><mark>getElementsByTagName()</mark></b> Method: Use this method to access all elements 
+    with a specific tag name. Multiple elements can have the same tag name, so this method will 
+	also return a collection of elements.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 let element = document.getElementById("my-id");
@@ -2281,11 +2308,10 @@ button.addEventListener("click", function() {
 ```
 
 <p>In this example, we use getElementById() to access a button element with the ID "myButton". 
-We then add an event listener to the button using the addEventListener() method. The event 
-we're listening for is a "click" event, which is triggered when the user clicks the button. 
-When the event is triggered, the function we passed as the second argument is executed, which 
-logs a message to the console.</p>
-
+We then add an event listener to the button using the <b><mark>addEventListener()</mark></b> 
+method. The event we're listening for is a "click" event, which is triggered when the user 
+clicks the button. When the event is triggered, the function we passed as the second argument 
+is executed, which logs a message to the console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1. Id selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2328,7 +2354,6 @@ logs a message to the console.</p>
 </a>
 </p>
 <!-- image043.jpg -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2. Class Selector:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2401,9 +2426,9 @@ logs a message to the console.</p>
 </html>
 ```
 
-<p>Explanation: In this example, we first access the button element using the getElementById() 
-method. We then add an event listener to the button using the addEventListener() method. The 
-event we are listening for is the "click" event, and the function we want to execute when the 
+<p>Explanation: In this example, we first access the button element using the <b><mark>getElementById()</mark></b> 
+method. We then add an event listener to the button using the <b><mark>addEventListener()</mark></b> 
+method. The event we are listening for is the "click" event, and the function we want to execute when the 
 event occurs is defined inline.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -2451,18 +2476,24 @@ let element = document.getElementById("myElementId");
 element.innerHTML = "New HTML content";
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Here are step-by-step instructions on how to use the innerHTML property in JavaScript</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Access an HTML element</h4>
-Use JavaScript to select the HTML element you want to manipulate. You can do this using various methods like document.getElementById(), document.querySelector(), or document.querySelectorAll().
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Use JavaScript to select the HTML element you want to manipulate. You can do this using 
+various methods like <b><mark>document.getElementById()</mark></b>, <b><mark>document.querySelector()</mark></b>, 
+or <b><mark>document.querySelectorAll()</mark></b>.</p>
 
 ```
 <div id="myElement">Initial content</div>
 let element = document.getElementById("myElement");
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 2: Get the HTML content</h4>
-If you want to retrieve the current HTML content of the element, use the innerHTML property.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>If you want to retrieve the current HTML content of the element, use the innerHTML property.</p>
 
 ```
 let htmlContent = element.innerHTML;
@@ -2470,22 +2501,29 @@ console.log(htmlContent);
 // Output: Initial content
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 3: Set the HTML content</h4>
-If you want to replace or update the HTML content of the element, assign a new HTML string to the innerHTML property.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>If you want to replace or update the HTML content of the element, assign a new HTML string to the innerHTML property.</p>
 
 ```
 element.innerHTML = "<b>New content</b>";
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 4: Verify the changes(optional)</h4>
-You can optionally verify that the HTML content has been updated as expected by accessing the element again or using browser developer tools.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>You can optionally verify that the HTML content has been updated as expected by accessing the 
+element again or using browser developer tools.</p>
 
 ```
 console.log(element.innerHTML);
  // Output: <b>New content</b>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Here, we have show the code on how to use innerHTML in JavaScript.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -2518,6 +2556,7 @@ console.log(element.innerHTML);
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 46.  ~~~~~~~~~~~~~~~~-->
@@ -2536,13 +2575,18 @@ console.log(element.innerHTML);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D-16">16. JavaScript innerHTML</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The innerHTML property in JavScript is used to append the dynamic HTML or text content to an element using JavaScript. It is designed to add dynamic HTML, but developers also use it to add text content as well. It can be directly used with the element by selecting it using DOM manipulation.
-
+<p>The <b><mark>innerHTML</mark></b> property in JavScript is used to append the dynamic HTML or 
+text content to an element using JavaScript. It is designed to add dynamic HTML, but developers 
+also use it to add text content as well. It can be directly used with the element by selecting 
+it using DOM manipulation.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>selctedHTMLElement.innerHTML = "contentToAppend";</pre>
-
-<h4>Example 1: The below code shows a basic implementation of innerHTML property to append HTML directly to an element.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example 1: The below code shows a basic implementation of innerHTML property to append 
+HTML directly to an element.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -2589,6 +2633,7 @@ The innerHTML property in JavScript is used to append the dynamic HTML or text c
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 47.  ~~~~~~~~~~~~~~~~-->
@@ -2605,7 +2650,9 @@ The innerHTML property in JavScript is used to append the dynamic HTML or text c
 </p>
 <!-- image047.png -->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 2: The below code implements the innerHTML property with click event to add HTML onclick to the button.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -2661,6 +2708,7 @@ The innerHTML property in JavScript is used to append the dynamic HTML or text c
 </html>
 ```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 48.  ~~~~~~~~~~~~~~~~-->
