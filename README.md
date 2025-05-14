@@ -5,6 +5,7 @@ title: |
 author: "bbauska"
 date created: "05/12/25 Mon 12+pm"
 date last editted: "05/12/25 Mon 8+pm"
+date last editted: "05/13/25 Tue 9+pm"
 output: 
   markdown:
     with some style
@@ -350,7 +351,7 @@ element.classList.add("className")
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>className</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this approach, we are using the <b><mark>clasName</mark></b> property. This property returns the 
+In this approach, we are using the <b><mark>className</mark></b> property. This property returns the 
 <b><mark>className</mark></b> of the element. If the element has already a class then it will simply 
 add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -414,28 +415,27 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to select DOM Elements in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Selecting <b><mark>DOM (Document Object Model)</mark></b> elements is a fundamental aspect of web 
+<p>Selecting <b><mark>DOM (Document Object Model)</mark></b> elements is a fundamental aspect of web 
 development with JavaScript. It allows developers to interact with and manipulate elements 
 on a webpage dynamically. Proper selection of elements is crucial for tasks such as updating 
-content, adding event listeners, or modifying styles.
+content, adding event listeners, or modifying styles.</p>
 
-Below are the approaches to select DOM elements in JavaScript:
+<p>Below are the approaches to select DOM elements in JavaScript:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Using <b><mark>getElementById</mark></b></li>
-  <li>Using <b><mark>getElementsByClassName</mark></b></li>
-  <li>Using <b><mark>getElementsByTagName</mark></b></li>
-  <li>Using <b><mark>querySelector</mark></b></li>
-  <li>Using <b><mark>querySelectorAll</mark></b></li>
+  <li><href id="#01">1. Using <b><mark>getElementById</mark></b></a></li>
+  <li><href id="#02">2. Using <b><mark>getElementsByClassName</mark></b></a></li>
+  <li><href id="#03">3. Using <b><mark>getElementsByTagName</mark></b></a></li>
+  <li><href id="#04">4. Using <b><mark>querySelector</mark></b></a></li>
+  <li><href id="#05">5. Using <b><mark>querySelectorAll</mark></b></a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using <b><mark>getElementById</mark></b></h3>
+<h3 id="01">1. Using <b><mark>getElementById</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This method selects a single element by its unique ID attribute.
-
+<p>This method selects a single element by its unique ID attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -471,7 +471,7 @@ This method selects a single element by its unique ID attribute.
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 05.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -485,7 +485,7 @@ This method selects a single element by its unique ID attribute.
 </p>
 <!-- image005.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using <b><mark>getElementsByClassName</mark></b></h3>
+<h3 id="02">2. Using <b><mark>getElementsByClassName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects elements based on their class attribute. It returns a collection of elements 
 with the specified class name.</p>
@@ -540,7 +540,7 @@ with the specified class name.</p>
 </p>
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using <b><mark>getElementsByTagName</mark></b></h3>
+<h3 id="03">03. Using <b><mark>getElementsByTagName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects elements based on their tag name. It returns a collection of elements with the 
 specified tag name.</p>
@@ -595,7 +595,7 @@ specified tag name.</p>
 </p>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using querySelector</h3>
+<h3 id="04">04. Using querySelector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects the first element that matches a specified CSS selector. It returns only 
 one element.</p>
@@ -649,7 +649,7 @@ one element.</p>
 </p>
 <!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using querySelectorAll</h3>
+<h3 id="05">05. Using querySelectorAll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> containing 
 all elements that match the specified CSS selector.</p>
