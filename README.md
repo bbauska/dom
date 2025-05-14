@@ -585,7 +585,7 @@ specified tag name.</p>
 </p>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="D03-04">04. Using querySelector</h3>
+<h3 id="D03-04">04. Using <b><mark>querySelector</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects the first element that matches a specified CSS selector. It returns only 
 one element.</p>
@@ -640,7 +640,7 @@ one element.</p>
 </p>
 <!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="D03-05">05. Using querySelectorAll</h3>
+<h3 id="D03-05">05. Using <b><mark>querySelectorAll</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> containing 
 all elements that match the specified CSS selector.</p>
@@ -1140,10 +1140,9 @@ element by class name and we will change the background color of selected class 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using <b><mark>document.querySelectorAll()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this approach we are using the document.querySelectorAll() method. This method finds all 
+<p>In this approach we are using the <b><mark>document.querySelectorAll()</mark></b> method. This method finds all 
 elements that match a specific CSS selector, like class name. It gives you a static list, 
 which means it wont automatically update if page changes.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
