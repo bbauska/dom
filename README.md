@@ -12,28 +12,28 @@ output:
 ---
 
 <ol>
-  <li><a href="#D-01">01. JavaScript - How to Manipulate DOM Elements?</a></li>
-  <li><a href="#D-02">02. How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</a></li>
-  <li><a href="#D-03">03. How to select DOM Elements in JavaScript?</a></li>
-  <li><a href="#D-04">04. How to get all ID of the DOM elements with JavaScript?</a></li>
-  <li><a href="#D-05">05. JavaScript – How to Get the Data Attributes of an Element?</a></li>
-  <li><a href="#D-06">06. How To Get Element By Class Name In JavaScript?</a></li>
-  <li><a href="#D-07">07. How to Get Value by Class Name using JavaScript?</a></li>
-  <li><a href="#D-08">08. How to Get Domain Name From URL in JavaScript?</a></li>
-  <li><a href="#D-09">09. How to get protocol, domain and port from URL using JavaScript?</a></li>
-  <li><a href="#D-10">10. How to Extract the Host Name from URL using JavaScript?</a></li>
-  <li><a href="#D-11">11. How to Get the Current URL using JavaScript?</a></li>
-  <li><a href="#D-12">12. How to get URL Parameters using JavaScript?</a></li>
-  <li><a href="#D-13">13. How to parse URL using JavaScript?</a></li>
-  <li><a href="#D-14">14. Manipulating HTML Elements with JavaScript</a></li>
-  <li><a href="#D-15">15. How to use innerHTML in JavaScript?</a></li>
-  <li><a href="#D-16">16. JavaScript innerHTML</a></li>
+  <li><a href="#D01">01. JavaScript - How to Manipulate DOM Elements?</a></li>
+  <li><a href="#D02">02. How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</a></li>
+  <li><a href="#D03">03. How to select DOM Elements in JavaScript?</a></li>
+  <li><a href="#D04">04. How to get all ID's of the DOM elements with JavaScript?</a></li>
+  <li><a href="#D05">05. JavaScript – How to Get the Data Attributes of an Element?</a></li>
+  <li><a href="#D06">06. How To Get Element By Class Name In JavaScript?</a></li>
+  <li><a href="#D07">07. How to Get Value by Class Name using JavaScript?</a></li>
+  <li><a href="#D08">08. How to Get Domain Name From URL in JavaScript?</a></li>
+  <li><a href="#D09">09. How to Get Protocol, Domain and Port from URL using JavaScript?</a></li>
+  <li><a href="#D10">10. How to Extract the Host Name from URL using JavaScript?</a></li>
+  <li><a href="#D11">11. How to Get the Current URL using JavaScript?</a></li>
+  <li><a href="#D12">12. How to Get URL Parameters using JavaScript?</a></li>
+  <li><a href="#D13">13. How to Parse URL using JavaScript?</a></li>
+  <li><a href="#D14">14. Manipulating HTML Elements with JavaScript</a></li>
+  <li><a href="#D15">15. How to use <b><mark>innerHTML</mark></b> in JavaScript?</a></li>
+  <li><a href="#D16">16. JavaScript <b><mark>innerHTML</mark></b></a></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of dom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 align="center">DOM</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-01">01 JavaScript - How to Manipulate DOM Elements?</h2>
+<h2 id="D01">01 JavaScript - How to Manipulate DOM Elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <b><mark>DOM</mark></b> stands for the <b><mark>Document Object Model (DOM)</mark></b>, which 
 allows us to interact with the document and change its structure, style, and content. We can use 
@@ -267,7 +267,7 @@ console.log(userId); // Outputs: 12345
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</h2>
+<h2 id="D02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in JavaScript is a fundamental 
 task that enables developers to dynamically manipulate the appearance and behavior of web pages. 
@@ -295,11 +295,7 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-element.classList.add("className")
-```
-
+<pre>element.classList.add("className")</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the implementation of the above-explained approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -332,7 +328,6 @@ element.classList.add("className")
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 03. manipulate class ~~~~~~~~~~~~~~~~-->
 <p align="center" >
@@ -396,7 +391,6 @@ add another one to it or else it will append our new class to it.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 04.  ~~~~~~~~~~~~~~~~-->
 <p align="center" >
@@ -412,7 +406,7 @@ add another one to it or else it will append our new class to it.
 </p>
 <!-- image004.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-03">03. How to select DOM Elements in JavaScript?</h2>
+<h2 id="D03">03. How to select DOM Elements in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Selecting <b><mark>DOM (Document Object Model)</mark></b> elements is a fundamental aspect of web 
 development with JavaScript. It allows developers to interact with and manipulate elements 
@@ -425,14 +419,14 @@ content, adding event listeners, or modifying styles.</p>
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><href id="#01">1. Using <b><mark>getElementById</mark></b></a></li>
-  <li><href id="#02">2. Using <b><mark>getElementsByClassName</mark></b></a></li>
-  <li><href id="#03">3. Using <b><mark>getElementsByTagName</mark></b></a></li>
-  <li><href id="#04">4. Using <b><mark>querySelector</mark></b></a></li>
-  <li><href id="#05">5. Using <b><mark>querySelectorAll</mark></b></a></li>
+  <li><href id="#D03-01">1. Using <b><mark>getElementById</mark></b></a></li>
+  <li><href id="#D03-02">2. Using <b><mark>getElementsByClassName</mark></b></a></li>
+  <li><href id="#D03-03">3. Using <b><mark>getElementsByTagName</mark></b></a></li>
+  <li><href id="#D03-04">4. Using <b><mark>querySelector</mark></b></a></li>
+  <li><href id="#D03-05">5. Using <b><mark>querySelectorAll</mark></b></a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="01">1. Using <b><mark>getElementById</mark></b></h3>
+<h3 id="D03-01">1. Using <b><mark>getElementById</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects a single element by its unique ID attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -468,7 +462,6 @@ content, adding event listeners, or modifying styles.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~-->
 <p align="center" >
@@ -484,7 +477,7 @@ content, adding event listeners, or modifying styles.</p>
 </p>
 <!-- image005.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="02">2. Using <b><mark>getElementsByClassName</mark></b></h3>
+<h3 id="D03-02">2. Using <b><mark>getElementsByClassName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects elements based on their class attribute. It returns a collection of elements 
 with the specified class name.</p>
@@ -523,7 +516,6 @@ with the specified class name.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 06.  ~~~~~~~~~~~~~~~~-->
 <p align="center" >
@@ -539,7 +531,7 @@ with the specified class name.</p>
 </p>
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="03">03. Using <b><mark>getElementsByTagName</mark></b></h3>
+<h3 id="D03-03">03. Using <b><mark>getElementsByTagName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects elements based on their tag name. It returns a collection of elements with the 
 specified tag name.</p>
@@ -593,7 +585,7 @@ specified tag name.</p>
 </p>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="04">04. Using querySelector</h3>
+<h3 id="D03-04">04. Using querySelector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method selects the first element that matches a specified CSS selector. It returns only 
 one element.</p>
@@ -648,7 +640,7 @@ one element.</p>
 </p>
 <!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="05">05. Using querySelectorAll</h3>
+<h3 id="D03-05">05. Using querySelectorAll</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> containing 
 all elements that match the specified CSS selector.</p>
@@ -704,7 +696,7 @@ all elements that match the specified CSS selector.</p>
 </p>
 <!-- image009.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-04">04. How to get all ID of the DOM elements with JavaScript?</h2>
+<h2 id="D04">04. How to get all ID of the DOM elements with JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Given a HTML document and the task is to get the all ID of the DOM elements in an array. There are 
 two methods to solve this problem which are discusses below:</p>
@@ -762,7 +754,6 @@ has an ID. If it has an ID then push it into the array.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~-->
 <p align="center" >
@@ -847,7 +838,7 @@ has an ID. If it has an ID then push it into the array.</p>
 </p>
 <!-- image011.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-05">05. JavaScript – How to Get the Data Attributes of an Element?</h2>
+<h2 id="D05">05. JavaScript – How to Get the Data Attributes of an Element?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here are the various methods to get the data attributes of an element using JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -983,7 +974,7 @@ accessing all at once.</p>
 </p>
 <!-- image013.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-06">06. How To Get Element By Class Name In JavaScript?</h2>
+<h2 id="D06">06. How To Get Element By Class Name In JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When working with the DOM in JavaScript, selecting elements by their class names is a common 
 task. JavaScript provides several methods to achieve this, whether we need to select one or 
@@ -1002,12 +993,12 @@ class name in JavaScript.</p>
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Using document.getElementsByClassName()</li>
-  <li>Using document.querySelector()</li>
-  <li>Using document.querySelectorAll()</li>
+  <li>Using <b><mark>document.getElementsByClassName()</mark></b></li>
+  <li>Using <b><mark>document.querySelector()</mark></b></li>
+  <li>Using <b><mark>document.querySelectorAll()</mark></b></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1. Using document.getElementsByClassName()</h3>
+<h3>1. Using <b><mark>document.getElementsByClassName()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this approach we are using the <b><mark>document.getElementsByClassName()</mark></b> 
 method. This method selects all elements with a specific class name and returns a live 
@@ -1019,7 +1010,7 @@ label. In this, list gets updated automatically if elements are added or removed
 <pre><code>var elements = document.getElementsByClassName("className");</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example we are using the <b><mark>getElementsByClassName()</mark></b> method 
-to get element by class name in javascript.</h4>
+to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -1080,7 +1071,7 @@ to get element by class name in javascript.</h4>
 <!-- image014.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>2. Using document.querySelector()</h3>
+<h3>2. Using <b><mark>document.querySelector()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this approach we are using the <b><mark>document.querySelector()</mark></b> method. This method 
 returns the first element that matches the specified selector (class name). It is useful when you 
@@ -1147,7 +1138,7 @@ element by class name and we will change the background color of selected class 
 <!-- image015.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>3. Using document.querySelectorAll()</h3>
+<h3>3. Using <b><mark>document.querySelectorAll()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this approach we are using the document.querySelectorAll() method. This method finds all 
 elements that match a specific CSS selector, like class name. It gives you a static list, 
@@ -1226,14 +1217,14 @@ print all the content which have that class name.</h4>
 </p>
 <!-- image016.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-07">07. How to Get Value by Class Name using JavaScript?</h2>
+<h2 id="D07">07. How to Get Value by Class Name using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This article will show you how to use JavaScript to get value by class name. To get the value 
 of an element by its class name in JavaScript, you can use the <b><mark>getElementsByClassName()</mark></b> 
 method. This method returns an array-like object of all elements with the specified class name. You can 
 then access the value property of the first element in the array to get the value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example, we will get the classname of an element.</h4>
+<h4>Example: In this example, we will get the <b><mark>classname</mark></b> of an element.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -1375,7 +1366,7 @@ then access the value property of the first element in the array to get the valu
 </a>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-08">08. How to Get Domain Name From URL in JavaScript?</h2>
+<h2 id="D08">08. How to Get Domain Name From URL in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In JavaScript, the URL object allows you to easily parse URLs and access their components. 
 This is useful when you need to extract specific parts of a URL, such as the domain name. The 
@@ -1485,18 +1476,21 @@ available, you can use regular expressions to extract the domain from the URL st
 <!-- image034.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-09">09. How to get protocol, domain and port from URL using JavaScript?</h2>
+<h2 id="D09">09. How to get protocol, domain and port from URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The protocol, domain, and port of the current page can be found by two methods:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Method 1: Using location.protocol, location.hostname, location.port methods: The location 
-interface has various methods that can be used to return the required properties.</h4>
+<h4>Method 1: Using <b><mark>location.protocol</mark></b>, <b><mark>location.hostname</mark></b>, 
+<b><mark>location.port</mark></b> methods: The location interface has various methods that can be 
+used to return the required properties.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The location.protocol property is used to return the protocol scheme of the URL along with the final colon(:).</li>
-  <li>The location.hostname is used to return the domain name of the URL.</li>
-  <li>The location.port property is used to return the port of the URL. It returns nothing if the port is not described explicitly in the URL.</li>
+  <li>The <b><mark>location.protocol</mark></b> property is used to return the protocol scheme 
+    of the URL along with the final colon(:).</li>
+  <li>The <b><mark>location.hostname</mark></b> is used to return the domain name of the URL.</li>
+  <li>The <b><mark>location.port</mark></b> property is used to return the port of the URL. It 
+    returns nothing if the port is not described explicitly in the URL.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -1573,7 +1567,7 @@ port = location.port;
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Before Clicking the button:</li>
+  <li><b>Before</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 35.  ~~~~~~~~~~~~~~~~-->
@@ -1590,7 +1584,7 @@ port = location.port;
 </p>
 <!-- image035.png -->
 <ul>
-  <li>After Clicking the button:</li>
+  <li><b>After</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 36.  ~~~~~~~~~~~~~~~~-->
@@ -1612,10 +1606,10 @@ port = location.port;
 be used for getting the port, domain, and protocol as it has inbuilt methods to get these values.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The url.protocol property is used to return the protocol scheme of the URL along with the 
+  <li>The <b><mark>url.protocol</mark></b> property is used to return the protocol scheme of the URL along with the 
     final colon(:).</li>
-  <li>The url.hostname is used to return the domain of the URL.</li>
-  <li>The url.port property is used to return the port of the URL. It returns ” if the port is 
+  <li>The <b><mark>url.hostname</mark></b> is used to return the domain of the URL.</li>
+  <li>The <b><mark>url.port</mark></b> property is used to return the port of the URL. It returns ” if the port is 
     not described explicitly.</li>
 </ul>
 <p>Note: This API is not supported in Internet Explorer 11.</p>
@@ -1689,7 +1683,7 @@ port = url_object.port;
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Before Clicking the button:</li>
+  <li><b>Before</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 37.  ~~~~~~~~~~~~~~~~-->
@@ -1705,7 +1699,7 @@ port = url_object.port;
 </a>
 </p><!-- image037.png -->
 <ul>
-  <li>After Clicking the button:</li>
+  <li><b>After</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 38.  ~~~~~~~~~~~~~~~~-->
@@ -1722,7 +1716,7 @@ port = url_object.port;
 </p>
 <!-- image038.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-10">10. How to Extract the Host Name from URL using JavaScript?</h2>
+<h2 id="D10">10. How to Extract the Host Name from URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Extracting the hostname from a URL using JavaScript means retrieving the domain part from a 
 complete web address. This can be done using JavaScript’s URL object or methods like 
@@ -1733,11 +1727,11 @@ window.location, which allow easy access to the hostname of a URL.</p>
 <p>A <b><mark>URL (Uniform Resource Locator)</mark></b> is the web address used to access 
 resources on the internet, such as webpages, images, or files, through browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Using the hostname property of the current window location</h3>
+<h3>Using the <b><mark>hostname</mark></b> property of the current window location</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Here we are using JavaScript’s window.location object to extract the full URL and hostname. 
-The window.location.href outputs the current page URL, while window.location.hostname retrieves 
-only the domain part (hostname) of that URL.</p>
+<p>Here we are using JavaScript’s <b><mark>window.location</mark></b> object to extract the full 
+URL and hostname. The <b><mark>window.location.href</mark></b> outputs the current page URL, while 
+<b><mark>window.location.hostname</mark></b> retrieves only the domain part (hostname) of that URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1796,10 +1790,10 @@ hostname.</h4>
 </p>
 <!-- image039.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Extracting Hostname Using indexOf and Looping</h3>
+<h3>Extracting Hostname using <b><mark>indexOf</mark></b> and <b><mark>Looping</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here we extracts the hostname from a user-provided URL by locating the position of “://” using 
-indexOf(). It then loops through characters starting after “://” until it encounters a “/”, 
+<b><mark>indexOf()</mark></b>. It then loops through characters starting after “://” until it encounters a “/”, 
 constructing and displaying the extracted hostname on the page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
@@ -1867,11 +1861,11 @@ extraction of the hostname on that URL.</h4>
 </p>
 <!-- image040.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-11">11. How to Get the Current URL using JavaScript?</h2>
+<h2 id="D11">11. How to Get the Current URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here are two different methods to get the current URL in JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1. Using <b><mark>Document.URL</mark></b> Property</h3>
+<h3 id="D11-01">01. Using <b><mark>Document.URL</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The DOM URL property in HTML is used to return a string that contains the complete URL of 
 the current document. The string also includes the HTTP protocol such as ( http://).</p>
@@ -1898,7 +1892,7 @@ console.log(currentUrl);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>http://127.0.0.1:5500/index.html</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>2. Using <b><mark>window.location.href</mark></b> Property</h3>
+<h3 id="D11-02">02. Using <b><mark>window.location.href</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <b><mark>window.location.href</mark></b> property of the HTML DOM Window object returns a string containing 
 the URL of the current page. This property is part of the Location object, which contains 
@@ -1926,7 +1920,7 @@ console.log(currentUrl);
 <p>Note: Use the HTML file to copy paste and run the given code and you can see the output in 
 the console, it will print the URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-12">12. How to get URL Parameters using JavaScript?</h2>
+<h2 id="D12">12. How to get URL Parameters using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To get URL parameters using JavaScript means extracting the query string values from a 
 URL. URL parameters, found after the ? in a URL, pass data like search terms or user 
@@ -2114,7 +2108,7 @@ https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks
 <!-- image042.gif -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-13">13. How to parse URL using JavaScript?</h2>
+<h2 id="D13">13. How to parse URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Given an URL and the task is to parse that URL and retrieve all the related data using 
 JavaScript. Example:</p>
@@ -2209,7 +2203,7 @@ search=query
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-14">14. Manipulating HTML Elements with JavaScript</h2>
+<h2 id="D14">14. Manipulating HTML Elements with JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>JavaScript is a powerful language that can be used to manipulate the HTML elements on a 
 web page. By using JavaScript, we can access the HTML elements and modify their attributes, 
@@ -2447,9 +2441,9 @@ that can be used to create dynamic and interactive web pages. By using the metho
 above, we can identify and access the HTML elements on a web page and modify their properties 
 to create the desired behavior.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-15">15. How to use innerHTML in JavaScript?</h2>
+<h2 id="D15">15. How to use innerHTML in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The innerHTML property in JavaScript allows you to get or set the HTML content of an element 
+<p>The <b><mark>innerHTML</mark></b> property in JavaScript allows you to get or set the HTML content of an element 
 as a string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax For</h4>
@@ -2472,7 +2466,7 @@ element.innerHTML = "New HTML content";
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Here are step-by-step instructions on how to use the innerHTML property in JavaScript</h3>
+<h3>Here are step-by-step instructions on how to use the <b><mark>innerHTML</mark></b> property in JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Access an HTML element</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2517,7 +2511,7 @@ console.log(element.innerHTML);
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: Here, we have show the code on how to use innerHTML in JavaScript.</h4>
+<h4>Example: Here, we have show the code on how to use <b><mark>innerHTML</mark></b> in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
@@ -2568,7 +2562,7 @@ console.log(element.innerHTML);
 </p>
 <!-- image046.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D-16">16. JavaScript innerHTML</h2>
+<h2 id="D16">16. JavaScript <b><mark>innerHTML</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <b><mark>innerHTML</mark></b> property in JavScript is used to append the dynamic HTML or 
 text content to an element using JavaScript. It is designed to add dynamic HTML, but developers 
@@ -2577,9 +2571,9 @@ it using DOM manipulation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>selctedHTMLElement.innerHTML = "contentToAppend";</pre>
+<pre>selectedHTMLElement.innerHTML = "contentToAppend";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 1: The below code shows a basic implementation of innerHTML property to append 
+<h4>Example 1: The below code shows a basic implementation of <b><mark>innerHTML</mark></b> property to append 
 HTML directly to an element.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -2646,7 +2640,7 @@ HTML directly to an element.</h4>
 <!-- image047.png -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 2: The below code implements the innerHTML property with click event to add HTML onclick to the button.</h4>
+<h4>Example 2: The below code implements the <b><mark>innerHTML</mark></b> property with click event to add HTML onclick to the button.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
