@@ -52,20 +52,20 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 </ul>
 
 <pre>
-<body&gt;
-  <div id="example1"&gt;This is the original content using <b><mark>innerHTML</mark></b>.</div&gt;
-  <div id="example2"&gt;This is the original text content using <b><mark>textContent</mark></b>.</div&gt;
-  <button onclick="changeContent()"&gt;Change Content</button&gt;
-  <script&gt;
+&lt;body&gt;
+  &lt;div id="example1"&gt;This is the original content using &lt;b>&lt;mark>innerHTML&lt;/mark>&lt;/b>.&lt;/div&gt;
+  &lt;div id="example2"&gt;This is the original text content using &lt;b>&lt;mark>textContent&lt;/mark>&lt;/b>.&lt;/div&gt;
+  &lt;button onclick="changeContent()"&gt;Change Content&lt;/button&gt;
+  &lt;script&gt;
   // Function to change content
   function changeContent() {
     document.getElementById("example1").innerHTML = 
-      "<strong&gt;This is changed using innerHTML!</strong&gt;";
+      "&lt;strong&gt;This is changed using innerHTML!&lt;/strong&gt;";
     document.getElementById("example2").textContent = 
       "This is changed using textContent!";
     }
-  </script&gt;
-</body&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -112,9 +112,9 @@ This is helpful for styling or applying animations.</p>
 </ul>
 
 <pre>
-<html&gt;
-<head&gt;
-  <style&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
     .highlight {
       color: red;
       font-weight: bold;
@@ -122,15 +122,15 @@ This is helpful for styling or applying animations.</p>
     .bold {
       font-weight: bold;
     }
-  </style&gt;
-</head&gt;
-<body&gt;
-  <div id="example" class="bold"&gt;This is a text element with the "bold" class.</div&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="example" class="bold"&gt;This is a text element with the "bold" class.&lt;/div&gt;
 
-  <button onclick="addClass()"&gt;Add 'highlight' Class</button&gt;
-  <button onclick="removeClass()"&gt;Remove 'bold' Class</button&gt;
-  <button onclick="toggleClass()"&gt;Toggle 'highlight' Class</button&gt;
-  <script&gt;
+  &lt;button onclick="addClass()"&gt;Add 'highlight' Class&lt;/button&gt;
+  &lt;button onclick="removeClass()"&gt;Remove 'bold' Class&lt;/button&gt;
+  &lt;button onclick="toggleClass()"&gt;Toggle 'highlight' Class&lt;/button&gt;
+  &lt;script&gt;
     function addClass() {
       document.getElementById("example").classList.add("highlight");
     }
@@ -140,11 +140,10 @@ This is helpful for styling or applying animations.</p>
     function toggleClass() {
       document.getElementById("example").classList.toggle("highlight");
     }
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -187,7 +186,6 @@ document.getElementById("demo").style.fontSize = "20px";
 // Adding more than one style
 document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;";
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Create, Add, and Remove Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -198,7 +196,6 @@ can do this easily with the following methods;</p>
   <li><b><mark>appendChild()</mark></b>: Adds a new element to a parent element.</li>
   <li><b><mark>removeChild()</mark></b>: Removes a child element from a parent.</li>
 </ul>
-
 <pre>
 // Create a new element
 let newDiv = document.createElement("div");
@@ -208,13 +205,11 @@ document.body.appendChild(newDiv);
 // Remove an element from the DOM
 document.body.removeChild(newDiv);
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>5. Insert Elements at a Specific Position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can insert new elements at specific positions relative to existing elements using methods 
 like <b><mark>insertBefore()</mark></b>.</p>
-
 <pre>
 // Create a new element
 let newDiv = document.createElement("div");
@@ -226,7 +221,6 @@ let referenceNode = document.getElementById("referenceElement");
 // Insert the new element before the reference element
 document.body.insertBefore(newDiv, referenceNode);
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>6. Manipulate Element Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -247,7 +241,6 @@ document.getElementById("image").setAttribute("src", "new-image.jpg");
 // Remove an attribute
 document.getElementById("image").removeAttribute("src");
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>7. Manipulate Data Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -265,7 +258,6 @@ document.getElementById("demo").dataset.userId = "12345";
 let userId = document.getElementById("demo").dataset.userId;
 console.log(userId); // Outputs: 12345
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -299,33 +291,31 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the implementation of the above-explained approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html&gt;
-<head&gt;
-  <style&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
     .geek {
       background-color: green;
       font-size: 50px;
     }
-  </style&gt;
-</head&gt;
-<body&gt;
-  <button onclick="myClass()"&gt;Try it</button&gt;
-  <div id="gfg"&gt;Geeks for Geeks</div&gt;
-  <script&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button onclick="myClass()"&gt;Try it&lt;/button&gt;
+  &lt;div id="gfg"&gt;Geeks for Geeks&lt;/div&gt;
+  &lt;script&gt;
     function myClass() {
       let elem = document.getElementById("gfg");
 
       // Adding class to div element 
       elem.classList.add("geek");
     } 
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -355,25 +345,24 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the implementation of the above-explained approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html&gt;
-<head&gt;
-  <style&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
     .geekClass {
       background-color: green;
       text-align: center;
       font-size: 50px;
     }
-  </style&gt;
-</head&gt;
-<body&gt;
-  <div id="gfg"&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="gfg"&gt;
       Geeks For Geeks
-  </div&gt;
-  <button onclick="myClassName()"&gt;Add Class</button&gt;
-  <script&gt;
+  &lt;/div&gt;
+  &lt;button onclick="myClassName()"&gt;Add Class&lt;/button&gt;
+  &lt;script&gt;
     function myClassName() {
       let element = document.getElementById("gfg");
       // Adding the class geekClass to element 
@@ -384,11 +373,10 @@ add another one to it or else it will append our new class to it.
       // one more class to the element 
       element.className += " geekClass";
     } 
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -414,7 +402,6 @@ on a webpage dynamically. Proper selection of elements is crucial for tasks such
 content, adding event listeners, or modifying styles.</p>
 
 <p>Below are the approaches to select DOM elements in JavaScript:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -436,30 +423,28 @@ content, adding event listeners, or modifying styles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport" content="width=device-width, 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, 
     initial-scale=1.0"&gt;
-  <title&gt;getElementById Example</title&gt;
-</head&gt;
-<body&gt;
-  <h1 id="gfg"&gt;GeeksForGeeks</h1&gt;
-  <script&gt;
+  &lt;title&gt;getElementById Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id="gfg"&gt;GeeksForGeeks&lt;/h1&gt;
+  &lt;script&gt;
   // styling the h1 tag
   const element = document.getElementById('gfg');
     element.style.color = "green";
     element.style.textAlign = "center";
     element.style.margin = "30px";
     element.style.fontSize = "30px";
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -488,20 +473,19 @@ with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport" 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
     content="width=device-width, initial-scale=1.0"&gt;
-  <title&gt;getElementsByClassName Example</title&gt;
-</head&gt;
-<body&gt;
-  <h1 class="selector"&gt;GeeksForGeeks</h1&gt;
-  <h2 class="selector"&gt;DOM selector in JavaScript</h2&gt;
-  <script&gt;
+  &lt;title&gt;getElementsByClassName Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="selector"&gt;GeeksForGeeks&lt;/h1&gt;
+  &lt;h2 class="selector"&gt;DOM selector in JavaScript&lt;/h2&gt;
+  &lt;script&gt;
     const elements = 
       documSizeent.getElementsByClassName('selector');
       elements[0].style.color = "green";
@@ -509,11 +493,10 @@ with the specified class name.</p>
       elements[0].style.textAlign = "center";
       elements[1].style.textAlign = "center";
       elements[0].style.marginTop = "60px";
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -542,20 +525,19 @@ specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport" 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
     content="width=device-width, initial-scale=1.0"&gt;
-  <title&gt;getElementsByTagName Example</title&gt;
-</head&gt;
-<body&gt;
-  <p&gt;Thanks for visiting GFG</p&gt;
-  <p&gt;This is showing how to select DOM element using tag name</p&gt;
-  <script&gt;
+  &lt;title&gt;getElementsByTagName Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Thanks for visiting GFG&lt;/p&gt;
+  &lt;p&gt;This is showing how to select DOM element using tag name&lt;/p&gt;
+  &lt;script&gt;
     const paragraphs = document.getElementsByTagName('p');
       paragraphs[0].style.color = "green";
       paragraphs[1].style.color = "blue";
@@ -563,11 +545,10 @@ specified tag name.</p>
       paragraphs[0].style.textAlign = "center";
       paragraphs[1].style.textAlign = "center";
       paragraphs[0].style.marginTop = "60px";
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -596,33 +577,29 @@ one element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport" 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
     content="width=device-width,
       initial-scale=1.0"&gt;
-  <title&gt;querySelector Example</title&gt;
-</head&gt;
-<body&gt;
-  <div class="gfg"&gt;GeeksForGeeks</div&gt;
-
-  <script&gt;
+  &lt;title&gt;querySelector Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="gfg"&gt;GeeksForGeeks&lt;/div&gt;
+  &lt;script&gt;
     const element = 
       document.querySelector('.gfg');
       element.style.color = "green";
       element.style.textAlign = "center";
       element.style.margin = "30px";
       element.style.fontSize = "30px";
-  </script&gt;
-</body&gt;
-  
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -651,34 +628,32 @@ all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport" 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
     content="width=device-width, initial-scale=1.0"&gt;
-  <title&gt;querySelectorAll Example</title&gt;
-</head&gt;
-<body&gt;
-  <h1 class="selector"&gt;GeeksForGeeks</h1&gt;
-  <p class="selector"&gt;
+  &lt;title&gt;querySelectorAll Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="selector"&gt;GeeksForGeeks&lt;/h1&gt;
+  &lt;p class="selector"&gt;
     This is showing how to select DOM element
     using tag name
-  </p&gt;
-  <script&gt;
+  &lt;/p&gt;
+  &lt;script&gt;
     const elements = document.querySelectorAll('.selector');
       elements[0].style.color = "green";
       elements[1].style.color = "red";
       elements[0].style.textAlign = "center";
       elements[1].style.textAlign = "center";
       elements[0].style.marginTop = "60px";
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -709,49 +684,45 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example implements the above approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <title&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;
     How to get all ID of the DOM
     elements with JavaScript ?
-  </title&gt;
-  <script src=
+  &lt;/title&gt;
+  &lt;script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;
-  </script&gt;
-</head&gt;
- 
-<body&gt;
-  <h1 style="color: green"&gt;
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color: green"&gt;
     GeeksforGeeks
-  </h1&gt;
-  <p&gt;
+  &lt;/h1&gt;
+  &lt;p&gt;
     Click on the button to get 
     all IDs in an array.
-  </p&gt;
-  <button onclick="muFunc()"&gt;
+  &lt;/p&gt;
+  &lt;button onclick="muFunc()"&gt;
     Click Here
-  </button&gt;
- 
-  <p id="GFG"&gt;</p&gt;
-   <script&gt;
-     let res = document.getElementById("GFG");
-     function muFunc() {
-       let ID = [];
-       $("*").each(function () {
-         if (this.id) {
-           ID.push(this.id);
-         }
-       });
-       res.innerHTML = ID;
-     }
-   </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/button&gt;
+  &lt;p id="GFG"&gt;&lt;/p&gt;
+  &lt;script&gt;
+    let res = document.getElementById("GFG");
+    function muFunc() {
+      let ID = [];
+      $("*").each(function () {
+        if (this.id) {
+          ID.push(this.id);
+        }
+      });
+      res.innerHTML = ID;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -780,32 +751,31 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example implements the above approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <title&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;
     How to get all ID of the DOM
     elements with JavaScript ?
-  </title&gt;
-  <script src= 
+  &lt;/title&gt;
+  &lt;script src= 
     "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;
-  </script&gt;
-</head&gt;
-<body&gt;
-  <h1 style="color: green"&gt;
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color: green"&gt;
     GeeksforGeeks
-  </h1&gt;
-  <p&gt;
+  &lt;/h1&gt;
+  &lt;p&gt;
     Click on the button to get 
     all IDs in an array.
-  </p&gt;
-   <button id="Geeks" onclick="muFunc()"&gt;
+  &lt;/p&gt;
+   &lt;button id="Geeks" onclick="muFunc()"&gt;
     Click Here
-  </button&gt;
-  <p id="GFG"&gt;</p&gt;
-  <script&gt;
+  &lt;/button&gt;
+  &lt;p id="GFG"&gt;&lt;/p&gt;
+  &lt;script&gt;
     let res = document.getElementById("GFG");
     function muFunc() {
       let ID = [];
@@ -816,11 +786,10 @@ has an ID. If it has an ID then push it into the array.</p>
     }).get();
     res.innerHTML = ID;
   }
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -856,45 +825,38 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 </code></pre>
 
 <pre>
-<!DOCTYPE html&gt;
-<html&gt;
-  
-<body&gt;
-    <div
-        id="element"
-        data-typeId="123"
-        data-name="name"
-        data-points="10"
-        data-important="true"&gt;
-        This is the Target Element.
-    </div&gt;
-
-    <br /&gt;
-    <button onclick="myFunction()"&gt;
-      	Get Attributes
-  	</button&gt;
-    
-  	<p id="result"&gt;</p&gt;
-
-    <script&gt;
-        let result = document.getElementById("result");
-        let e = document.getElementById("element");
-
-        function myFunction() {
-            let jsonData = JSON.stringify({
-                id: parseInt(e.dataset.typeid),
-                points: parseInt(e.dataset.points),
-                important: e.dataset.important,
-                dataName: e.dataset.name
-            });
-            result.innerHTML = jsonData;
-        }
-    </script&gt;
-</body&gt;
-  
-</html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;div
+    id="element"
+    data-typeId="123"
+    data-name="name"
+    data-points="10"
+    data-important="true"&gt;
+    This is the Target Element.
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;button onclick="myFunction()"&gt;
+    Get Attributes
+  &lt;/button&gt;
+  &lt;p id="result"&gt;&lt;/p&gt;
+  &lt;script&gt;
+    let result = document.getElementById("result");
+    let e = document.getElementById("element");
+    function myFunction() {
+      let jsonData = JSON.stringify({
+        id: parseInt(e.dataset.typeid),
+        points: parseInt(e.dataset.points),
+        important: e.dataset.important,
+        dataName: e.dataset.name
+      });
+      result.innerHTML = jsonData;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -918,45 +880,38 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 attribute from an HTML element. To get data attributes, use <b><mark>element.getAttribute(‘data-attribute’)</mark></b>. 
 This method allows precise selection and manipulation of individual data attributes without 
 accessing all at once.</p>
-
 <pre>
-<!DOCTYPE html&gt;
-<html&gt;
-  
-<body&gt;
-    <div
-        id="target"
-        data-typeId="123"
-        data-name="name"
-        data-points="10"
-        data-important="true"
-    &gt;
-        This is the Target Element.
-    </div&gt;
-
-    <br /&gt;
-    <button onclick="myFunction()"&gt;Get Attributes</button&gt;
-    <p id="result"&gt;</p&gt;
-
-    <script&gt;
-        let result = document.getElementById("result");
-        let e = document.getElementById("target");
-
-        function myFunction() {
-            let jsonData = JSON.stringify({
-                id: parseInt(e.getAttribute('data-typeId')),
-                points: parseInt(e.getAttribute('data-points')),
-                important: e.getAttribute('data-important'),
-                dataName: e.getAttribute('data-name')
-            });
-            result.innerHTML = jsonData;
-        }
-    </script&gt;
-</body&gt;
-  
-</html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;div
+    id="target"
+    data-typeId="123"
+    data-name="name"
+    data-points="10"
+    data-important="true"
+  &gt;
+    This is the Target Element.
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;button onclick="myFunction()"&gt;Get Attributes&lt;/button&gt;
+  &lt;p id="result"&gt;&lt;/p&gt;
+  &lt;script&gt;
+    let result = document.getElementById("result");
+    let e = document.getElementById("target");
+    function myFunction() {
+      let jsonData = JSON.stringify({
+        id: parseInt(e.getAttribute('data-typeId')),
+        points: parseInt(e.getAttribute('data-points')),
+        important: e.getAttribute('data-important'),
+        dataName: e.getAttribute('data-name')
+      });
+      result.innerHTML = jsonData;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1012,47 +967,40 @@ label. In this, list gets updated automatically if elements are added or removed
 <h4>Example: In this example we are using the <b><mark>getElementsByClassName()</mark></b> method 
 to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-
-<head&gt;
-    <meta charset="UTF-8"&gt;
-    <meta name="viewport"
-     content="width=device-width,
-      initial-scale=1.0"&gt;
-    <title&gt;Get Elements by Class Name</title&gt;
-    <style&gt;
-        .output {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-    </style&gt;
-</head&gt;
-
-<body&gt;
-    <div class="box"&gt;Box 1</div&gt;
-    <div class="box"&gt;Box 2</div&gt;
-    <div class="box"&gt;Box 3</div&gt;
-
-    <div class="output" id="output1"&gt;</div&gt;
-
-    <script&gt;
-        var boxes =
-         document.getElementsByClassName("box");
-        var output =
-         document.getElementById("output1");
-        output.innerHTML = 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0"&gt;
+  &lt;title&gt;Get Elements by Class Name&lt;/title&gt;
+  &lt;style&gt;
+    .output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="box"&gt;Box 1&lt;/div&gt;
+  &lt;div class="box"&gt;Box 2&lt;/div&gt;
+  &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;div class="output" id="output1"&gt;&lt;/div&gt;
+  &lt;script&gt;
+    var boxes =
+      document.getElementsByClassName("box");
+    var output =
+      document.getElementById("output1");
+      output.innerHTML = 
         "Number of boxes: " + boxes.length;
-    </script&gt;
-</body&gt;
-
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1084,42 +1032,36 @@ only need to select a single element by class name.</p>
 <h4>Example: In this example we are using the <b><mark>querySelector()</mark></b> method to get 
 element by class name and we will change the background color of selected class in javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-
-<head&gt;
-    <meta charset="UTF-8"&gt;
-    <meta name="viewport"
-     content="width=device-width,'' initial-scale=1.0"&gt;
-    <title&gt;Query Selector Example</title&gt;
-    <style&gt;
-        .box {
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ccc;
-        }
-    </style&gt;
-</head&gt;
-
-<body&gt;
-    <div class="box"&gt;Box 1</div&gt;
-    <div class="box"&gt;Box 2</div&gt;
-    <div class="box"&gt;Box 3</div&gt;
-
-    <script&gt;
-        var firstBox = 
-        document.querySelector(".box");
-        firstBox.style.backgroundColor =
-         "lightblue"; // Change the background color to light blue
-        firstBox.style.color = "white"; // Change the text color to white
-    </script&gt;
-</body&gt;
-
-</html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+    content="width=device-width,'' initial-scale=1.0"&gt;
+  &lt;title&gt;Query Selector Example&lt;/title&gt;
+  &lt;style&gt;
+    .box {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="box"&gt;Box 1&lt;/div&gt;
+  &lt;div class="box"&gt;Box 2&lt;/div&gt;
+  &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;script&gt;
+    var firstBox = 
+      document.querySelector(".box");
+    firstBox.style.backgroundColor =
+       "lightblue"; // Change the background color to light blue
+    firstBox.style.color = "white"; // Change the text color to white
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1136,7 +1078,6 @@ element by class name and we will change the background color of selected class 
 </a>
 </p>
 <!-- image015.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using <b><mark>document.querySelectorAll()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1146,52 +1087,49 @@ which means it wont automatically update if page changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 var elements = document.querySelectorAll(".className");
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In below example we are using the <b><mark>querySelectorAll</mark></b> and we will 
 print all the content which have that class name.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html&gt;
-<html lang="en"&gt;
-<head&gt;
-  <meta charset="UTF-8"&gt;
-  <meta name="viewport"
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
     content="width=device-width,
     initial-scale=1.0"&gt;
-  <title&gt;Query Selector All Example</title&gt;
-  <style&gt;
+  &lt;title&gt;Query Selector All Example&lt;/title&gt;
+  &lt;style&gt;
     .output {
       margin-top: 20px;
       padding: 10px;
       border: 1px solid #ccc;
       background-color: #f9f9f9;
     }
-  </style&gt;
-</head&gt;
-<body&gt;
-  <div class="box"&gt;Box 1</div&gt;
-  <div class="box"&gt;Box 2</div&gt;
-  <div class="box"&gt;Box 3</div&gt;
-  <div class="output" id="output3"&gt;</div&gt;
-  <script&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="box"&gt;Box 1&lt;/div&gt;
+  &lt;div class="box"&gt;Box 2&lt;/div&gt;
+  &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;div class="output" id="output3"&gt;&lt;/div&gt;
+  &lt;script&gt;
     var allBoxes = 
       document.querySelectorAll(".box");
     var output = 
       document.getElementById("output3");
-    var content = "Contents of all boxes: <br&gt;";
+    var content = "Contents of all boxes: &lt;br&gt;";
     allBoxes.forEach(function (box) {
-      content += box.innerText + "<br&gt;";
+      content += box.innerText + "&lt;br&gt;";
     });
     output.innerHTML = content;
-  </script&gt;
-</body&gt;
-</html&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -1220,33 +1158,33 @@ then access the value property of the first element in the array to get the valu
 <h4>Example: In this example, we will get the <b><mark>classname</mark></b> of an element.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-    "width=device-width, initial-scale=1.0">
-  <title>Get Value by Class Name</title>
-</head>
-<body style="text-align: center;">
-  <h1 class="heading">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content=
+    "width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Get Value by Class Name&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="text-align: center;"&gt;
+  &lt;h1 class="heading"&gt;
     GeeksforGeeks
-  </h1>
-  <p class="para">
+  &lt;/h1&gt;
+  &lt;p class="para"&gt;
     A computer science portal for geeks
-  </p>
-  <button onclick="myGeeks()">
+  &lt;/p&gt;
+  &lt;button onclick="myGeeks()"&gt;
     Get Value
-  </button>
-  <p id="result"></p>
-  <script>
+  &lt;/button&gt;
+  &lt;p id="result"&gt;&lt;/p&gt;
+  &lt;script&gt;
     function myGeeks() {
       // Get elements with the class name 'heading'
       let headingElements = 
         document.getElementsByClassName('heading');
         // Check if any elements with the 
         // specified class name exist
-      if (headingElements.length > 0) {
+      if (headingElements.length &gt; 0) {
         // Access the value of the first 
         // element in the collection
         let headingVal = headingElements[0].innerHTML;
@@ -1258,10 +1196,9 @@ then access the value property of the first element in the array to get the valu
           'Element with class name "heading" not found.');
       }
     }
-  </script>
-</body>
-
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -1282,51 +1219,48 @@ then access the value property of the first element in the array to get the valu
 <h4>Example 2: In this example, we will get the second element by class name.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
-
-    <title>Get Value by Class Name</title>
-</head>
-<body style="text-align: center;">
-    <h1 class="heading text">
-        GeeksforGeeks
-    </h1>
-    <p class="para text">
-        A computer science portal for geeks
-    </p>
-    <button onclick="myGeeks()">
-        Get Value
-    </button>
-    <p id="result"></p>
-    <script>
-        function myGeeks() {
-            // Get elements with the class name 'heading'
-            let headingElements = 
-                document.getElementsByClassName('text');
-            // Check if any elements with the 
-            // specified class name exist
-            if (headingElements.length > 0) {
-                // Access the value of the first 
-                // element in the collection
-                let headingVal = headingElements[1].innerHTML;
-                // Update the content of the 'result' element
-                document.getElementById('result')
-                    .innerHTML = headingVal;
-            } else {
-                console.log(
-                  'Element with class name "text" not found.');
-            }
-        }
-    </script>
-</body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content=
+    "width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Get Value by Class Name&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="text-align: center;"&gt;
+  &lt;h1 class="heading text"&gt;
+    GeeksforGeeks
+  &lt;/h1&gt;
+  &lt;p class="para text"&gt;
+    A computer science portal for geeks
+  &lt;/p&gt;
+  &lt;button onclick="myGeeks()"&gt;
+    Get Value
+  &lt;/button&gt;
+  &lt;p id="result"&gt;&lt;/p&gt;
+  &lt;script&gt;
+    function myGeeks() {
+      // Get elements with the class name 'heading'
+      let headingElements = 
+        document.getElementsByClassName('text');
+      // Check if any elements with the 
+      // specified class name exist
+      if (headingElements.length &gt; 0) {
+        // Access the value of the first 
+        // element in the collection
+        let headingVal = headingElements[1].innerHTML;
+        // Update the content of the 'result' element
+        document.getElementById('result')
+          .innerHTML = headingVal;
+      } else {
+        console.log(
+          'Element with class name "text" not found.');
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1375,24 +1309,21 @@ catch block, you can handle this error, for example by logging it or returning a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the extraction of the domain name from a URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>How to get domain name from URL in JavaScript</h1>
-    <p>Domain Name : <span id="span"></span></p>
-    <script src="Index.js"> </script>
-</body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;How to get domain name from URL in JavaScript&lt;/h1&gt;
+  &lt;p&gt;Domain Name : &lt;span id="span"&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;script src="Index.js"&gt; &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1409,7 +1340,6 @@ catch block, you can handle this error, for example by logging it or returning a
 </a>
 </p>
 <!-- image033.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using Regular Expressions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1418,23 +1348,21 @@ available, you can use regular expressions to extract the domain from the URL st
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example demonstrates the extraction of the domain name using Regex.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>How to get domain name from URL in JavaScript</h1>
-    <p>Domain Name : <span id="span"></span></p>
-    <script src="Index.js"> </script>
-</body>
-</html>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;How to get domain name from URL in JavaScript&lt;/h1&gt;
+  &lt;p&gt;Domain Name : &lt;span id="span"&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;script src="Index.js"&gt; &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1451,12 +1379,10 @@ available, you can use regular expressions to extract the domain from the URL st
 </a>
 </p>
 <!-- image034.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D09">09. How to get protocol, domain and port from URL using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The protocol, domain, and port of the current page can be found by two methods:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Method 1: Using <b><mark>location.protocol</mark></b>, <b><mark>location.hostname</mark></b>, 
 <b><mark>location.port</mark></b> methods: The location interface has various methods that can be 
@@ -1472,61 +1398,49 @@ used to return the required properties.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 protocol = location.protocol;
 domain = location.hostname;
 port = location.port;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html> 
-<html> 
-  
-<head> 
-  <title> 
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+  &lt;title&gt; 
     Get protocol, domain, and port from URL 
-  </title> 
-</head> 
-  
-<body> 
-  <h1 style="color: green"> 
+  &lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+  &lt;h1 style="color: green"&gt; 
     GeeksforGeeks 
-  </h1> 
-      
-  <b> 
+  &lt;/h1&gt; 
+  &lt;b&gt; 
     Get protocol, domain, and port from URL 
-  </b> 
-      
-  <p> 
+  &lt;/b&gt; 
+  &lt;p&gt; 
     Protocol is:  
-    <span class="protocol"></span> 
-  </p> 
-      
-  <p> 
+    &lt;span class="protocol"&gt;&lt;/span&gt; 
+  &lt;/p&gt; 
+  &lt;p&gt; 
     Domain is:  
-    <span class="domain"></span> 
-  </p> 
-      
-  <p> 
+    &lt;span class="domain"&gt;&lt;/span&gt; 
+  &lt;/p&gt; 
+  &lt;p&gt; 
     Port is:  
-    <span class="port"></span> 
-  </p> 
-      
-  <button onclick="getDetails()"> 
+    &lt;span class="port"&gt;&lt;/span&gt; 
+  &lt;/p&gt; 
+  &lt;button onclick="getDetails()"&gt; 
     Get protocol, domain, port 
-  </button> 
-      
-  <script type="text/javascript"> 
+  &lt;/button&gt; 
+  &lt;script type="text/javascript"&gt; 
     function getDetails() { 
       protocol = location.protocol; 
       domain = location.hostname; 
       port = location.port; 
-  
       document.querySelector('.protocol').textContent 
         = protocol; 
       document.querySelector('.domain').textContent 
@@ -1534,12 +1448,10 @@ port = location.port;
       document.querySelector('.port').textContent 
         = port; 
     } 
-  </script> 
-</body> 
-  
-</html>          
+  &lt;/script&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;          
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1577,7 +1489,6 @@ port = location.port;
 </a>
 </p>
 <!-- image036.png -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Method 2: Using the URL interface: The URL interface is used to represent object URL. It can 
 be used for getting the port, domain, and protocol as it has inbuilt methods to get these values.</h4>
@@ -1593,69 +1504,55 @@ be used for getting the port, domain, and protocol as it has inbuilt methods to 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 current_url = window.location.href;
 url_object = new URL(current_url);
-
 protocol = url_object.protocol;
 domain = url_object.hostname;
 port = url_object.port;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
-      
-<head>
-  <title>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
     Get protocol, domain, and port from URL
-  </title>
-</head>
-
-<body>
-  <h1 style="color: green">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color: green"&gt;
     GeeksforGeeks
-  </h1>
-      
-    <b> 
-        Get protocol, domain, and port from URL 
-    </b> 
-      
-    <p>Protocol is: <span class="protocol"></span></p> 
-    <p>Domain is: <span class="domain"></span></p> 
-    <p>Port is: <span class="port"></span></p> 
-      
-    <button onclick="getDetails()"> 
-        Get protocol, domain, port 
-    </button> 
-      
-    <script type="text/javascript">
-        function getDetails() {
-            current_url = window.location.href;
-            url_object = new URL(current_url);
-  
-            protocol = url_object.protocol;
-            domain = url_object.hostname;
-            port = url_object.port;
-  
-            document.querySelector('.protocol').textContent
-                    = protocol;
-            document.querySelector('.domain').textContent
-                    = domain;
-            document.querySelector('.port').textContent
-                    = port;
-        }
-    </script>
-</body>
-  
-</html>                     
+  &lt;/h1&gt;
+  &lt;b&gt;
+    Get protocol, domain, and port from URL 
+  &lt;/b&gt; 
+  &lt;p&gt;Protocol is: &lt;span class="protocol"&gt;&lt;/span&gt;&lt;/p&gt; 
+  &lt;p&gt;Domain is: &lt;span class="domain"&gt;&lt;/span&gt;&lt;/p&gt; 
+  &lt;p&gt;Port is: &lt;span class="port"&gt;&lt;/span&gt;&lt;/p&gt; 
+  &lt;button onclick="getDetails()"&gt; 
+    Get protocol, domain, port 
+  &lt;/button&gt; 
+  &lt;script type="text/javascript"&gt;
+    function getDetails() {
+      current_url = window.location.href;
+      url_object = new URL(current_url);
+      protocol = url_object.protocol;
+      domain = url_object.hostname;
+      port = url_object.port;
+      document.querySelector('.protocol').textContent
+        = protocol;
+      document.querySelector('.domain').textContent
+        = domain;
+      document.querySelector('.port').textContent
+        = port;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;                     
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1674,7 +1571,8 @@ port = url_object.port;
     title=""
     alt="." />
 </a>
-</p><!-- image037.png -->
+</p>
+<!-- image037.png -->
 <ul>
   <li><b>After</b> Clicking the button:</li>
 </ul>
@@ -1717,39 +1615,30 @@ URL and hostname. The <b><mark>window.location.href</mark></b> outputs the curre
 <h4>Example : In this example, we will use the self URL, where the code will run to extract the 
 hostname.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
     Get domain from URL
-  </title>
-</head>
-
-<body>
-  <h1 style="color: green">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color: green"&gt;
     GeeksforGeeks
-  </h1>
-
-  <b>URL is:</b>
-
-  <script>
+  &lt;/h1&gt;
+  &lt;b&gt;URL is:&lt;/b&gt;
+  &lt;script&gt;
     document.write(window.location.href);
-  </script>
-
-  <br>
-  <b>hostname is:</b>
-
-  <script>
+  &lt;/script&gt;
+  &lt;br&gt;
+  &lt;b&gt;hostname is:&lt;/b&gt;
+  &lt;script&gt;
     document.write(window.location.hostname);
-  </script>
-</body>
-
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1780,47 +1669,38 @@ constructing and displaying the extracted hostname on the page.</p>
 <h4>Example: In this example, we will ask for the URL to the user and then will perform the 
 extraction of the hostname on that URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Extracting URL</title>
-</head>
-
-<body>
-    <h1 style="color: green;">GeeksforGeeks</h1>
-    <b>Extracting URL</b>
-    <br><br>
-    <form name="f1">
-        <input type="text" name="txt" placeholder="Paste URL" />
-        <input type="button" value="click" onclick="url2()" />
-    </form>
-    <script>
-        function url2() {
-
-            let url3 = document.f1.txt.value;
-
-            let j = url3.indexOf("://");
-
-            let host = "";
-
-            for (i = j + 3; i < url3.length; i++) {
-                if (url3.charAt(i) != '/') {
-                    host = host + "" + url3.charAt(i);
-                } else {
-                    break;
-                }
-            }
-            document.write(host);
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Extracting URL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color: green;"&gt;GeeksforGeeks&lt;/h1&gt;
+  &lt;b&gt;Extracting URL&lt;/b&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;form name="f1"&gt;
+    &lt;input type="text" name="txt" placeholder="Paste URL" /&gt;
+    &lt;input type="button" value="click" onclick="url2()" /&gt;
+  &lt;/form&gt;
+  &lt;script&gt;
+    function url2() {
+      let url3 = document.f1.txt.value;
+      let j = url3.indexOf("://");
+      let host = "";
+      for (i = j + 3; i &lt; url3.length; i++) {
+        if (url3.charAt(i) != '/') {
+          host = host + "" + url3.charAt(i);
+        } else {
+          break;
         }
-    </script>
-</body>
-
-</html>
+      }
+      document.write(host);
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1853,17 +1733,15 @@ the current document. The string also includes the HTTP protocol such as ( http:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Return Value: It returns a string value that represents the full URL of the document.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<script>
+&lt;script&gt;
 // Get the current URL using document.URL
 let currentUrl = document.URL;
 
 // Log the URL to the console
 console.log(currentUrl);
-</script>
+&lt;/script&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1878,17 +1756,15 @@ information about the current location of the document.</p>
 <h4>Syntax</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>window.location.href</pre>
-
 <pre>
-<script>
+&lt;script&gt;
 // Get the current URL using document.URL
 let currentUrl = document.URL;
 
 // Log the URL to the console
 console.log(currentUrl);
-</script>
+&lt;/script&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1921,7 +1797,6 @@ retrieve key/value pairs, allowing access to all URL parameters for further use.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 let paramString = urlString.split('?')[1];
 let queryString = new URLSearchParams(paramString);
@@ -1930,38 +1805,36 @@ for (let pair of queryString.entries()) {
    console.log("Value is: " + pair[1]);
 }
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example we retrieves URL parameters using JavaScript. It splits the URL, 
 extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each 
 <b><mark>key-value</mark></b> pair to the console when the button is clicked.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
     How To Get URL Parameters using JavaScript?
-  </title>
-</head>
-<body>
-  <h1 style="color:green;">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color:green;"&gt;
     GeeksforGeeks
-  </h1> 
-  <b>
+  &lt;/h1&gt; 
+  &lt;b&gt;
     How To Get URL Parameters
     With JavaScript?
-  </b>
-  <p> The url used is: 
+  &lt;/b&gt;
+  &lt;p&gt; The url used is: 
     https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks 
-  </p>
-  <p> 
+  &lt;/p&gt;
+  &lt;p&gt; 
     Click on the button to get the url 
     parameters in the console. 
-  </p>
-  <button onclick="getParameters()"> Get URL parameters </button>
-  <script>
+  &lt;/p&gt;
+  &lt;button onclick="getParameters()"&gt; Get URL parameters &lt;/button&gt;
+  &lt;script&gt;
     function getParameters() {
       let urlString = 
         "https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
@@ -1972,11 +1845,10 @@ extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each
         console.log("Value is:" + pair[1]);
       }
     }
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1993,7 +1865,6 @@ extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each
 </a>
 </p>
 <!-- image041.gif -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D12-02">02. Method 2: Separating and accessing each parameter pair</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2003,14 +1874,13 @@ giving keys at the first index and values at the second, enabling parameter extr
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 let paramString = urlString.split('?')[1];
 let params_arr = paramString.split('&');
-for (let i = 0; i < params_arr.length; i++) {
-   let pair = params_arr[i].split('=');
-   console.log("Key is:", pair[0]);
-   console.log("Value is:", pair[1]);
+for (let i = 0; i &lt; params_arr.length; i++)  {
+  let pair = params_arr[i].split('=');
+  console.log("Key is:", pair[0]);
+  console.log("Value is:", pair[1]);
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2019,43 +1889,43 @@ It extracts each key-value pair, splits them, and logs the results in the consol
 button is clicked.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<!DOCTYPE html>
-<html>
-<head>
-  <title> 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt; 
     How To Get URL Parameters using JavaScript? 
-  </title>
-</head>
-<body>
-  <h1 style="color:green;">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color:green;"&gt;
     GeeksforGeeks
-  </h1> <b>
+  &lt;/h1&gt; &lt;b&gt;
     How To Get URL Parameters
     With JavaScript?
-  </b>
-  <p> The url used is: 
+  &lt;/b&gt;
+  &lt;p&gt; The url used is: 
     https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks 
-  </p>
-  <p> 
+  &lt;/p&gt;
+  &lt;p&gt; 
     Click on the button to get the url
     parameters in the console. 
-  </p>
-  <button onclick="getParameters()"> Get URL parameters </button>
-  <script>
+  &lt;/p&gt;
+  &lt;button onclick="getParameters()"&gt; Get URL parameters &lt;/button&gt;
+  &lt;script&gt;
     function getParameters() {
       let urlString = 
         "https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
       let paramString = urlString.split('?')[1];
       let params_arr = paramString.split('&');
-      for(let i = 0; i < params_arr.length; i++) {
+      for(let i = 0; i &lt; params_arr.length; i++) {
         let pair = params_arr[i].split('=');
         console.log("Key is:" + pair[0]);
         console.log("Value is:" + pair[1]);
       }
     }
-  </script>
-</body>
-</html>
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -2088,26 +1958,25 @@ path: /courses
 <h4>Method 1: In this method, we will use <b><mark>createElement()</mark></b> method to create a 
 HTML element, anchor tag and then use it for parsing the given URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 // Store the URL into variable 
 var url = "https://geeksforgeeks.org/pathname/?search=query"; 
-      
+
 // Created a parser using createElement() method 
 var parser = document.createElement("a"); 
 parser.href = url; 
-      
+
 // Host of the URL 
 console.log(parser.host); 
-      
+
 // Hostname of the URL 
-console.log(parser.hostname ); 
-      
+console.log(parser.hostname); 
+
 // Pathname of URL 
 console.log(parser.pathname); 
-      
+
 // Search in the URL 
-console.log(parser.search );
+console.log(parser.search);
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -2131,7 +2000,7 @@ var url =
 var parser = new URL(url); 
 
 // Protocol used in URL 
-console.log(parser.protocol); 
+console.log(parser.protocol);
 
 // Host of the URL 
 console.log(parser.host); 
@@ -2359,7 +2228,7 @@ event occurs is defined inline.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 45. Click me, 'Hello, World' to 'Button clicked' ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" >
+<p style="align:center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -2463,7 +2332,7 @@ console.log(element.innerHTML);
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 46. Change content live using innerHTML and button ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" >
+<p style="align:center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -2537,7 +2406,7 @@ HTML directly to an element.</h4>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 47. Add content dynamically using innerHTML property ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" >
+<p style="align:center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
@@ -2604,25 +2473,15 @@ HTML directly to an element.</h4>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 48. click the button to dynamically add the html using innerHTML property ~~~~~~~~~-->
-<p align="center" >
+<p style="align:center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
     src="./images/image048.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title="Click the below button to dynamically add the HTML using innerHTML property"
-    alt="Click the below button to dynamically add the HTML using innerHTML property." />
+    title="Click the button below to dynamically add the HTML using innerHTML property"
+    alt="Click the button below to dynamically add the HTML using innerHTML property." />
 </a>
 </p>
 <!-- image048.gif -->
-
-
-
-
-
-
-
-
-
-
