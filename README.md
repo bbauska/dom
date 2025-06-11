@@ -308,10 +308,9 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
   &lt;script&gt;
     function myClass() {
       let elem = document.getElementById("gfg");
-
-      // Adding class to div element 
+      // Adding class to div element
       elem.classList.add("geek");
-    } 
+    }
   &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -601,7 +600,7 @@ one element.</p>
 &lt;/html&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Output:</h4.
+<h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 08.  ~~~~~~~~~~~~~~~~-->
 <p align="center" >
