@@ -102,7 +102,7 @@ alert( document.body instanceof HTMLElement ); // true
 alert( document.body instanceof Element ); // true
 alert( document.body instanceof Node ); // true
 alert( document.body instanceof EventTarget ); // true
-</pre>
+
 
 <p>As we can see, DOM nodes are regular JavaScript objects. They use prototype-based classes for inheritance.</p>
 
@@ -374,156 +374,193 @@ here. Take a look.</p>
 
 <p>Looks really odd, right?</p>
 
-<p>In the line (*) we replaced div with <p>A new element</p>. In the outer document (the 
-DOM) we can see the new content instead of the <div>. But, as we can see in line (**), 
-the value of the old div variable hasn’t changed!</p>
+<p>In the line <mark>(&ast;)</mark> we replaced <mark>div</mark> with 
+<mark>&lt;p&gt;A new element&lt;/p&gt;</mark>. In the outer document (the DOM) we can see 
+the new content instead of the <mark>&lt;div&gt;</mark>. But, as we can see in line 
+<mark>(&ast;&ast;)</mark>, the value of the old <mark>div</mark> variable hasn’t changed!</p>
 
-<p>The outerHTML assignment does not modify the DOM element (the object referenced by, 
+<p>The <mark>outerHTML</mark> assignment does not modify the DOM element (the object referenced by, 
 in this case, the variable ‘div’), but removes it from the DOM and inserts the new HTML 
 in its place.</p>
 
-<p>So what happened in div.outerHTML=... is:</p>
+<p>So what happened in <mark>div.outerHTML=...</mark> is:</p>
 
-<p>div was removed from the document.</p>
+<ul>
+  <li><p><mark>div</mark> was removed from the document.</p></li>
+  <li><p>Another piece of HTML <mark>&lt;p&gt;A new element&lt;/p&gt;</mark> was inserted 
+    in its place.</li>
+  <li><mark>div</mark> still has its old value. The new HTML wasn’t saved to any variable.</li>
+</ul>
 
-Another piece of HTML <p>A new element</p> was inserted in its place.
-div still has its old value. The new HTML wasn’t saved to any variable.
-It’s so easy to make an error here: modify div.outerHTML and then continue to work 
-with div as if it had the new content in it. But it doesn’t. Such thing is correct 
-for innerHTML, but not for outerHTML.
+<p>It’s so easy to make an error here: modify <mark>div.outerHTML</mark> and then continue 
+to work with <mark>div</mark> as if it had the new content in it. But it doesn’t. Such 
+thing is correct for <mark>innerHTML</mark>, but not for <mark>outerHTML</mark>.</p>
 
-We can write to elem.outerHTML, but should keep in mind that it doesn’t change the 
-element we’re writing to (‘elem’). It puts the new HTML in its place instead. We 
-can get references to the new elements by querying the DOM.
-
+<p>We can write to <mark>elem.outerHTML</mark>, but should keep in mind that it doesn’t 
+change the element we’re writing to (‘elem’). It puts the new HTML in its place 
+instead. We can get references to the new elements by querying the DOM.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>nodeValue/data: text node content</h3>
-The innerHTML property is only valid for element nodes.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The <mark>innerHTML</mark> property is only valid for element nodes.</p>
 
-Other node types, such as text nodes, have their counterpart: nodeValue and data 
-properties. These two are almost the same for practical use, there are only minor 
-specification differences. So we’ll use data, because it’s shorter.
+<p>Other node types, such as text nodes, have their counterpart: <mark>nodeValue</mark> 
+and <mark>data</mark> properties. These two are almost the same for practical use, there 
+are only minor specification differences. So we’ll use <mark>data</mark>, because it’s shorter.</p>
 
-An example of reading the content of a text node and a comment:
+<p>An example of reading the content of a text node and a comment:</p>
 
-<body>
+<pre>
+&lt;body&gt;
   Hello
-  <!-- Comment -->
-  <script>
+  &lt;!-- Comment --&gt;
+  &lt;script&gt;
     let text = document.body.firstChild;
     alert(text.data); // Hello
 
     let comment = text.nextSibling;
     alert(comment.data); // Comment
-  </script>
-</body>
-For text nodes we can imagine a reason to read or modify them, but why comments?
+  &lt;/script&gt;
+&lt;/body&gt;
+</pre>
 
-Sometimes developers embed information or template instructions into HTML in them, like 
-this:
+<p>For text nodes we can imagine a reason to read or modify them, but why comments?</p>
 
-<!-- if isAdmin -->
-  <div>Welcome, Admin!</div>
-<!-- /if -->
-…Then JavaScript can read it from data property and process embedded instructions.
+<p>Sometimes developers embed information or template instructions into HTML in them, 
+like this:</p>
 
+<pre>
+&lt;!-- if isAdmin --&gt;
+  &lt;div&gt;Welcome, Admin!&lt;/div&gt;
+&lt;!-- /if --&gt;
+</pre>
+
+<p>…Then JavaScript can read it from <mark>data</mark> property and process embedded 
+instructions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>textContent: pure text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The textContent provides access to the text inside the element: only text, minus all <tags>.
+<p>The <mark>textContent</mark> provides access to the text inside the element: only 
+text, minus all <mark>&lt;tags&gt;</mark>.
 
-For instance:
+<p>For instance:</p>
 
-<div id="news">
-  <h1>Headline!</h1>
-  <p>Martians attack people!</p>
-</div>
+<pre>
+&lt;div id="news"&gt;
+  &lt;h1&gt;Headline!&lt;/h1&gt;
+  &lt;p&gt;Martians attack people!&lt;/p&gt;
+&lt;/div&gt;
 
-<script>
+&lt;script&gt;
   // Headline! Martians attack people!
   alert(news.textContent);
-</script>
-As we can see, only text is returned, as if all <tags> were cut out, but the text in them 
-remained.
+&lt;/script&gt;
+</pre>
 
-In practice, reading such text is rarely needed.
+<p>As we can see, only text is returned, as if all <mark>&lt;tags&gt;</mark> were cut 
+out, but the text in them remained.</p>
 
-Writing to textContent is much more useful, because it allows to write text the “safe way”.
+<p>In practice, reading such text is rarely needed.</p>
 
-Let’s say we have an arbitrary string, for instance entered by a user, and want to show it.
+<h4>Writing to <mark>textContent</mark> is much more useful, because it allows to write 
+text the “safe way”.</h4>
 
-With innerHTML we’ll have it inserted “as HTML”, with all HTML tags.
-With textContent we’ll have it inserted “as text”, all symbols are treated literally.
-Compare the two:
+<p>Let’s say we have an arbitrary string, for instance entered by a user, and want to show it.</p>
+<ul>
+  <li>With <mark>innerHTML</mark> we’ll have it inserted “as HTML”, with all HTML tags.</li>
+  <li>With <mark>textContent</mark> we’ll have it inserted “as text”, all symbols are 
+    treated literally.</li>
+</ul>
 
-<div id="elem1"></div>
-<div id="elem2"></div>
+<p>Compare the two:</p>
 
-<script>
-  let name = prompt("What's your name?", "<b>Winnie-the-Pooh!</b>");
+<pre>
+&lt;div id="elem1"&gt;&lt;/div&gt;
+&lt;div id="elem2"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  let name = prompt("What's your name?", "&lt;b&gt;Winnie-the-Pooh!&lt;/b&gt;");
 
   elem1.innerHTML = name;
   elem2.textContent = name;
-</script>
-The first <div> gets the name “as HTML”: all tags become tags, so we see the bold name.
-The second <div> gets the name “as text”, so we literally see <b>Winnie-the-Pooh!</b>.
-In most cases, we expect the text from a user, and want to treat it as text. We don’t 
-want unexpected HTML in our site. An assignment to textContent does exactly that.
+&lt;/script&gt;
+</pre>
 
+<ol type="1">
+  <li>The first <mark>&lt;div&gt;</mark> gets the name “as HTML”: all tags become tags, 
+    so we see the bold name.</li>
+  <li>The second <mark>&lt;div&gt;</mark> gets the name “as text”, so we literally 
+    see <mark>&lt;b&gt;Winnie-the-Pooh!&lt;/b&gt;</mark>.</li>
+</ol>
+
+<p>In most cases, we expect the text from a user, and want to treat it as text. We don’t 
+want unexpected HTML in our site. An assignment to <mark>textContent</mark> does exactly that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The “hidden” property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The “hidden” attribute and the DOM property specifies whether the element is visible or not.
+<p>The “hidden” attribute and the DOM property specifies whether the element is visible or not.</p>
 
-We can use it in HTML or assign it using JavaScript, like this:
+<p>We can use it in HTML or assign it using JavaScript, like this:</p>
 
 <pre>
-<div>Both divs below are hidden</div>
+&lt;div&gt;Both divs below are hidden&lt;/div&gt;
 
-<div hidden>With the attribute "hidden"</div>
+&lt;div hidden&gt;With the attribute "hidden"&lt;/div&gt;
 
-<div id="elem">JavaScript assigned the property "hidden"</div>
+&lt;div id="elem"&gt;JavaScript assigned the property "hidden"&lt;/div&gt;
 
-<script>
+&lt;script&gt;
   elem.hidden = true;
-</script>
+&lt;/script&gt;
 </pre>
 
-<p>Technically, hidden works the same as style="display:none". But it’s shorter to write.</p>
+<p>Technically, <mark>hidden</mark> works the same as <mark>style="display:none"</mark>. 
+But it’s shorter to write.</p>
 
 <p>Here’s a blinking element:</p>
 
 <pre>
-<div id="elem">A blinking element</div>
+&lt;div id="elem"&gt;A blinking element&lt;/div&gt;
 
-<script>
-  setInterval(() => elem.hidden = !elem.hidden, 1000);
-</script>
+&lt;script&gt;
+  setInterval(() =&gt; elem.hidden = !elem.hidden, 1000);
+&lt;/script&gt;
 </pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>More properties</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>DOM elements also have additional properties, in particular those that depend on the class:</p>
+<ul>
+  <li><mark>value</mark> – the value for <mark>&lt;input&gt;</mark>, <mark>&lt;select&gt;</mark> 
+    and <mark>&lt;textarea&gt;</mark> <mark>(HTMLInputElement, HTMLSelectElement</mark>…).</li>
+  <li><mark>href</mark> – the “href” for <mark>&lt;a href="..."&gt; (HTMLAnchorElement)</mark>.</li>
+  <li><mark>id</mark> – the value of “id” attribute, for all elements (<mark>HTMLElement</mark>).</li>
+  <li>…and much more…</li>
+</ul>
 
-value – the value for <input>, <select> and <textarea> (HTMLInputElement, HTMLSelectElement…).
-href – the “href” for <a href="..."> (HTMLAnchorElement).
-id – the value of “id” attribute, for all elements (HTMLElement).
-…and much more…
-For instance:
+<p>For instance:</p>
 
 <pre>
-<input type="text" id="elem" value="value">
+&lt;input type="text" id="elem" value="value"&gt;
 
-<script>
+&lt;script&gt;
   alert(elem.type); // "text"
   alert(elem.id); // "elem"
   alert(elem.value); // value
-</script>
+&lt;/script&gt;
 </pre>
 
-<p>Most standard HTML attributes have the corresponding DOM property, and we can access it like that.</p>
+<p>Most standard HTML attributes have the corresponding DOM property, and we can access it 
+like that.</p>
 
-<p>If we want to know the full list of supported properties for a given class, we can find them in the specification. For instance, HTMLInputElement is documented at https://html.spec.whatwg.org/#htmlinputelement.</p>
+<p>If we want to know the full list of supported properties for a given class, we can 
+find them in the specification. For instance, <mark>HTMLInputElement</mark> is documented at 
+<a href="https://html.spec.whatwg.org/#htmlinputelement">https://html.spec.whatwg.org/#htmlinputelement</a>.</p>
 
-<p>Or if we’d like to get them fast or are interested in a concrete browser specification – we can always output the element using console.dir(elem) and read the properties. Or explore “DOM properties” in the Elements tab of the browser developer tools.</p>
+<p>Or if we’d like to get them fast or are interested in a concrete browser specification 
+– we can always output the element using <mark>console.dir(elem)</mark> and read the 
+properties. Or explore “DOM properties” in the Elements tab of the browser developer tools.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Summary</h3>
