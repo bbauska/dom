@@ -1,10 +1,13 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- from: https://javascript.info/basic-dom-node-properties -->
 <h2>Node properties: type, tag and contents</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s get a more in-depth look at DOM nodes.</p>
 
 <p>In this chapter we’ll see more into what they are and learn their most used properties.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>DOM node classes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Different DOM nodes may have different properties. For instance, an element node 
 corresponding to tag <mark>&lt;a&gt;</mark> has link-related properties, and the one corresponding 
 to <mark>&lt;input&gt;</mark> has input-related properties and so on. Text nodes are not the same as 
@@ -22,63 +25,74 @@ because all classes of DOM nodes form a single hierarchy.</p>
 
 <h3>The classes are:</h3>
 <ul>
-  <li><span class="node1">EventTarget</span> – is the root “abstract” class for everything.<br>
+  <li><a href="">EventTarget</a> – is the root “abstract” class for everything.<br>
     <p>Objects of that class are never created. It serves as a base, so that all DOM nodes support so-called “events”, we’ll study them later.</p>
   </li>
-  <li><b>Node</b> – is also an “abstract” class, serving as a base for DOM nodes.<br>
+  <li><a href="">Node</a> – is also an “abstract” class, serving as a base for DOM nodes.<br>
     <p>It provides the core tree functionality: <mark>parentNode</mark>, <mark>nextSibling</mark>, 
 	<mark>childNodes</mark> and so on (they are getters). Objects of <mark>Node</mark> class 
 	are never created. But there are other classes that inherit from it (and so inherit the 
 	<mark>Node</mark> functionality).</p>
   </li>
-  <li><span>Document</span>, for historical reasons often inherited by HTMLDocument (though the latest spec doesn’t dictate it) – is a document as a whole.<br>
+  <li><a href="">Document</a>, for historical reasons often inherited by <mark>HTMLDocument</mark> 
+    (though the latest spec doesn’t dictate it) – is a document as a whole.<br>
   The document global object belongs exactly to this class. It serves as an entry point to the DOM.</li>
-  <li><span class="classes">CharacterData</span> – an “abstract” class, inherited by:<br>
+  <li><a href="">CharacterData</a> – an “abstract” class, inherited by:<br>
     <ul>
-      <li><span class="node">Text</span> – the class corresponding to a text inside elements, e.g. Hello in &lt;p&gt;Hello&lt;/p&gt;.</li>
-      <li><span class="classes">Comment</span> – the class for comments. They are not shown, but each comment becomes a member of DOM.</li>
+      <li><a href="">Text</a> – the class corresponding to a text inside elements, 
+	    e.g. <mark>Hello</mark> in <mark>&lt;p&gt;Hello&lt;/p&gt;</mark>.</li>
+      <li><a href="">Comment</a> – the class for comments. They are not shown, but each comment becomes a member of DOM.</li>
     </ul>
   </li>
-  <li><span class="classes">Element</span> – is the base class for DOM elements.<br>
-    It provides element-level navigation like <span class="nav-item">nextElementSibling, children and searching methods like getElementsByTagName, querySelector.<br>
+  <li><a href="">Element</a> – is the base class for DOM elements.<br>
+    It provides element-level navigation like <mark>nextElementSibling</mark>, 
+	<mark>children</mark> and searching methods like <mark>getElementsByTagName</mark>, 
+	<mark>querySelector</mark>.<br>
     A browser supports not only HTML, but also XML and SVG. So the Element class serves as a base for more specific classes: SVGElement, XMLElement (we don’t need them here) and HTMLElement.</li>
-  </li>Finally, <span>HTMLElement</span> is the basic class for all HTML elements. We’ll 
+  </li>Finally, <a href="">HTMLElement</a> is the basic class for all HTML elements. We’ll 
     work with it most of the time.<br>
   <p>It is inherited by concrete HTML elements:</p>
     <ul>
-      <li><span>HTMLInputElement</span> – the class for &lt;input&gt; elements,</li>
-      <li><span>HTMLBodyElement</span> – the class for &lt;body&gt; elements,</li>
-      <li><span>HTMLAnchorElement</span> – the class for &lt;a&gt; elements,</li>
+      <li><a href="">HTMLInputElement</a> – the class for <mark>&lt;input&gt;</mark> elements,</li>
+      <li><a href="">HTMLBodyElement</a> – the class for <mark>&lt;body&gt;</mark> elements,</li>
+      <li><a href="">HTMLAnchorElement</a> – the class for <mark>&lt;a&gt;</mark> elements,</li>
       <li>…and so on.</li>
     </ul>
   </li>
 </ul>
-<p>There are many other tags with their own classes that may have specific properties and methods, while some elements, such as &lt;span&gt;, &lt;section&gt;, &lt;article&gt; do 
-not have any specific properties, so they are instances of HTMLElement class.</p>
+
+<p>There are many other tags with their own classes that may have specific properties and 
+methods, while some elements, such as <mark>&lt;span&gt;</mark>, <mark>&lt;section&gt;</mark>, 
+<mark>&lt;article&gt;</mark> do not have any specific properties, so they are instances of 
+<mark>HTMLElement</mark> class.</p>
 
 <p>So, the full set of properties and methods of a given node comes as the result of the 
 chain of inheritance.</p>
 
-<p>For example, let’s consider the DOM object for an &lt;input&gt; element. It belongs to HTMLInputElement class.</p>
+<p>For example, let’s consider the DOM object for an <mark>&lt;input&gt;</mark> element. 
+It belongs to <mark>HTMLInputElement</mark> class.</p>
+
 <p>It gets properties and methods as a superposition of (listed in inheritance order):</p>
+
 <ul>
-  <li><span>HTMLInputElement</span> – this class provides input-specific properties,</li>
-  <li>HTMLElement – it provides common HTML element methods (and getters/setters),</li>
-  <li>Element – provides generic element methods,</li>
-  <li>Node – provides common DOM node properties,</li>
-  <li>EventTarget – gives the support for events (to be covered),</li>
-  <li>…and finally it inherits from <span>Object</span>, so “plain object” methods like
-    <span class="command">hasOwnProperty</span> are also available.</li>
+  <li><mark>HTMLInputElement</mark> – this class provides input-specific properties,</li>
+  <li><mark>HTMLElement</mark> – it provides common HTML element methods (and getters/setters),</li>
+  <li><mark>Element</mark> – provides generic element methods,</li>
+  <li><mark>Node</mark> – provides common DOM node properties,</li>
+  <li><mark>EventTarget</mark> – gives the support for events (to be covered),</li>
+  <li>…and finally it inherits from <mark>Object</mark>, so “plain object” methods like
+    <mark>hasOwnProperty</mark> are also available.</li>
 </ul>
+
 <p>To see the DOM node class name, we can recall that an object usually has the 
-constructor property. It references the class constructor, and constructor.name 
-is its name:</p>
+<mark>constructor</mark> property. It references the class constructor, and 
+<mark>constructor.name</mark> is its name:</p>
 
 <pre>alert( document.body.constructor.name ); // HTMLBodyElement</pre>
 
 <p>…Or we can just <span>toString</span> it:</p>
 
-<pre>alert( document.body ); // [object HTMLBodyElement]</pre>
+<pre>alert( document.body ); // &lbrack;object HTMLBodyElement&rbrack;</pre>
 
 <p>We also can use instanceof to check the inheritance:</p>
 
@@ -92,30 +106,29 @@ alert( document.body instanceof EventTarget ); // true
 
 <p>As we can see, DOM nodes are regular JavaScript objects. They use prototype-based classes for inheritance.</p>
 
-<p>That’s also easy to see by outputting an element with <span>console.dir(elem)</span> 
-in a browser. There in the console you can see <span>HTMLElement.prototype</span>, 
-<span>Element.prototype</span> and so on.</p>
+<p>That’s also easy to see by outputting an element with <mark>console.dir(elem)</mark> 
+in a browser. There in the console you can see <mark>HTMLElement.prototype</mark>, 
+<mark>Element.prototype</mark> and so on.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>console.dir(elem) versus console.log(elem)</h4>
-<p>Most browsers support two commands in their developer tools: <span>console.log</span> 
-and <span>console.dir</span>. They output their arguments to the console. For JavaScript 
+<p>Most browsers support two commands in their developer tools: <mark>console.log</mark> 
+and <mark>console.dir</mark>. They output their arguments to the console. For JavaScript 
 objects these commands usually do the same.</p>
 <p>But for DOM elements they are different:</p>
 <ul>
-  <li><span>console.log(elem)</span> shows the element DOM tree.</li>
-  <li><span>console.dir(elem)</span> shows the element as a DOM object, good to explore 
+  <li><mark>console.log(elem)</mark> shows the element DOM tree.</li>
+  <li><mark>console.dir(elem)</mark> shows the element as a DOM object, good to explore 
     its properties.</li>
 </ul>
-<p>Try it on <span>document.body</span>.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<p>Try it on <mark>document.body</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>IDL in the spec</h4>
 <p>In the specification, DOM classes aren’t described by using JavaScript, but a special 
-Interface description language (IDL), that is usually easy to understand.</p>
+<a href="">Interface description language</a> (IDL), that is usually easy to understand.</p>
 
-<p>In IDL all properties are prepended with their types. For instance, DOMString, boolean and so on.</p>
+<p>In IDL all properties are prepended with their types. For instance, <mark>DOMString</mark>, 
+<mark>boolean</mark> and so on.</p>
 
 <p>Here’s an excerpt from it, with comments:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -141,15 +154,15 @@ interface HTMLInputElement: HTMLElement {
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The “nodeType” property</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The nodeType property provides one more, “old-fashioned” way to get the “type” of a DOM node.</p>
 
 <p>It has a numeric value:</p>
 <ul>
-  <li><span>elem.nodeType == 1 for element nodes,</li>
-  <li><span>elem.nodeType == 3 for text nodes,</li>
-  <li><span>elem.nodeType == 9 for the document object,</li>
-  <li>there are few other values in the specification.</li>
+  <li><mark>elem.nodeType == 1</mark> for element nodes,</li>
+  <li><mark>elem.nodeType == 3</mark> for text nodes,</li>
+  <li><mark>elem.nodeType == 9</mark> for the document object,</li>
+  <li>there are few other values <a href="">in the specification</a>.</li>
 </ul>
 
 <p>For instance:</p>
@@ -172,13 +185,17 @@ interface HTMLInputElement: HTMLElement {
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<p>In modern scripts, we can use instanceof and other class-based tests to see the node 
-type, but sometimes nodeType may be simpler. We can only read nodeType, not change it.</p>
-
+<p>In modern scripts, we can use <mark>instanceof</mark> and other class-based tests to 
+see the node type, but sometimes <mark>nodeType</mark> may be simpler. We can only read 
+nodeType, not change it.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Tag: nodeName and tagName</h3>
-<p>Given a DOM node, we can read its tag name from nodeName or tagName properties:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Given a DOM node, we can read its tag name from <mark>nodeName</mark> or 
+<mark>tagName</mark>  properties:</p>
 
 <p>For instance:</p>
+
 <pre>
 alert( document.body.nodeName ); // BODY
 alert( document.body.tagName ); // BODY
@@ -189,22 +206,21 @@ alert( document.body.tagName ); // BODY
 <p>Sure, the difference is reflected in their names, but is indeed a bit subtle.</p>
 
 <ul>
-  <li>The <span>tagName</span> property exists only for <span>Element</span> nodes.</li>
-  <li>The <span>nodeName</span> is defined for any <span>Node</span>:
+  <li>The <mark>tagName</mark> property exists only for <mark>Element</mark> nodes.</li>
+  <li>The <mark>nodeName</mark> is defined for any <mark>Node</mark>:
     <ul>
-	  <li>for elements it means the same as <span>tagName</span>.</li>
+	  <li>for elements it means the same as <mark>tagName</mark>.</li>
 	  <li>for other node types (text, comment, etc.) it has a string with the node type.</li>
     </ul>
   </li>
 </ul>
 
-<p>In other words, <span>tagName</span> is only supported by element nodes (as it 
-originates from <span>Element</span> class), while <span>nodeName</span> can say 
+<p>In other words, <mark>tagName</mark> is only supported by element nodes (as it 
+originates from <mark>Element</mark> class), while <mark>nodeName</mark> can say 
 something about other node types.</p>
 
-<p>For instance, let’s compare <span>tagName</span> and <span>nodeName</span> for 
-the <span>document</span> and a comment node:</p>
-
+<p>For instance, let’s compare <mark>tagName</mark> and <mark>nodeName</mark> for 
+the <mark>document</mark> and a comment node:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;body&gt;&lt;!-- comment --&gt;
@@ -221,7 +237,6 @@ the <span>document</span> and a comment node:</p>
 &lt;/body&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>If we only deal with elements, then we can use both <mark>tagName</mark> and 
 <mark>nodeName</mark> – there’s no difference.</p>
 
@@ -242,16 +257,16 @@ either for <mark>&lt;body&gt;</mark> or <mark>&lt;BoDy&gt;</mark>.</p>
 <p>The example shows the contents of <mark>document.body</mark> and then replaces it completely:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<body>
-  <p>A paragraph</p>
-  <div>A div</div>
+&lt;body&gt;
+  &lt;p&gt;A paragraph&lt;/p&gt;
+  &lt;div&gt;A div&lt;/div&gt;
 
-  <script>
+  &lt;script&gt;
     alert( document.body.innerHTML ); // read the current contents
     document.body.innerHTML = 'The new BODY!'; // replace it
-  </script>
+  &lt;/script&gt;
 
-</body>
+&lt;/body&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We can try to insert invalid HTML, the browser will fix our errors:</p>
@@ -269,21 +284,26 @@ either for <mark>&lt;body&gt;</mark> or <mark>&lt;BoDy&gt;</mark>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Scripts don’t execute</h4>
-<p>If innerHTML inserts a &lt;script&gt; tag into the document – it becomes a part of 
-HTML, but doesn’t execute.</p>
+
+<p>If <mark>innerHTML</mark> inserts a <mark>&lt;script&gt;</mark> tag into the document 
+– it becomes a part of HTML, but doesn’t execute.</p>
 
 <h3>Beware: “innerHTML+=” does a full overwrite</h3>
+
 <p>We can append HTML to an element by using <mark>elem.innerHTML+="more html"</mark>.</p>
 
 <p>Like this:</p>
+
 <pre>
 chatDiv.innerHTML += "&lt;div&gt;Hello&lt;img src='smile.gif'/&gt; !&lt;/div&gt;";
 chatDiv.innerHTML += "How goes?";
 </pre>
+
 <p>But we should be very careful about doing it, because what’s going on is not an 
 addition, but a full overwrite.</p>
 
 <p>Technically, these two lines do the same:</p>
+
 <pre>
 elem.innerHTML += "...";
 // is a shorter way to write:
@@ -294,59 +314,73 @@ elem.innerHTML = elem.innerHTML + "..."
 
 <ol type="1">
   <li>The old contents is removed.</li>
-  <li>The new innerHTML is written instead (a concatenation of the old and the new one).</li>
+  <li>The new <mark>innerHTML</mark> is written instead (a concatenation of the old and 
+    the new one).</li>
 </ol>
 
 <h4>As the content is “zeroed-out” and rewritten from the scratch, all images and other 
 resources will be reloaded.</h4>
 
-<p>In the chatDiv example above the line chatDiv.innerHTML+="How goes?" re-creates the 
-HTML content and reloads smile.gif (hope it’s cached). If chatDiv has a lot of other 
-text and images, then the reload becomes clearly visible.</p>
+<p>In the <mark>chatDiv</mark> example above the line <mark>chatDiv.innerHTML+="How goes?"</mark> 
+re-creates the HTML content and reloads <mark>smile.gif</mark> (hope it’s cached). If 
+<mark>chatDiv</mark> has a lot of other text and images, then the reload becomes clearly 
+visible.</p>
 
 <p>There are other side-effects as well. For instance, if the existing text was selected 
-with the mouse, then most browsers will remove the selection upon rewriting innerHTML. 
-And if there was an &lt;input&gt; with a text entered by the visitor, then the text will be 
-removed. And so on.</p>
+with the mouse, then most browsers will remove the selection upon rewriting <mark>innerHTML</mark>. 
+And if there was an <mark>&lt;input&gt;</mark> with a text entered by the visitor, then 
+the text will be removed. And so on.</p>
 
-<p>Luckily, there are other ways to add HTML besides innerHTML, and we’ll study them soon.</p>
-
+<p>Luckily, there are other ways to add HTML besides <mark>innerHTML</mark>, and we’ll 
+study them soon.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><a href="https://javascript.info/basic-dom-node-properties#outerhtml-full-html-of-the-element">
 outerHTML: full HTML of the element</a></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The outerHTML property contains the full HTML of the element. That’s like innerHTML 
-plus the element itself.</p>
+<p>The <mark>outerHTML</mark> property contains the full HTML of the element. That’s like 
+<mark>innerHTML</mark> plus the element itself.</p>
 
 <p>Here’s an example:</p>
 
-<div id="elem">Hello <b>World</b></div>
+<pre>
+&lt;div id="elem"&gt;Hello &lt;b&gt;World&lt;/b&gt;&lt;/div&gt;
 
-<script>
-  alert(elem.outerHTML); // <div id="elem">Hello <b>World</b></div>
-</script>
-<p>Beware: unlike innerHTML, writing to outerHTML does not change the element. Instead, it replaces it in the DOM.</p>
+&lt;script&gt;
+  alert(elem.outerHTML); // &lt;div id="elem">Hello &lt;b&gt;World&lt;/b&gt;&lt;/div&gt;
+&lt;/script&gt;
+</pre>
 
-<p>Yeah, sounds strange, and strange it is, that’s why we make a separate note about it here. Take a look.</p>
+<h4>Beware: unlike innerHTML, writing to outerHTML does not change the element. Instead, 
+it replaces it in the DOM.</h4>
+
+<p>Yeah, sounds strange, and strange it is, that’s why we make a separate note about it 
+here. Take a look.</p>
 
 <p>Consider the example:</p>
 
-<div>Hello, world!</div>
+<pre>
+&lt;div&gt;Hello, world!&lt;/div&gt;
 
-<script>
+&lt;script&gt;
   let div = document.querySelector('div');
 
-  // replace div.outerHTML with <p>...</p>
-  div.outerHTML = '<p>A new element</p>'; // (*)
+  // replace div.outerHTML with &lt;p&gt;...&lt;/p&gt;
+  div.outerHTML = '&lt;p&gt;A new element&lt;/p&gt;'; // (&ast;)
 
   // Wow! 'div' is still the same!
-  alert(div.outerHTML); // <div>Hello, world!</div> (**)
-</script>
+  alert(div.outerHTML); // &lt;div&gt;Hello, world!&lt;/div&gt; (&ast;&ast;)
+&lt;/script&gt;
+</pre>
+
 <p>Looks really odd, right?</p>
 
-<p>In the line (*) we replaced div with <p>A new element</p>. In the outer document (the DOM) we can see the new content instead of the <div>. But, as we can see in line (**), the value of the old div variable hasn’t changed!</p>
+<p>In the line (*) we replaced div with <p>A new element</p>. In the outer document (the 
+DOM) we can see the new content instead of the <div>. But, as we can see in line (**), 
+the value of the old div variable hasn’t changed!</p>
 
-<p>The outerHTML assignment does not modify the DOM element (the object referenced by, in this case, the variable ‘div’), but removes it from the DOM and inserts the new HTML in its place.</p>
+<p>The outerHTML assignment does not modify the DOM element (the object referenced by, 
+in this case, the variable ‘div’), but removes it from the DOM and inserts the new HTML 
+in its place.</p>
 
 <p>So what happened in div.outerHTML=... is:</p>
 
@@ -354,14 +388,20 @@ plus the element itself.</p>
 
 Another piece of HTML <p>A new element</p> was inserted in its place.
 div still has its old value. The new HTML wasn’t saved to any variable.
-It’s so easy to make an error here: modify div.outerHTML and then continue to work with div as if it had the new content in it. But it doesn’t. Such thing is correct for innerHTML, but not for outerHTML.
+It’s so easy to make an error here: modify div.outerHTML and then continue to work 
+with div as if it had the new content in it. But it doesn’t. Such thing is correct 
+for innerHTML, but not for outerHTML.
 
-We can write to elem.outerHTML, but should keep in mind that it doesn’t change the element we’re writing to (‘elem’). It puts the new HTML in its place instead. We can get references to the new elements by querying the DOM.
+We can write to elem.outerHTML, but should keep in mind that it doesn’t change the 
+element we’re writing to (‘elem’). It puts the new HTML in its place instead. We 
+can get references to the new elements by querying the DOM.
 
 <h3>nodeValue/data: text node content</h3>
 The innerHTML property is only valid for element nodes.
 
-Other node types, such as text nodes, have their counterpart: nodeValue and data properties. These two are almost the same for practical use, there are only minor specification differences. So we’ll use data, because it’s shorter.
+Other node types, such as text nodes, have their counterpart: nodeValue and data 
+properties. These two are almost the same for practical use, there are only minor 
+specification differences. So we’ll use data, because it’s shorter.
 
 An example of reading the content of a text node and a comment:
 
@@ -378,7 +418,8 @@ An example of reading the content of a text node and a comment:
 </body>
 For text nodes we can imagine a reason to read or modify them, but why comments?
 
-Sometimes developers embed information or template instructions into HTML in them, like this:
+Sometimes developers embed information or template instructions into HTML in them, like 
+this:
 
 <!-- if isAdmin -->
   <div>Welcome, Admin!</div>
@@ -401,7 +442,8 @@ For instance:
   // Headline! Martians attack people!
   alert(news.textContent);
 </script>
-As we can see, only text is returned, as if all <tags> were cut out, but the text in them remained.
+As we can see, only text is returned, as if all <tags> were cut out, but the text in them 
+remained.
 
 In practice, reading such text is rarely needed.
 
@@ -424,7 +466,8 @@ Compare the two:
 </script>
 The first <div> gets the name “as HTML”: all tags become tags, so we see the bold name.
 The second <div> gets the name “as text”, so we literally see <b>Winnie-the-Pooh!</b>.
-In most cases, we expect the text from a user, and want to treat it as text. We don’t want unexpected HTML in our site. An assignment to textContent does exactly that.
+In most cases, we expect the text from a user, and want to treat it as text. We don’t 
+want unexpected HTML in our site. An assignment to textContent does exactly that.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>The “hidden” property</h3>
@@ -458,7 +501,7 @@ We can use it in HTML or assign it using JavaScript, like this:
 </pre>
 
 <h3>More properties</h3>
-DOM elements also have additional properties, in particular those that depend on the class:
+<p>DOM elements also have additional properties, in particular those that depend on the class:</p>
 
 value – the value for <input>, <select> and <textarea> (HTMLInputElement, HTMLSelectElement…).
 href – the “href” for <a href="..."> (HTMLAnchorElement).
@@ -595,7 +638,8 @@ importance: 4
 
 <p>Let’s traverse the prototype chain via __proto__.</p>
 
-<p>As we know, methods of a class are in the prototype of the constructor. For instance, HTMLDocument.prototype has methods for documents.</p>
+<p>As we know, methods of a class are in the prototype of the constructor. For instance, 
+HTMLDocument.prototype has methods for documents.</p>
 
 <p>Also, there’s a reference to the constructor function inside the prototype:</p>
 
