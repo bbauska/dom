@@ -311,9 +311,10 @@ removed. And so on.</p>
 
 <p>Luckily, there are other ways to add HTML besides innerHTML, and we’ll study them soon.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><a href="https://javascript.info/basic-dom-node-properties#outerhtml-full-html-of-the-element">
 outerHTML: full HTML of the element</a></h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The outerHTML property contains the full HTML of the element. That’s like innerHTML 
 plus the element itself.</p>
 
@@ -324,11 +325,11 @@ plus the element itself.</p>
 <script>
   alert(elem.outerHTML); // <div id="elem">Hello <b>World</b></div>
 </script>
-Beware: unlike innerHTML, writing to outerHTML does not change the element. Instead, it replaces it in the DOM.
+<p>Beware: unlike innerHTML, writing to outerHTML does not change the element. Instead, it replaces it in the DOM.</p>
 
-Yeah, sounds strange, and strange it is, that’s why we make a separate note about it here. Take a look.
+<p>Yeah, sounds strange, and strange it is, that’s why we make a separate note about it here. Take a look.</p>
 
-Consider the example:
+<p>Consider the example:</p>
 
 <div>Hello, world!</div>
 
@@ -341,22 +342,23 @@ Consider the example:
   // Wow! 'div' is still the same!
   alert(div.outerHTML); // <div>Hello, world!</div> (**)
 </script>
-Looks really odd, right?
+<p>Looks really odd, right?</p>
 
-In the line (*) we replaced div with <p>A new element</p>. In the outer document (the DOM) we can see the new content instead of the <div>. But, as we can see in line (**), the value of the old div variable hasn’t changed!
+<p>In the line (*) we replaced div with <p>A new element</p>. In the outer document (the DOM) we can see the new content instead of the <div>. But, as we can see in line (**), the value of the old div variable hasn’t changed!</p>
 
-The outerHTML assignment does not modify the DOM element (the object referenced by, in this case, the variable ‘div’), but removes it from the DOM and inserts the new HTML in its place.
+<p>The outerHTML assignment does not modify the DOM element (the object referenced by, in this case, the variable ‘div’), but removes it from the DOM and inserts the new HTML in its place.</p>
 
-So what happened in div.outerHTML=... is:
+<p>So what happened in div.outerHTML=... is:</p>
 
-div was removed from the document.
+<p>div was removed from the document.</p>
+
 Another piece of HTML <p>A new element</p> was inserted in its place.
 div still has its old value. The new HTML wasn’t saved to any variable.
 It’s so easy to make an error here: modify div.outerHTML and then continue to work with div as if it had the new content in it. But it doesn’t. Such thing is correct for innerHTML, but not for outerHTML.
 
 We can write to elem.outerHTML, but should keep in mind that it doesn’t change the element we’re writing to (‘elem’). It puts the new HTML in its place instead. We can get references to the new elements by querying the DOM.
 
-nodeValue/data: text node content
+<h3>nodeValue/data: text node content</h3>
 The innerHTML property is only valid for element nodes.
 
 Other node types, such as text nodes, have their counterpart: nodeValue and data properties. These two are almost the same for practical use, there are only minor specification differences. So we’ll use data, because it’s shorter.
@@ -383,7 +385,9 @@ Sometimes developers embed information or template instructions into HTML in the
 <!-- /if -->
 …Then JavaScript can read it from data property and process embedded instructions.
 
-textContent: pure text
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>textContent: pure text</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The textContent provides access to the text inside the element: only text, minus all <tags>.
 
 For instance:
@@ -422,11 +426,14 @@ The first <div> gets the name “as HTML”: all tags become tags, so we see the
 The second <div> gets the name “as text”, so we literally see <b>Winnie-the-Pooh!</b>.
 In most cases, we expect the text from a user, and want to treat it as text. We don’t want unexpected HTML in our site. An assignment to textContent does exactly that.
 
-The “hidden” property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>The “hidden” property</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The “hidden” attribute and the DOM property specifies whether the element is visible or not.
 
 We can use it in HTML or assign it using JavaScript, like this:
 
+<pre>
 <div>Both divs below are hidden</div>
 
 <div hidden>With the attribute "hidden"</div>
@@ -436,16 +443,21 @@ We can use it in HTML or assign it using JavaScript, like this:
 <script>
   elem.hidden = true;
 </script>
-Technically, hidden works the same as style="display:none". But it’s shorter to write.
+</pre>
 
-Here’s a blinking element:
+<p>Technically, hidden works the same as style="display:none". But it’s shorter to write.</p>
 
+<p>Here’s a blinking element:</p>
+
+<pre>
 <div id="elem">A blinking element</div>
 
 <script>
   setInterval(() => elem.hidden = !elem.hidden, 1000);
 </script>
-More properties
+</pre>
+
+<h3>More properties</h3>
 DOM elements also have additional properties, in particular those that depend on the class:
 
 value – the value for <input>, <select> and <textarea> (HTMLInputElement, HTMLSelectElement…).
@@ -454,6 +466,7 @@ id – the value of “id” attribute, for all elements (HTMLElement).
 …and much more…
 For instance:
 
+<pre>
 <input type="text" id="elem" value="value">
 
 <script>
@@ -461,108 +474,142 @@ For instance:
   alert(elem.id); // "elem"
   alert(elem.value); // value
 </script>
-Most standard HTML attributes have the corresponding DOM property, and we can access it like that.
+</pre>
 
-If we want to know the full list of supported properties for a given class, we can find them in the specification. For instance, HTMLInputElement is documented at https://html.spec.whatwg.org/#htmlinputelement.
+<p>Most standard HTML attributes have the corresponding DOM property, and we can access it like that.</p>
 
-Or if we’d like to get them fast or are interested in a concrete browser specification – we can always output the element using console.dir(elem) and read the properties. Or explore “DOM properties” in the Elements tab of the browser developer tools.
+<p>If we want to know the full list of supported properties for a given class, we can find them in the specification. For instance, HTMLInputElement is documented at https://html.spec.whatwg.org/#htmlinputelement.</p>
 
-Summary
-Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.
+<p>Or if we’d like to get them fast or are interested in a concrete browser specification – we can always output the element using console.dir(elem) and read the properties. Or explore “DOM properties” in the Elements tab of the browser developer tools.</p>
 
-Main DOM node properties are:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Summary</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.</p>
+
+<p>Main DOM node properties are:</p>
+
 
 nodeType
 We can use it to see if a node is a text or an element node. It has a numeric value: 1 for elements,3 for text nodes, and a few others for other node types. Read-only.
+
 nodeName/tagName
 For elements, tag name (uppercased unless XML-mode). For non-element nodes nodeName describes what it is. Read-only.
+
 innerHTML
 The HTML content of the element. Can be modified.
+
 outerHTML
 The full HTML of the element. A write operation into elem.outerHTML does not touch elem itself. Instead it gets replaced with the new HTML in the outer context.
+
 nodeValue/data
 The content of a non-element node (text, comment). These two are almost the same, usually we use data. Can be modified.
+
 textContent
 The text inside the element: HTML minus all <tags>. Writing into it puts the text inside the element, with all special characters and tags treated exactly as text. Can safely insert user-generated text and protect from unwanted HTML insertions.
+
 hidden
-When set to true, does the same as CSS display:none.
-DOM nodes also have other properties depending on their class. For instance, <input> elements (HTMLInputElement) support value, type, while <a> elements (HTMLAnchorElement) support href etc. Most standard HTML attributes have a corresponding DOM property.
+<p>When set to true, does the same as CSS display:none.</p>
 
-However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter.
+<p>DOM nodes also have other properties depending on their class. For instance, &lt;input&gt; elements (HTMLInputElement) support value, type, while <a> elements (HTMLAnchorElement) support href etc. Most standard HTML attributes have a corresponding DOM property.</p>
 
-Tasks
-Count descendants
-importance: 5
-There’s a tree structured as nested ul/li.
+<p>However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter.</p>
 
-Write the code that for each <li> shows:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Tasks</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Count descendants</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<small>importance: 5</small>
+<p>There’s a tree structured as nested ul/li.</p>
 
-What’s the text inside it (without the subtree)
-The number of nested <li> – all descendants, including the deeply nested ones.
-Demo in new window
+<p>Write the code that for each &lt;li&gt; shows:</p>
+<ol type="1">
+  <li>What’s the text inside it (without the subtree)</li>
+  <li>The number of nested &lt;li&gt; – all descendants, including the deeply nested ones.</li>
+</ol>
 
-Open a sandbox for the task.
+<p>Demo in new window</p>
 
-solution
-What's in the nodeType?
-importance: 5
-What does the script show?
+<p>Open a sandbox for the task.</p>
 
-<html>
+<h4>solution</h4>
 
-<body>
-  <script>
+<h3>What's in the nodeType?</h3>
+<small>importance: 5</small>
+<p>What does the script show?</p>
+<pre>
+&lt;html&gt;
+
+&lt;body&gt;
+  &lt;script&gt;
     alert(document.body.lastChild.nodeType);
-  </script>
-</body>
+  &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
-solution
-Tag in comment
-importance: 3
-What does this code show?
+&lt;/html&gt;
+</pre>
 
-<script>
+<h4>solution</h4>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Tag in comment</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<small>importance: 3</small>
+
+<p>What does this code show?</p>
+
+<pre>
+&lt;script&gt;
   let body = document.body;
 
-  body.innerHTML = "<!--" + body.tagName + "-->";
+  body.innerHTML = "&lt;!--" + body.tagName + "--&gt;";
 
   alert( body.firstChild.data ); // what's here?
-</script>
-solution
-Where's the "document" in the hierarchy?
+&lt;/script&gt;
+</pre>
+
+<h4>solution</h4>
+<h3>Where's the "document" in the hierarchy?</h3>
 importance: 4
-Which class does the document belong to?
 
-What’s its place in the DOM hierarchy?
+<h4>Which class does the document belong to?</h4>
 
-Does it inherit from Node or Element, or maybe HTMLElement?
+<p>What’s its place in the DOM hierarchy?</p>
 
-solution
-We can see which class it belongs by outputting it, like:
+<p>Does it inherit from Node or Element, or maybe HTMLElement?</p>
 
-alert(document); // [object HTMLDocument]
-Or:
+<h4>solution</h4>
 
-alert(document.constructor.name); // HTMLDocument
-So, document is an instance of HTMLDocument class.
+<p>We can see which class it belongs by outputting it, like:</p>
 
-What’s its place in the hierarchy?
+<pre>alert(document); // [object HTMLDocument]</pre>
+<p>Or:</p>
 
-Yeah, we could browse the specification, but it would be faster to figure out manually.
+<pre>alert(document.constructor.name); // HTMLDocument</pre>
+<p>So, document is an instance of HTMLDocument class.</p>
 
-Let’s traverse the prototype chain via __proto__.
+<p>What’s its place in the hierarchy?</p>
 
-As we know, methods of a class are in the prototype of the constructor. For instance, HTMLDocument.prototype has methods for documents.
+<p>Yeah, we could browse the specification, but it would be faster to figure out manually.</p>
 
-Also, there’s a reference to the constructor function inside the prototype:
+<p>Let’s traverse the prototype chain via __proto__.</p>
 
-alert(HTMLDocument.prototype.constructor === HTMLDocument); // true
-To get a name of the class as a string, we can use constructor.name. Let’s do it for the whole document prototype chain, till class Node:
+<p>As we know, methods of a class are in the prototype of the constructor. For instance, HTMLDocument.prototype has methods for documents.</p>
 
+<p>Also, there’s a reference to the constructor function inside the prototype:</p>
+
+<pre>alert(HTMLDocument.prototype.constructor === HTMLDocument); // true</pre>
+
+<p>To get a name of the class as a string, we can use constructor.name. Let’s do it for the whole document prototype chain, till class Node:</p>
+
+<pre>
 alert(HTMLDocument.prototype.constructor.name); // HTMLDocument
 alert(HTMLDocument.prototype.__proto__.constructor.name); // Document
 alert(HTMLDocument.prototype.__proto__.__proto__.constructor.name); // Node
-That’s the hierarchy.
+</pre>
 
-We also could examine the object using console.dir(document) and see these names by opening __proto__. The console takes them from constructor internally.
+<p>That’s the hierarchy.</p>
+
+<p>We also could examine the object using <mark>console.dir(document)</mark> and see 
+these names by opening <mark>__proto__</mark>. The console takes them from <mark>constructor</mark> internally.</p>
