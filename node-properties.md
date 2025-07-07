@@ -569,32 +569,40 @@ properties. Or explore “DOM properties” in the Elements tab of the browser d
 
 <p>Main DOM node properties are:</p>
 
+<mark>nodeType</mark>
+<p>We can use it to see if a node is a text or an element node. It has a numeric value: 
+<mark>1</mark> for elements,<mark>3</mark> for text nodes, and a few others for other 
+node types. Read-only.</p>
 
-nodeType
-We can use it to see if a node is a text or an element node. It has a numeric value: 1 for elements,3 for text nodes, and a few others for other node types. Read-only.
+<mark>nodeName/tagName</mark>
+<p>For elements, tag name (uppercased unless XML-mode). For non-element nodes <mark>nodeName</mark> 
+describes what it is. Read-only.</p>
 
-nodeName/tagName
-For elements, tag name (uppercased unless XML-mode). For non-element nodes nodeName describes what it is. Read-only.
+<mark>innerHTML</mark>
+<p>The HTML content of the element. Can be modified.</p>
 
-innerHTML
-The HTML content of the element. Can be modified.
+<mark>outerHTML</mark>
+<p>The full HTML of the element. A write operation into <mark>elem.outerHTML</mark> does not 
+touch elem itself. Instead it gets replaced with the new HTML in the outer context.</p>
 
-outerHTML
-The full HTML of the element. A write operation into elem.outerHTML does not touch elem itself. Instead it gets replaced with the new HTML in the outer context.
+<mark>nodeValue/data</mark>
+<p>The content of a non-element node (text, comment). These two are almost the same, usually we use data. Can be modified.</p>
 
-nodeValue/data
-The content of a non-element node (text, comment). These two are almost the same, usually we use data. Can be modified.
+<mark>textContent</mark>
+<p>The text inside the element: HTML minus all <mark>&lt;tags&gt;</mark>. Writing into it 
+puts the text inside the element, with all special characters and tags treated exactly as 
+text. Can safely insert user-generated text and protect from unwanted HTML insertions.</p>
 
-textContent
-The text inside the element: HTML minus all <tags>. Writing into it puts the text inside the element, with all special characters and tags treated exactly as text. Can safely insert user-generated text and protect from unwanted HTML insertions.
+<mark>hidden</mark>
+<p>When set to <mark>true</mark>, does the same as <mark>CSS display:none</mark>.</p>
 
-hidden
-<p>When set to true, does the same as CSS display:none.</p>
-
-<p>DOM nodes also have other properties depending on their class. For instance, &lt;input&gt; elements (HTMLInputElement) support value, type, while <a> elements (HTMLAnchorElement) support href etc. Most standard HTML attributes have a corresponding DOM property.</p>
+<p>DOM nodes also have other properties depending on their class. For instance, 
+<mark>&lt;input&gt;</mark> elements <mark>(HTMLInputElement)</mark> support 
+<mark>value</mark>, <mark>type</mark>, while <mark>&lt;a&gt;</mark> elements 
+<mark>(HTMLAnchorElement)</mark> support <mark>href</mark> etc. Most standard 
+HTML attributes have a corresponding DOM property.</p>
 
 <p>However, HTML attributes and DOM properties are not always the same, as we’ll see in the next chapter.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Tasks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -609,13 +617,36 @@ hidden
   <li>The number of nested &lt;li&gt; – all descendants, including the deeply nested ones.</li>
 </ol>
 
-<p>Demo in new window</p>
+<p><a href="https://en.js.cx/task/tree-info/solution/">Demo in new window</a>.</p>
 
-<p>Open a sandbox for the task.</p>
+<p><a href="https://plnkr.co/edit/HILrCNC2WQL70wBY?p=preview">Open a sandbox for the task</a>.</p>
 
 <h4>solution</h4>
+Let’s make a loop over <li>:
+<pre>
+for (let li of document.querySelectorAll('li')) {
+  ...
+}
+</pre>
 
+<p>In the loop we need to get the text inside every <mark>li</mark>.</p>
+
+<p>We can read the text from the first child node of <mark>li</mark>, that is the text node:</p>
+
+<pre>
+for (let li of document.querySelectorAll('li')) {
+  let title = li.firstChild.data;
+
+  // title is the text in <li> before any other nodes
+}
+</pre>
+
+<p>Then we can get the number of descendants as <mark>li.getElementsByTagName('li').length</mark>.</p>
+
+<p><a href="https://plnkr.co/edit/F1UQNdzRcv7xkTpk?p=preview">Open the solution in a sandbox</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What's in the nodeType?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <small>importance: 5</small>
 <p>What does the script show?</p>
 <pre>
