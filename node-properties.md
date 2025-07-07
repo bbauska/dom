@@ -102,7 +102,7 @@ alert( document.body instanceof HTMLElement ); // true
 alert( document.body instanceof Element ); // true
 alert( document.body instanceof Node ); // true
 alert( document.body instanceof EventTarget ); // true
-
+</pre>
 
 <p>As we can see, DOM nodes are regular JavaScript objects. They use prototype-based classes for inheritance.</p>
 
