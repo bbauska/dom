@@ -52,15 +52,20 @@ p {
   font-size: 13px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   text-align: left; 
-  margin-left: 5px; }
+  margin-left: 5px; 
+}
 p.em1 {
-  margin-left: 1em; }
+  margin-left: 1em; 
+}
 p.em2 {
-  margin-left: 2em; }
+  margin-left: 2em; 
+}
 p.em3 {
-  margin-left: 3em; }
+  margin-left: 3em; 
+}
 p.em4 {
-  margin-left: 4em; }
+  margin-left: 4em; 
+}
 
 background: linear-gradient(34deg, #5cc0fb 0%, transparent 48.18%, #83d8ff 56.429%, rgba(134,252,212,0.36) 100%);
 
@@ -93,11 +98,11 @@ h4 {
   font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; 
 }
 h5 { 
-  font-size: 12px;
+  font-size: 14px;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif; 
 }
 h6 { 
-  font-size: 10px;
+  font-size: 12px;
   font-family: Consolas, Inter, Bahnschrift, Inter, Helvetic, sans-serif; 
 }
 
