@@ -124,18 +124,13 @@ most common properties for this are <b><mark>innerHTML</mark></b> and
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 01.  change content using innerHTML ~~~~~~~~~~~~~~~~-->
-<p align="center" >
-<a href="" 
-  target="_blank" rel="noopener noreferrer">
-  <img class="displayed"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 01. example change content using innerHTML ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
     src="./images/image001.gif?raw=true"
     loading="lazy"
-    style="width:40%;"
-    title=""
-    alt="." />
-</a>
-</p>
+    style="width:531px; height:94px;"
+    title="Example changing content using innerHTML"
+    alt="Example changing content using innerHTML." />
 <!-- image001.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
@@ -1763,11 +1758,10 @@ hostname.</h4>
 
 </html>
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 39.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. g4g - listing url and hostname ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1775,8 +1769,10 @@ hostname.</h4>
     src="./images/image039.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="GeeksforGeeks URL is: https://ide.geeksforgeeks.org/tryit.php, 
+	  hostname is: ide.geeksforgeeks.org"
+    alt="GeeksforGeeks URL is: https://ide.geeksforgeeks.org/tryit.php, 
+	  hostname is: ide.geeksforgeeks.org." />
 </a>
 </p>
 <!-- image039.png -->
@@ -1794,24 +1790,22 @@ constructing and displaying the extracted hostname on the page.</p>
 <h4>Example: In this example, we will ask for the URL to the user and then will perform the 
 extraction of the hostname on that URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Extracting URL</title&gt;
+&lt;/head&gt;
 
-<head>
-    <title>Extracting URL</title>
-</head>
-
-<body>
-    <h1 style="color: green;">GeeksforGeeks</h1>
-    <b>Extracting URL</b>
-    <br><br>
-    <form name="f1">
-        <input type="text" name="txt" placeholder="Paste URL" />
-        <input type="button" value="click" onclick="url2()" />
-    </form>
-    <script>
+&lt;body&gt;
+    &lt;h1 style="color: green;"&gt;GeeksforGeeks&lt;/h1&gt;
+    &lt;b&gt;Extracting URL&lt;/b&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;form name="f1"&gt;
+        &lt;input type="text" name="txt" placeholder="Paste URL" /&gt;
+        &lt;input type="button" value="click" onclick="url2()" /&gt;
+    &lt;/form&gt;
+    &lt;script&gt;
         function url2() {
 
             let url3 = document.f1.txt.value;
@@ -1820,7 +1814,7 @@ extraction of the hostname on that URL.</h4>
 
             let host = "";
 
-            for (i = j + 3; i < url3.length; i++) {
+            for (i = j + 3; i &lt; url3.length; i++) {
                 if (url3.charAt(i) != '/') {
                     host = host + "" + url3.charAt(i);
                 } else {
@@ -1829,12 +1823,11 @@ extraction of the hostname on that URL.</h4>
             }
             document.write(host);
         }
-    </script>
-</body>
+    &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1867,17 +1860,15 @@ the current document. The string also includes the HTTP protocol such as ( http:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Return Value: It returns a string value that represents the full URL of the document.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<script>
+&lt;script&gt;
 // Get the current URL using document.URL
 let currentUrl = document.URL;
 
 // Log the URL to the console
 console.log(currentUrl);
-</script>
+&lt;/script&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1894,13 +1885,13 @@ information about the current location of the document.</p>
 <pre>window.location.href</pre>
 
 <pre>
-<script>
+&lt;script&gt;
 // Get the current URL using document.URL
 let currentUrl = document.URL;
 
 // Log the URL to the console
 console.log(currentUrl);
-</script>
+&lt;/script&gt;
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1935,7 +1926,6 @@ retrieve key/value pairs, allowing access to all URL parameters for further use.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 let paramString = urlString.split('?')[1];
 let queryString = new URLSearchParams(paramString);
@@ -1944,38 +1934,36 @@ for (let pair of queryString.entries()) {
    console.log("Value is: " + pair[1]);
 }
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example we retrieves URL parameters using JavaScript. It splits the URL, 
 extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each 
 <b><mark>key-value</mark></b> pair to the console when the button is clicked.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
     How To Get URL Parameters using JavaScript?
-  </title>
-</head>
-<body>
-  <h1 style="color:green;">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 style="color:green;"&gt;
     GeeksforGeeks
-  </h1> 
-  <b>
+  &lt;/h1&gt; 
+  &lt;b&gt;
     How To Get URL Parameters
     With JavaScript?
-  </b>
-  <p> The url used is: 
+  &lt;/b&gt;
+  &lt;p&gt; The url used is: 
     https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks 
-  </p>
-  <p> 
+  &lt;/p&gt;
+  &lt;p&gt; 
     Click on the button to get the url 
     parameters in the console. 
-  </p>
-  <button onclick="getParameters()"> Get URL parameters </button>
-  <script>
+  &lt;/p&gt;
+  &lt;button onclick="getParameters()"&gt; Get URL parameters &lt;/button&gt;
+  &lt;script&gt;
     function getParameters() {
       let urlString = 
         "https://www.example.com/login.php?a=GeeksforGeeks&b=500&c=Hello Geeks";
@@ -1986,11 +1974,10 @@ extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each
         console.log("Value is:" + pair[1]);
       }
     }
-  </script>
-</body>
-</html>
-</pre>
-
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre&gt;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2633,12 +2620,3 @@ HTML directly to an element.</h4>
   <!- script was here -->
   </body>
 </html>
-
-
-
-
-
-
-
-
-
