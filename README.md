@@ -12,22 +12,22 @@ output:
 ---
 
 <ol>
-  <li><a href="#D01">01. JavaScript - How to Manipulate DOM Elements?</a></li>
-  <li><a href="#D02">02. How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</a></li>
-  <li><a href="#D03">03. How to select DOM Elements in JavaScript?</a></li>
-  <li><a href="#D04">04. How to get all ID's of the DOM elements with JavaScript?</a></li>
-  <li><a href="#D05">05. JavaScript – How to Get the Data Attributes of an Element?</a></li>
-  <li><a href="#D06">06. How To Get Element By Class Name In JavaScript?</a></li>
-  <li><a href="#D07">07. How to Get Value by Class Name using JavaScript?</a></li>
-  <li><a href="#D08">08. How to Get Domain Name From URL in JavaScript?</a></li>
-  <li><a href="#D09">09. How to Get Protocol, Domain and Port from URL using JavaScript?</a></li>
-  <li><a href="#D10">10. How to Extract the Host Name from URL using JavaScript?</a></li>
-  <li><a href="#D11">11. How to Get the Current URL using JavaScript?</a></li>
-  <li><a href="#D12">12. How to Get URL Parameters using JavaScript?</a></li>
-  <li><a href="#D13">13. How to Parse URL using JavaScript?</a></li>
-  <li><a href="#D14">14. Manipulating HTML Elements with JavaScript</a></li>
-  <li><a href="#D15">15. How to use <b><mark>innerHTML</mark></b> in JavaScript?</a></li>
-  <li><a href="#D16">16. JavaScript <b><mark>innerHTML</mark></b></a></li>
+  <li><a href="#D01">JavaScript - How to Manipulate DOM Elements?</a></li>
+  <li><a href="#D02">How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</a></li>
+  <li><a href="#D03">How to select DOM Elements in JavaScript?</a></li>
+  <li><a href="#D04">How to get all ID's of the DOM elements with JavaScript?</a></li>
+  <li><a href="#D05">JavaScript – How to Get the Data Attributes of an Element?</a></li>
+  <li><a href="#D06">How To Get Element By Class Name In JavaScript?</a></li>
+  <li><a href="#D07">How to Get Value by Class Name using JavaScript?</a></li>
+  <li><a href="#D08">How to Get Domain Name From URL in JavaScript?</a></li>
+  <li><a href="#D09">How to Get Protocol, Domain and Port from URL using JavaScript?</a></li>
+  <li><a href="#D10">How to Extract the Host Name from URL using JavaScript?</a></li>
+  <li><a href="#D11">How to Get the Current URL using JavaScript?</a></li>
+  <li><a href="#D12">How to Get URL Parameters using JavaScript?</a></li>
+  <li><a href="#D13">How to Parse URL using JavaScript?</a></li>
+  <li><a href="#D14">Manipulating HTML Elements with JavaScript</a></li>
+  <li><a href="#D15">How to use <b><mark>innerHTML</mark></b> in JavaScript?</a></li>
+  <li><a href="#D16">JavaScript <b><mark>innerHTML</mark></b></a></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of dom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
