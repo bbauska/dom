@@ -6,6 +6,7 @@ author: "bbauska"
 date created: "05/12/25 Mon 12+pm"
 date last editted: "05/12/25 Mon 8+pm"
 date last editted: "05/13/25 Tue 9+pm"
+date last editted: "09/13/25 Sat 1+am"
 output: 
   markdown:
     with some style
@@ -35,11 +36,13 @@ output:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D01">01 JavaScript - How to Manipulate DOM Elements?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>DOM</mark></b> stands for the <b><mark>Document Object Model (DOM)</mark></b>, which 
-allows us to interact with the document and change its structure, style, and content. We can use 
-the <b><mark>DOM</mark></b> to change the content and style of an HTML element by changing its properties.</p>
+<p>The <b><mark>DOM</mark></b> stands for the <b><mark>Document Object Model (DOM)</mark></b>, 
+which allows us to interact with the document and change its structure, style, and content. 
+We can use the <b><mark>DOM</mark></b> to change the content and style of an HTML element by 
+changing its properties.</p>
 
-<p>We can manipulate or change the <b><mark>DOM elements</mark></b> by using the following methods:</p>
+<p>We can manipulate or change the <b><mark>DOM elements</mark></b> by using the following 
+methods:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Change the Content of an Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -69,7 +72,7 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 01.  change content using innerHTML ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 01.  Button: change content using innerHTML ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -77,8 +80,8 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
     src="./images/image001.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button: change content using innerHTML"
+    alt="Button: change content using innerHTML." />
 </a>
 </p>
 <!-- image001.gif -->
@@ -86,18 +89,21 @@ properties for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:<
 <h4>In this example</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li><b><mark>innerHTML</mark></b> changes the entire content of an element, including HTML tags. 
-      In this case, we replace the content of the first <b><mark>div</mark></b> with bold text 
-	  using <b><mark>&lt;strong&gt;</mark></b>.</li>
-  <li><b><mark>textContent</mark></b> changes only the text inside the element, ignoring any HTML 
-    tags. The second <b><mark>div</mark></b> is updated with plain text, without any HTML formatting.</li>
-  <li>The first <b><mark>div</mark></b> shows "This is the original content using <b><mark>innerHTML</mark></b>."</li>
-  <li>The second <b><mark>div</mark></b> shows "This is the original text content using <b><mark>textContent</mark></b>."</li>
+  <li><b><mark>innerHTML</mark></b> changes the entire content of an element, including HTML 
+    tags. In this case, we replace the content of the first <b><mark>div</mark></b> with bold 
+	text using <b><mark>&lt;strong&gt;</mark></b>.</li>
+  <li><b><mark>textContent</mark></b> changes only the text inside the element, ignoring any 
+    HTML tags. The second <b><mark>div</mark></b> is updated with plain text, without any HTML 
+	formatting.</li>
+  <li>The first <b><mark>div</mark></b> shows "This is the original content using 
+    <b><mark>innerHTML</mark></b>."</li>
+  <li>The second <b><mark>div</mark></b> shows "This is the original text content using 
+    <b><mark>textContent</mark></b>."</li>
   <li>After clicking the "Change Content" button.</li>
-  <li>The first <b><mark>div</mark></b> will display "This is changed using <b><mark>innerHTML</mark></b>!" 
-      with bold text.</li>
-  <li>The second <b><mark>div</mark></b> will display "This is changed using <b><mark>textContent</mark></b>!" 
-      with plain text.</li>
+  <li>The first <b><mark>div</mark></b> will display "This is changed using 
+    <b><mark>innerHTML</mark></b>!" with bold text.</li>
+  <li>The second <b><mark>div</mark></b> will display "This is changed using 
+    <b><mark>textContent</mark></b>!" with plain text.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Manipulate the Class Attribute</h3>
@@ -148,7 +154,7 @@ This is helpful for styling or applying animations.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 02. manipulate class ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 02. manipulate class; add, remove, toggle ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -156,8 +162,8 @@ This is helpful for styling or applying animations.</p>
     src="./images/image002.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Buttons to manipulate class; add, remove and toggle"
+    alt="Buttons to manipulate class; add, remove and toggle." />
 </a><!-- image002.gif -->
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -176,8 +182,8 @@ This is helpful for styling or applying animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Set CSS Styles Using JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You can directly manipulate the CSS styles of an element using the style property. This allows you 
-to dynamically change how elements appear on the page.</p>
+<p>You can directly manipulate the CSS styles of an element using the style property. This 
+allows you to dynamically change how elements appear on the page.</p>
 
 <pre>
 // Changing multiple CSS properties
@@ -189,8 +195,8 @@ document.getElementById("demo").style.cssText = "color: blue; font-size: 18px;";
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Create, Add, and Remove Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Sometimes, you need to create new elements, add them to the DOM, or remove existing ones. You 
-can do this easily with the following methods;</p>
+<p>Sometimes, you need to create new elements, add them to the DOM, or remove existing ones. 
+You can do this easily with the following methods;</p>
 <ul>
   <li><b><mark>document.createElement()</mark></b>: Creates a new element.</li>
   <li><b><mark>appendChild()</mark></b>: Adds a new element to a parent element.</li>
@@ -244,11 +250,12 @@ document.getElementById("image").removeAttribute("src");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>7. Manipulate Data Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>HTML5 introduced data attributes, which are custom attributes that you can use to store extra 
-information about an element. These are particularly useful for adding data to an element 
-without affecting its visual structure.</p>
+<p>HTML5 introduced data attributes, which are custom attributes that you can use to store 
+extra information about an element. These are particularly useful for adding data to an 
+element without affecting its visual structure.</p>
 <ul>
-  <li><b><mark>dataset</mark></b>: A special property in JavaScript that allows you to access data attributes.</li>
+  <li><b><mark>dataset</mark></b>: A special property in JavaScript that allows you to access 
+    data attributes.</li>
 </ul>
 
 <pre>
@@ -259,12 +266,13 @@ let userId = document.getElementById("demo").dataset.userId;
 console.log(userId); // Outputs: 12345
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="D02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> in JavaScript?</h2>
+<h2 id="D02">02 How to Add a <b><mark>Class</mark></b> to <b><mark>DOM Element</mark></b> 
+in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in 
-JavaScript is a fundamental task that enables developers to dynamically manipulate 
-the appearance and behavior of web pages. Classes in HTML provide a powerful way to 
-apply CSS styles or JavaScript functionality to multiple elements at once.</p>
+<p>Adding a class to a <b><mark>DOM (Document Object Model)</mark></b> element in JavaScript 
+is a fundamental task that enables developers to dynamically manipulate the appearance and 
+behavior of web pages. Classes in HTML provide a powerful way to apply CSS styles or 
+JavaScript functionality to multiple elements at once.</p>
 
 <p>By using JavaScript, you can easily add, remove, or toggle classes on elements, making 
 your web applications more interactive and responsive to user actions.</p>
@@ -279,10 +287,11 @@ your web applications more interactive and responsive to user actions.</p>
   <li>Using <b><mark>classList</mark></b> Property</li>
 </ul>
 
-<p>In this approach, we are using <b><mark>classList</mark></b> property to add the class into the 
-<b><mark>DOM element</mark></b>. It returns the class name as a <b><mark>DOMTokenList</mark></b> 
-object. It has a method called “add” which is used to add class name to elements. We will access 
-the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we will use the add property of 
+<p>In this approach, we are using <b><mark>classList</mark></b> property to add the class 
+into the <b><mark>DOM element</mark></b>. It returns the class name as a 
+<b><mark>DOMTokenList</mark></b> object. It has a method called “add” which is used to 
+add class name to elements. We will access the <b><mark>div</mark></b> using the 
+<b><mark>getElementById</mark></b> and we will use the add property of 
 <b><mark>classList</mark></b> to add a class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -318,7 +327,7 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 03. manipulate class ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. Button add class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -326,17 +335,17 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
     src="./images/image003.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button add class"
+    alt="Button add class." />
 </a>
 </p>
 <!-- image003.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Using <b><mark>className</mark></b> Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this approach, we are using the <b><mark>className</mark></b> property. This property returns the 
-<b><mark>className</mark></b> of the element. If the element has already a class then it will simply 
-add another one to it or else it will append our new class to it.
+In this approach, we are using the <b><mark>className</mark></b> property. This property 
+returns the <b><mark>className</mark></b> of the element. If the element has already a 
+class then it will simply add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -379,7 +388,7 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 04.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. Button add class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -387,16 +396,16 @@ add another one to it or else it will append our new class to it.
     src="./images/image004.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button and class"
+    alt="Button and class." />
 </a>
 </p>
 <!-- image004.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D03">03. How to select DOM Elements in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Selecting <b><mark>DOM (Document Object Model)</mark></b> elements is a fundamental aspect of web 
-development with JavaScript. It allows developers to interact with and manipulate elements 
+<p>Selecting <b><mark>DOM (Document Object Model)</mark></b> elements is a fundamental aspect 
+of web development with JavaScript. It allows developers to interact with and manipulate elements 
 on a webpage dynamically. Proper selection of elements is crucial for tasks such as updating 
 content, adding event listeners, or modifying styles.</p>
 
@@ -447,7 +456,7 @@ content, adding event listeners, or modifying styles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -455,16 +464,16 @@ content, adding event listeners, or modifying styles.</p>
     src="./images/image005.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="GeeksForGeeks in green"
+    alt="GeeksForGeeks in green." />
 </a>
 </p>
 <!-- image005.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-02">2. Using <b><mark>getElementsByClassName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This method selects elements based on their class attribute. It returns a collection of elements 
-with the specified class name.</p>
+<p>This method selects elements based on their class attribute. It returns a collection of 
+elements with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -499,7 +508,7 @@ with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 06.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06. DOM selector in JavaScript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -507,16 +516,16 @@ with the specified class name.</p>
     src="./images/image006.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="DOM selector in JavaScript"
+    alt="DOM selector in JavaScript." />
 </a>
 </p>
 <!-- image006.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-03">03. Using <b><mark>getElementsByTagName</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This method selects elements based on their tag name. It returns a collection of elements with the 
-specified tag name.</p>
+<p>This method selects elements based on their tag name. It returns a collection of elements 
+with the specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -551,7 +560,7 @@ specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 07.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 07. How to select DOM elements using tag name ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -559,16 +568,16 @@ specified tag name.</p>
     src="./images/image007.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="How to select DOM elements using tag name"
+    alt="How to select DOM elements using tag name." />
 </a>
 </p>
 <!-- image007.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-04">04. Using <b><mark>querySelector</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This method selects the first element that matches a specified CSS selector. It returns only 
-one element.</p>
+<p>This method selects the first element that matches a specified CSS selector. It returns 
+only one element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -602,7 +611,7 @@ one element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 08.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. GeeksForGeeks ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -610,16 +619,16 @@ one element.</p>
     src="./images/image008.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="GeeksForGeeks"
+    alt="GeeksForGeeks." />
 </a>
 </p>
 <!-- image008.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="D03-05">05. Using <b><mark>querySelectorAll</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> containing 
-all elements that match the specified CSS selector.</p>
+<p>Similar to <b><mark>querySelector</mark></b>, but it returns a <b><mark>NodeList</mark></b> 
+containing all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -656,7 +665,7 @@ all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 09. how to select dom element using tag name ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 09. how to select dom element using tag name ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -664,22 +673,22 @@ all elements that match the specified CSS selector.</p>
     src="./images/image009.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="This is showing hoiw to select DOM elements using tag name"
+    alt="This is showing hoiw to select DOM elements using tag name." />
 </a>
 </p>
 <!-- image009.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D04">04. How to get all ID of the DOM elements with JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Given a HTML document and the task is to get the all ID of the DOM elements in an array. There are 
-two methods to solve this problem which are discusses below:</p>
+<p>Given a HTML document and the task is to get the all ID of the DOM elements in an array. 
+There are two methods to solve this problem which are discusses below:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach 1:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every element 
-of the document. Use <b><mark>.each()</mark></b> method to traverse all elements and check if it 
-has an ID. If it has an ID then push it into the array.</p>
+<p>First select all elements using <b><mark>$(‘*’)</mark></b> selector, which selects every 
+element of the document. Use <b><mark>.each()</mark></b> method to traverse all elements and 
+check if it has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example implements the above approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -725,16 +734,16 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
     src="./images/image010.gif?raw=true"
     loading="lazy"
-    style="width:30%;"
-    title=""
-    alt="." />
+    style="width: 300px;"
+    title="Click to get all Ids in an array"
+    alt="Click to get all Ids in an array." />
 </a>
 </p>
 <!-- image010.gif -->
@@ -792,16 +801,16 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 11. click to get all id's in an array ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. click to get all id's in an array ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
   <img class="displayed"
     src="./images/image011.gif?raw=true"
     loading="lazy"
-    style="width:30%;"
-    title=""
-    alt="." />
+    style="width:3in;"
+    title="Click button to get all Id's in an array"
+    alt="Click button to get all Id's in an array." />
 </a>
 </p>
 <!-- image011.gif -->
@@ -812,9 +821,10 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Using dataset Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>dataset</mark></b> property in JavaScript allows you to access all data attributes of an HTML 
-element as a <b><mark>DOMStringMap</mark></b> object. It simplifies retrieving, modifying, or interacting with 
-custom data stored in attributes like data-id or data-name.</p>
+<p>The <b><mark>dataset</mark></b> property in JavaScript allows you to access all data 
+attributes of an HTML element as a <b><mark>DOMStringMap</mark></b> object. It simplifies 
+retrieving, modifying, or interacting with custom data stored in attributes like data-id 
+or data-name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -859,7 +869,7 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 12. click to get attributes for target element ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 12. click to get attributes for target element ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -867,18 +877,18 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
     src="./images/image012.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Click button to get 'for target' element"
+    alt="Click button to get 'for target' element." />
 </a>
 </p>
 <!-- image012.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using getAttribute() Method</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>getAttribute()</mark></b> method in JavaScript retrieves the value of a specified 
-attribute from an HTML element. To get data attributes, use <b><mark>element.getAttribute(‘data-attribute’)</mark></b>. 
-This method allows precise selection and manipulation of individual data attributes without 
-accessing all at once.</p>
+<p>The <b><mark>getAttribute()</mark></b> method in JavaScript retrieves the value of a 
+specified attribute from an HTML element. To get data attributes, use 
+<b><mark>element.getAttribute(‘data-attribute’)</mark></b>. This method allows precise 
+selection and manipulation of individual data attributes without accessing all at once.</p>
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -914,7 +924,7 @@ accessing all at once.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 13. click to get attributes ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13. click to get attributes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -922,8 +932,8 @@ accessing all at once.</p>
     src="./images/image013.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Click button to get attributes"
+    alt="Click button to get attributes." />
 </a>
 </p>
 <!-- image013.gif -->
@@ -963,8 +973,8 @@ label. In this, list gets updated automatically if elements are added or removed
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>var elements = document.getElementsByClassName("className");</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example we are using the <b><mark>getElementsByClassName()</mark></b> method 
-to get element by class name in JavaScript.</h4>
+<h4>Example: In this example we are using the <b><mark>getElementsByClassName()</mark></b> 
+method to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -1003,7 +1013,7 @@ to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 14. get elements by class name ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14. get elements by class name ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1011,8 +1021,8 @@ to get element by class name in JavaScript.</h4>
     src="./images/image014.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Get elements by class name"
+    alt="Get elements by class name." />
 </a>
 </p>
 <!-- image014.png -->
@@ -1020,16 +1030,17 @@ to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>document.querySelector()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this approach we are using the <b><mark>document.querySelector()</mark></b> method. This method 
-returns the first element that matches the specified selector (class name). It is useful when you 
-only need to select a single element by class name.</p>
+<p>In this approach we are using the <b><mark>document.querySelector()</mark></b> method. 
+This method returns the first element that matches the specified selector (class name). 
+It is useful when you only need to select a single element by class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>var element = document.querySelector(".className");</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example we are using the <b><mark>querySelector()</mark></b> method to get 
-element by class name and we will change the background color of selected class in javascript.</h4>
+<h4>Example: In this example we are using the <b><mark>querySelector()</mark></b> method 
+to get element by class name and we will change the background color of selected class in 
+javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -1064,7 +1075,7 @@ element by class name and we will change the background color of selected class 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 15. query selector example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. query selector example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1072,17 +1083,17 @@ element by class name and we will change the background color of selected class 
     src="./images/image015.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Query selector example"
+    alt="Query selector example." />
 </a>
 </p>
 <!-- image015.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using <b><mark>document.querySelectorAll()</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this approach we are using the <b><mark>document.querySelectorAll()</mark></b> method. This method finds all 
-elements that match a specific CSS selector, like class name. It gives you a static list, 
-which means it wont automatically update if page changes.</p>
+<p>In this approach we are using the <b><mark>document.querySelectorAll()</mark></b> method. 
+This method finds all elements that match a specific CSS selector, like class name. It gives 
+you a static list, which means it wont automatically update if page changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1090,8 +1101,8 @@ which means it wont automatically update if page changes.</p>
 var elements = document.querySelectorAll(".className");
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In below example we are using the <b><mark>querySelectorAll</mark></b> and we will 
-print all the content which have that class name.</h4>
+<h4>Example: In below example we are using the <b><mark>querySelectorAll</mark></b> and we 
+will print all the content which have that class name.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -1133,7 +1144,7 @@ print all the content which have that class name.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 16. query selector all example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16. query selector all example ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1141,18 +1152,19 @@ print all the content which have that class name.</h4>
     src="./images/image016.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Query selector All example"
+    alt="Query selector All example." />
 </a>
 </p>
 <!-- image016.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="D07">07. How to Get Value by Class Name using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This article will show you how to use JavaScript to get value by class name. To get the value 
-of an element by its class name in JavaScript, you can use the <b><mark>getElementsByClassName()</mark></b> 
-method. This method returns an array-like object of all elements with the specified class name. You can 
-then access the value property of the first element in the array to get the value.</p>
+<p>This article will show you how to use JavaScript to get value by class name. To get the 
+value of an element by its class name in JavaScript, you can use the 
+<b><mark>getElementsByClassName()</mark></b> method. This method returns an array-like object 
+of all elements with the specified class name. You can then access the value property of the 
+first element in the array to get the value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example, we will get the <b><mark>classname</mark></b> of an element.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1202,7 +1214,7 @@ then access the value property of the first element in the array to get the valu
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 17. query selector all example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17. toggle button get value ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1210,8 +1222,8 @@ then access the value property of the first element in the array to get the valu
     src="./images/image017.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Toggle button get value"
+    alt="Toggle button get value." />
 </a>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1263,7 +1275,7 @@ then access the value property of the first element in the array to get the valu
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 18. query selector all example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. 3 box, highlight first ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1271,8 +1283,8 @@ then access the value property of the first element in the array to get the valu
     src="./images/image018.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="3 box, highlight first"
+    alt="3 box, highlight first." />
 </a>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1326,7 +1338,7 @@ catch block, you can handle this error, for example by logging it or returning a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 33.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 33. how to get domain name from URL in javascript ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1334,8 +1346,8 @@ catch block, you can handle this error, for example by logging it or returning a
     src="./images/image033.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="How to get domain name from URL in JavaScript"
+    alt="How to get domain name from URL in JavaScript." />
 </a>
 </p>
 <!-- image033.png -->
@@ -1365,7 +1377,7 @@ available, you can use regular expressions to extract the domain from the URL st
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 34.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 34. again, get domain name in javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1373,8 +1385,8 @@ available, you can use regular expressions to extract the domain from the URL st
     src="./images/image034.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Again, get domain name in JavaScript"
+    alt="Again, get domain name in JavaScript." />
 </a>
 </p>
 <!-- image034.png -->
@@ -1388,8 +1400,8 @@ available, you can use regular expressions to extract the domain from the URL st
 used to return the required properties.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The <b><mark>location.protocol</mark></b> property is used to return the protocol scheme 
-    of the URL along with the final colon(:).</li>
+  <li>The <b><mark>location.protocol</mark></b> property is used to return the protocol 
+    scheme of the URL along with the final colon(:).</li>
   <li>The <b><mark>location.hostname</mark></b> is used to return the domain name of the URL.</li>
   <li>The <b><mark>location.port</mark></b> property is used to return the port of the URL. It 
     returns nothing if the port is not described explicitly in the URL.</li>
@@ -1458,7 +1470,7 @@ port = location.port;
   <li><b>Before</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 35.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 35. Button to get product, domain and port ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1466,8 +1478,8 @@ port = location.port;
     src="./images/image035.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button to get product, domain and port"
+    alt="Button to get product, domain and port." />
 </a>
 </p>
 <!-- image035.png -->
@@ -1475,7 +1487,7 @@ port = location.port;
   <li><b>After</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 36.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 36. Button to get protocol, domain and port ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1483,8 +1495,8 @@ port = location.port;
     src="./images/image036.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button to get protocol, domain and port"
+    alt="Button to get protocol, domain and port." />
 </a>
 </p>
 <!-- image036.png -->
@@ -1559,7 +1571,7 @@ port = url_object.port;
   <li><b>Before</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 37.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 37. Again, button for protocol, domain & port ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1567,8 +1579,8 @@ port = url_object.port;
     src="./images/image037.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Again, button for protocol, domain and port"
+    alt="Again, button for protocol, domain and port." />
 </a>
 </p>
 <!-- image037.png -->
@@ -1576,7 +1588,7 @@ port = url_object.port;
   <li><b>After</b> Clicking the button:</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 38.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 38. Button to get protocol, domain and port ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1584,8 +1596,8 @@ port = url_object.port;
     src="./images/image038.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button to get protocol, domain and port"
+    alt="Button to get protocol, domain and port." />
 </a>
 </p>
 <!-- image038.png -->
@@ -1641,7 +1653,7 @@ hostname.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 39.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. Display URL and hostname ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1649,8 +1661,8 @@ hostname.</h4>
     src="./images/image039.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Display URL and hostname"
+    alt="Display URL and hostname." />
 </a>
 </p>
 <!-- image039.png -->
@@ -1703,7 +1715,7 @@ extraction of the hostname on that URL.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 40.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 40. Button click to extract URL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1711,8 +1723,8 @@ extraction of the hostname on that URL.</h4>
     src="./images/image040.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button click to extract URL"
+    alt="Button click to extract URL." />
 </a>
 </p>
 <!-- image040.gif -->
@@ -1851,7 +1863,7 @@ extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 41.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. Button to click for URL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1859,8 +1871,8 @@ extracts parameters with <b><mark>URLSearchParams()</mark></b>, and logs each
     src="./images/image041.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="Button click for URL"
+    alt="Button click for URL." />
 </a>
 </p>
 <!-- image041.gif -->
@@ -2145,7 +2157,7 @@ is executed, which logs a message to the console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 43.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. new content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -2153,8 +2165,8 @@ is executed, which logs a message to the console.</p>
     src="./images/image043.jpg?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="New content"
+    alt="New content." />
 </a>
 </p>
 <!-- image043.jpg -->
@@ -2182,7 +2194,7 @@ is executed, which logs a message to the console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 44.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 44. new content; another new paragraph ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -2190,8 +2202,8 @@ is executed, which logs a message to the console.</p>
     src="./images/image044.jpg?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    title="New content; anothe new paragraph"
+    alt="New content; anothe new paragraph." />
 </a>
 </p>
 <!-- image044.jpg -->
@@ -2219,10 +2231,11 @@ is executed, which logs a message to the console.</p>
 &lt;/html&gt;
 </pre>
 
-<p>Explanation: In this example, we first access the button element using the <b><mark>getElementById()</mark></b> 
-method. We then add an event listener to the button using the <b><mark>addEventListener()</mark></b> 
-method. The event we are listening for is the "click" event, and the function we want to execute when the 
-event occurs is defined inline.</p>
+<p>Explanation: In this example, we first access the button element using the 
+<b><mark>getElementById()</mark></b> method. We then add an event listener to the button 
+using the <b><mark>addEventListener()</mark></b> method. The event we are listening for 
+is the "click" event, and the function we want to execute when the event occurs is defined 
+inline.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2287,7 +2300,8 @@ console.log(htmlContent);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 3: Set the HTML content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>If you want to replace or update the HTML content of the element, assign a new HTML string to the innerHTML property.</p>
+<p>If you want to replace or update the HTML content of the element, assign a new HTML 
+string to the innerHTML property.</p>
 <pre>element.innerHTML = "<b>New content</b>";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 4: Verify the changes(optional)</h4>
@@ -2355,8 +2369,8 @@ it using DOM manipulation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>selectedHTMLElement.innerHTML = "contentToAppend";</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 1: The below code shows a basic implementation of <b><mark>innerHTML</mark></b> property to append 
-HTML directly to an element.</h4>
+<h4>Example 1: The below code shows a basic implementation of <b><mark>innerHTML</mark></b> 
+property to append HTML directly to an element.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -2417,7 +2431,8 @@ HTML directly to an element.</h4>
 </a>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example 2: The below code implements the <b><mark>innerHTML</mark></b> property with click event to add HTML onclick to the button.</h4>
+<h4>Example 2: The below code implements the <b><mark>innerHTML</mark></b> property with click 
+event to add HTML onclick to the button.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
