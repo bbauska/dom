@@ -6,7 +6,7 @@ table {
 th, td {
   padding: 3px;
   text-align: left;
-  border-bottom: 1px solid #ddd;  /* very light gray */
+  border-bottom: 1px solid #dddddd;  /* very light gray */
 }
 
 img.displayed {
@@ -33,7 +33,7 @@ blockquote {
   overflow: hidden;
   padding: 0 0 0 13px;  /* 0 0 0 26px; */
   font-weight: 500;  /* 100 */
-  color: #ffffff;  /* white, was: cc6b39; moderate orange */
+  color: #ffffff;  /* white */
   position: relative;
 }
 blockquote:before {
@@ -209,7 +209,7 @@ textarea {
   padding: 0;
   border: 0;
   background: #282a3a;  /* very dark grayish blue */
-  color: #fff;  /* white */
+  color: #ffffff;  /* white */
   min-width: 500px;
   outline: none;
   resize: none;
@@ -221,7 +221,7 @@ textarea {
 *,
 :before,
 :after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
