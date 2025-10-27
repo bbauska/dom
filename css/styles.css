@@ -77,9 +77,9 @@ a[href]:hover {
   background-color: #ffff00;  /* pure (or mostly pure) yellow */
   text-decoration: underline; 
 }
-a.three:link {color:#ffff00;}
-a.three:visited {color:#000;}
-a.three:hover {background:#ee7;}
+a.three:link {color:#ffff00;}  /* pure yellow */
+a.three:visited {color:#000000;}  /* black */
+a.three:hover {background:#ee7ee7;}  /* soft yellow */
 
 h1 { 
   font-size: 21px;
@@ -225,8 +225,8 @@ textarea {
 }
 
 body {
-  background-color: #ffffff;  /* very dark (mostly black) blue */
-  color: #e5e5e5;  /* very light gray */
+  background-color: #ffffff;  /* white */
+  color: #000000;  /* black */
   font: 14px/1.25 'Crimson Text', sans-serif;
   margin-left: 15px;;
 }
