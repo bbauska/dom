@@ -183,7 +183,7 @@ pre:hover, pre:focust { width: min-content; }
   gap: 10px;
   font-family: monospace;
   line-height: 21px;
-  background: #282a3a;
+  background: #282a3a;  /* very dark grayish blue */
   border-radius: 2px;
   padding: 20px 10px;
   height: 200px;
@@ -225,7 +225,7 @@ textarea {
 }
 
 body {
-  background-color: #1d1f20;  /* very dark (mostly black) blue */
+  background-color: #ffffff;  /* very dark (mostly black) blue */
   color: #e5e5e5;  /* very light gray */
   font: 14px/1.25 'Crimson Text', sans-serif;
   margin-left: 15px;;
