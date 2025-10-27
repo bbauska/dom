@@ -3,37 +3,37 @@
 <!--~~~~~~~~~~~~~~~~~~~~~ index.html of bbauska/dom making dom.bauska.org ~~~~~~~~~~~~~~~~~~~~~~-->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title' content="DOM (Document Object Model)" />
-  <meta name="description" content="A DOM (Document Object Model) tree built out of websites I've built
-    for people I love." />
+  <meta name="description" content="A DOM (Document Object Model) tree built out of websites I've 
+    built for people I love." />
   <meta name="author" content="Brian Bauska" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 
   <title>DOM (Document Object Model)</title>
     
   <link href="/css/styles.css" rel="stylesheet" media="screen" />
-  <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css' />
 
   <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 </head>
 <body>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -96,14 +96,13 @@ following methods:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Change the Content of an Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You can change the content inside an HTML element using JavaScript. The two 
-most common properties for this are <b><mark>innerHTML</mark></b> and 
-<b><mark>textContent:</mark></b></p>
+<p>You can change the content inside an HTML element using JavaScript. The two most common properties 
+for this are <b><mark>innerHTML</mark></b> and <b><mark>textContent:</mark></b></p>
+
 <ul>
-  <li><b><mark>innerHTML</mark></b>: Allows you to get or set the HTML content 
-    inside an element.</li>
-  <li><b><mark>textContent</mark></b>: Allows you to get or set the text content 
-    inside an element, ignoring any HTML tags.</li>
+  <li><b><mark>innerHTML</mark></b>: Allows you to get or set the HTML content inside an element.</li>
+  <li><b><mark>textContent</mark></b>: Allows you to get or set the text content inside an element, 
+    ignoring any HTML tags.</li>
 </ul>
 
 <pre>
@@ -122,15 +121,15 @@ most common properties for this are <b><mark>innerHTML</mark></b> and
   &lt;/script&gt;
 &lt;/body&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 01. example change content using innerHTML ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 01. change text and make bold using innerHTML ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
     src="./images/image001.gif?raw=true"
     loading="lazy"
     style="width:531px; height:94px;"
-    title="Example changing content using innerHTML"
-    alt="Example changing content using innerHTML." />
+    aria-label="Change text, make bold using innerHTML"
+    title="Change text, make bold using innerHTML"
+    alt="Change text, make bold using innerHTML." />
 <!-- image001.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this example</h4>
@@ -152,8 +151,9 @@ most common properties for this are <b><mark>innerHTML</mark></b> and
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Manipulate the Class Attribute</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You can add, remove, or toggle <b><mark>classes</mark></b> on an element using JavaScript. 
-This is helpful for styling or applying animations.</p>
+<p>You can add, remove, or toggle <b><mark>classes</mark></b> on an element using JavaScript. This 
+is helpful for styling or applying animations.</p>
+
 <ul>
   <li><b><mark>classList.add()</mark></b>: Adds a <b><mark>class</mark></b> to an element.</li>
   <li><b><mark>classList.remove()</mark></b>: Removes a <b><mark>class</mark></b> from an element.</li>
@@ -196,9 +196,8 @@ This is helpful for styling or applying animations.</p>
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 02. manipulate class ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. highlight, remove, toggle text in class ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -206,8 +205,9 @@ This is helpful for styling or applying animations.</p>
     src="./images/image002.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Add highlight class, remove bold class, or toggle highlight class"
+    title="Add highlight class, remove bold class, or toggle highlight class"
+    alt="Add highlight class, remove bold class, or toggle highlight class." />
 </a><!-- image002.gif -->
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -366,7 +366,7 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 03. manipulate class ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 03. update heading font size, background color using class ~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -374,8 +374,9 @@ the <b><mark>div</mark></b> using the <b><mark>getElementById</mark></b> and we 
     src="./images/image003.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Update heading font size, background color using class"
+    title="Update heading font size, background color using class"
+    alt="Update heading font size, background color using class." />
 </a>
 </p>
 <!-- image003.gif -->
@@ -392,7 +393,6 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the implementation of the above-explained approach.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -428,7 +428,7 @@ add another one to it or else it will append our new class to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 04.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 04. Update font size, background color using class ~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -436,8 +436,9 @@ add another one to it or else it will append our new class to it.
     src="./images/image004.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Update font size, background color using class"
+    title="Update font size, background color using class"
+    alt="Update font size, background color using class." />
 </a>
 </p>
 <!-- image004.gif -->
@@ -496,7 +497,7 @@ content, adding event listeners, or modifying styles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. GeeksForGeeks in green ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -504,8 +505,9 @@ content, adding event listeners, or modifying styles.</p>
     src="./images/image005.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Geeks4Geeks in green"
+    title="Geeks4Geeks in green"
+    alt="Geeks4Geeks in green." />
 </a>
 </p>
 <!-- image005.png -->
@@ -548,7 +550,7 @@ with the specified class name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 06.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 06. Geeks4Geeks in green, DOM select in JavaScript in red ~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -556,8 +558,9 @@ with the specified class name.</p>
     src="./images/image006.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Geeks4Geeks in green, DOM select in JavaScript in red"
+    title="Geeks4Geeks in green, DOM select in JavaScript in red"
+    alt="Geeks4Geeks in green, DOM select in JavaScript in red." />
 </a>
 </p>
 <!-- image006.png -->
@@ -600,7 +603,7 @@ specified tag name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 07.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 07. first paragraph in green, 2nd in blue, centered, 60px from top ~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -608,8 +611,9 @@ specified tag name.</p>
     src="./images/image007.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="1st paragraph in green, 2nd in blue, all centered, 1st paragraph 60px from top of form"
+    title="1st paragraph in green, 2nd in blue, all centered, 1st paragraph 60px from top of form"
+    alt="1st paragraph in green, 2nd in blue, all centered, 1st paragraph 60px from top of form." />
 </a>
 </p>
 <!-- image007.png -->
@@ -653,7 +657,7 @@ one element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 08.  ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 08. Geeks4Geeks in green, centered, 30px from margin, 30px in size ~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -661,8 +665,9 @@ one element.</p>
     src="./images/image008.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Geeks4Geeks in green, centered, 30px from margin, 30px in size"
+    title="Geeks4Geeks in green, centered, 30px from margin, 30px in size"
+    alt="Geeks4Geeks in green, centered, 30px from margin, 30px in size." />
 </a>
 </p>
 <!-- image008.png -->
@@ -707,7 +712,7 @@ all elements that match the specified CSS selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 09. how to select dom element using tag name ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 09. how to select dom element using tag name ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -715,8 +720,9 @@ all elements that match the specified CSS selector.</p>
     src="./images/image009.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="How to select dom element using tag name"
+    title="How to select dom element using tag name"
+    alt="How to select dom element using tag name." />
 </a>
 </p>
 <!-- image009.png -->
@@ -778,7 +784,7 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. click to get all ids in an array ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -786,8 +792,9 @@ has an ID. If it has an ID then push it into the array.</p>
     src="./images/image010.gif?raw=true"
     loading="lazy"
     style="width:30%;"
-    title=""
-    alt="." />
+    aria-label="Click to get all ids in array"
+    title="Click to get all ids in array"
+    alt="Click to get all ids in array." />
 </a>
 </p>
 <!-- image010.gif -->
@@ -845,7 +852,7 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 11. click to get all id's in an array ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 11. click to get/display all ids in an array ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -853,8 +860,9 @@ has an ID. If it has an ID then push it into the array.</p>
     src="./images/image011.gif?raw=true"
     loading="lazy"
     style="width:30%;"
-    title=""
-    alt="." />
+    arial-label="Click to get/display all ids in an array"
+    title="Click to get/display all ids in an array"
+    alt="Click to get/display all ids in an array." />
 </a>
 </p>
 <!-- image011.gif -->
@@ -865,9 +873,9 @@ has an ID. If it has an ID then push it into the array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Using dataset Property</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b><mark>dataset</mark></b> property in JavaScript allows you to access all data attributes of an HTML 
-element as a <b><mark>DOMStringMap</mark></b> object. It simplifies retrieving, modifying, or interacting with 
-custom data stored in attributes like data-id or data-name.</p>
+<p>The <b><mark>dataset</mark></b> property in JavaScript allows you to access all data attributes 
+of an HTML element as a <b><mark>DOMStringMap</mark></b> object. It simplifies retrieving, modifying, 
+or interacting with custom data stored in attributes like data-id or data-name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -918,7 +926,7 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 12. click to get attributes for target element ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 12. click to get/display attributes for target elements ~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -926,8 +934,9 @@ const dataId  = e.dataset.dataID //Access the data-id attribute
     src="./images/image012.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Click to get/display attributes for target elements"
+    title="Click to get/display attributes for target elements"
+    alt="Click to get/display attributes for target elements." />
 </a>
 </p>
 <!-- image012.gif -->
@@ -978,7 +987,7 @@ accessing all at once.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 13. click to get attributes ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 13. click to get/display attributes for target elements ~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -986,8 +995,9 @@ accessing all at once.</p>
     src="./images/image013.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Click to get/display attributes for target elements"
+    title="Click to get/display attributes for target elements"
+    alt="Click to get/display attributes for target elements." />
 </a>
 </p>
 <!-- image013.gif -->
@@ -1035,36 +1045,36 @@ to get element by class name in JavaScript.</h4>
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport"
-     content="width=device-width,
-      initial-scale=1.0"&gt;
-    &lt;title&gt;Get Elements by Class Name&lt;/title&gt;
-    &lt;style&gt;
-        .output {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-    &lt;/style&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0"&gt;
+  &lt;title&gt;Get Elements by Class Name&lt;/title&gt;
+  &lt;style&gt;
+    .output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div class="box"&gt;Box 1&lt;/div&gt;
-    &lt;div class="box"&gt;Box 2&lt;/div&gt;
-    &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;div class="box"&gt;Box 1&lt;/div&gt;
+  &lt;div class="box"&gt;Box 2&lt;/div&gt;
+  &lt;div class="box"&gt;Box 3&lt;/div&gt;
 
-    &lt;div class="output" id="output1"&gt;&lt;/div&gt;
+  &lt;div class="output" id="output1"&gt;&lt;/div&gt;
 
-    &lt;script&gt;
-        var boxes =
-         document.getElementsByClassName("box");
-        var output =
-         document.getElementById("output1");
-        output.innerHTML = 
-        "Number of boxes: " + boxes.length;
-    &lt;/script&gt;
+  &lt;script&gt;
+    var boxes =
+      document.getElementsByClassName("box");
+    var output =
+      document.getElementById("output1");
+      output.innerHTML = 
+      "Number of boxes: " + boxes.length;
+  &lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -1072,7 +1082,7 @@ to get element by class name in JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 14. get elements by class name ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 14. get/display elements by class name, number of elements ~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1080,8 +1090,9 @@ to get element by class name in JavaScript.</h4>
     src="./images/image014.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Get/display elements by class name, number of elements"
+    title="Get/display elements by class name, number of elements"
+    alt="Get/display elements by class name, number of elements." />
 </a>
 </p>
 <!-- image014.png -->
@@ -1105,31 +1116,31 @@ element by class name and we will change the background color of selected class 
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport"
-     content="width=device-width,'' initial-scale=1.0"&gt;
-    &lt;title&gt;Query Selector Example&lt;/title&gt;
-    &lt;style&gt;
-        .box {
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ccc;
-        }
-    &lt;/style&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+    content="width=device-width,'' initial-scale=1.0"&gt;
+  &lt;title&gt;Query Selector Example&lt;/title&gt;
+  &lt;style&gt;
+    .box {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div class="box"&gt;Box 1&lt;/div&gt;
-    &lt;div class="box"&gt;Box 2&lt;/div&gt;
-    &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;div class="box"&gt;Box 1&lt;/div&gt;
+  &lt;div class="box"&gt;Box 2&lt;/div&gt;
+  &lt;div class="box"&gt;Box 3&lt;/div&gt;
 
-    &lt;script&gt;
-        var firstBox = 
-        document.querySelector(".box");
-        firstBox.style.backgroundColor =
-         "lightblue"; // Change the background color to light blue
-        firstBox.style.color = "white"; // Change the text color to white
-    &lt;/script&gt;
+  &lt;script&gt;
+    var firstBox = 
+      document.querySelector(".box");
+      firstBox.style.backgroundColor =
+      "lightblue"; // Change the background color to light blue
+      firstBox.style.color = "white"; // Change the text color to white
+  &lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
@@ -1137,7 +1148,7 @@ element by class name and we will change the background color of selected class 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 15. query selector example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 15. get/display elements by class name, each element reformatted ~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1145,8 +1156,9 @@ element by class name and we will change the background color of selected class 
     src="./images/image015.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Get/display elements by class name, each element reformatted"
+    title="Get/display elements by class name, each element reformatted"
+    alt="Get/display elements by class name, each element reformatted." />
 </a>
 </p>
 <!-- image015.png -->
@@ -1205,7 +1217,7 @@ print all the content which have that class name.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 16. query selector all example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 16. get/display elements by class name, display contents of each element ~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1213,8 +1225,9 @@ print all the content which have that class name.</h4>
     src="./images/image016.png?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Get/display elements by class name, display contents of each element"
+    title="Get/display elements by class name, display contents of each element"
+    alt="Get/display elements by class name, display contents of each element." />
 </a>
 </p>
 <!-- image016.png -->
@@ -1275,7 +1288,7 @@ then access the value property of the first element in the array to get the valu
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 17. query selector all example ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17. Get/display classname value ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" >
 <a href="" 
   target="_blank" rel="noopener noreferrer">
@@ -1283,8 +1296,9 @@ then access the value property of the first element in the array to get the valu
     src="./images/image017.gif?raw=true"
     loading="lazy"
     style="width:40%;"
-    title=""
-    alt="." />
+    aria-label="Get/display classname value"
+    title="Get/display classname value"
+    alt="Get/display classname value." />
 </a>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1302,36 +1316,36 @@ then access the value property of the first element in the array to get the valu
     <title>Get Value by Class Name</title>
 </head>
 <body style="text-align: center;">
-    <h1 class="heading text">
-        GeeksforGeeks
-    </h1>
-    <p class="para text">
-        A computer science portal for geeks
-    </p>
-    <button onclick="myGeeks()">
-        Get Value
-    </button>
-    <p id="result"></p>
-    <script>
-        function myGeeks() {
-            // Get elements with the class name 'heading'
-            let headingElements = 
-                document.getElementsByClassName('text');
-            // Check if any elements with the 
-            // specified class name exist
-            if (headingElements.length > 0) {
-                // Access the value of the first 
-                // element in the collection
-                let headingVal = headingElements[1].innerHTML;
-                // Update the content of the 'result' element
-                document.getElementById('result')
-                    .innerHTML = headingVal;
-            } else {
-                console.log(
-                  'Element with class name "text" not found.');
-            }
-        }
-    </script>
+  <h1 class="heading text">
+    GeeksforGeeks
+  </h1>
+  <p class="para text">
+    A computer science portal for geeks
+  </p>
+  <button onclick="myGeeks()">
+    Get Value
+  </button>
+  <p id="result"></p>
+  <script>
+    function myGeeks() {
+      // Get elements with the class name 'heading'
+      let headingElements = 
+        document.getElementsByClassName('text');
+      // Check if any elements with the 
+      // specified class name exist
+      if (headingElements.length > 0) {
+        // Access the value of the first 
+        // element in the collection
+        let headingVal = headingElements[1].innerHTML;
+          // Update the content of the 'result' element
+          document.getElementById('result')
+          .innerHTML = headingVal;
+      } else {
+        console.log(
+          'Element with class name "text" not found.');
+      }
+    }
+  </script>
 </body>
 </html>
 </pre>
