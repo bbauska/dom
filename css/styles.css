@@ -109,7 +109,7 @@ h6 {
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   font-size: 13px;   /* 1.2rem; */
-  background-color: #f5f5f5;  /* very light gray, was #eeeeee */
+  background-color: #f5f5f5;  /* very light gray, mostly white */
   color: #ffffff;  /* white */
   text-align: left;
   padding: 10px;
@@ -131,7 +131,7 @@ body {
   border-radius: 1px;  /* 4px */
 }
 #myBtn:hover {
-  background-color: #ffc0cb;  /* very pale red */
+  background-color: #ffe7e7;  /* very pale red */
 }
 
 details {
@@ -141,14 +141,14 @@ details {
 details > summary {
   padding: 2px 6px;
   width: max-content;  /* 12em */
-  background-color: #eee;  /* very light gray */
+  background-color: #eeeeee;  /* very light gray */
   border: none;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
   cursor: pointer;
 }
 details > p {
   border-radius: 0 0 10px 10px;
-  background-color: #fff;  /* white */
+  background-color: #ffffff;  /* white */
   padding: 2px 6px;
   margin: 0.2;
   box-shadow: 3px 3px 4px #0008b;  /* dark blue */
